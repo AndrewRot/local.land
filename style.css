@@ -5,7 +5,7 @@ html {
 
 body {
 	padding: 70px;
-	background-image:url('/Images/Trees.jpg');
+	background-image:url('Trees.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -27,15 +27,23 @@ body {
 	background-color: #222;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 h1 {
 	font-weight: 700;
 	font-family: 'Lobster', cursive;
 	font-size: 5em;
+	color: #FFFFFF
 }
 
 h3 {
 	font-weight: 500;
 	font-size: 2em;
+	color: #FFFFFF;
+	font-family: 'Abel', sans-serif;
 }
 
 hr {
