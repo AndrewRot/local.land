@@ -32,7 +32,7 @@ input[type=text] {
 		border-bottom: none;
     font-size: 16px;
     text-align: center;
-    background-image: url('searchicon.png');
+    /*background-image: url('searchicon.png');*/
     background-color: rgba(0, 0, 0, 0.75);
     background-position: 10px 10px;
     background-repeat: no-repeat;

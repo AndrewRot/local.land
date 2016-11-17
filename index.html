@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- JQuery needs to come before bootstrap js file  -->
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
@@ -51,7 +52,7 @@
 					<h1>local.land</h1>
 					<h3>CONNECTING PEOPLE WITH LOCAL FARMERS MARKETS</h3>
   					<div id="search">
-    					<form>
+    					<form action="submit" method="submit">
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
         				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Zipcode" required title="Zip Code Must Be 5 Numbers">
     					</form>
@@ -67,8 +68,27 @@
 	<div id="gmap">
 			<div id="map">
 				<script>
+
+					$('.btn').click(function() {
+    					initMapSearch(document.getElementById('ZippyZip').value);
+  					});
+
 					var geocoder;
 					var map;
+
+					//Handle relocating map when user searchers
+					function initMapSearch(loc) {
+						geocoder = new google.maps.Geocoder();
+						var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 13,
+							center: new google.maps.LatLng(loc, -122.1419),
+							scrollwheel: false
+						});
+						console.log(document.getElementById('ZippyZip').value);
+
+						codeAddress(document.getElementById('ZippyZip').value);
+					}
+
 					function initMap() {
 						geocoder = new google.maps.Geocoder();
 						var map = new google.maps.Map(document.getElementById('map'), {
@@ -76,9 +96,12 @@
 							center: new google.maps.LatLng(37.4419, -122.1419),
 							scrollwheel: false
 						});
+						console.log(document.getElementById('ZippyZip').value);
+
 						codeAddress(document.getElementById('ZippyZip').value);
 					}
 					google.maps.event.addDomListener(window, "load", initialize);
+					//google.maps.event.addDomListener(window, "submit", initialize);
 
 					function codeAddress(address) {
 						geocoder.geocode({
@@ -90,9 +113,7 @@
 									map: map,
 									position: results[0].geometry.location
 								});
-							} else {
-								alert("Geocode was not successful: " + status);
-							}
+							} 
 						});
 					}
 				</script>
