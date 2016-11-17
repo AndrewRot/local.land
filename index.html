@@ -89,6 +89,16 @@
 	</div>
 
   <nav class="navbar navbar-fixed-bottom" id="footer">
+		<script>
+			$(window).scroll(function() {
+	  		if ($(this).scrollTop() < 200) {
+	    		$("nav").slideUp();
+	      }
+	  		else {
+	    		$("nav").slideDown();
+	      }
+			});
+	</script>
 	  <div class="container">
 	    <div class="navbar-header">
 	      <p>
