@@ -53,7 +53,9 @@
   					<div id="search">
     					<form>
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
+
         				<input type="text" name="search" placeholder="Enter Zipcode" required title="Zip Code Must Be 5 Numbers">
+
     					</form>
 						</div>
 					<button type="submit" class="btn btn-primary">Search</button>
@@ -67,16 +69,33 @@
 	<div id="gmap">
 			<div id="map">
 				<script>
+					var geocoder;
+					var map;
 					function initMap() {
-						var uluru = {lat: -25.363, lng: 131.044};
+						geocoder = new google.maps.Geocoder();
+						var uluru = {lat: 71.8023, lng: 42.2626};
 						var map = new google.maps.Map(document.getElementById('map'), {
 							zoom: 4,
 							center: uluru,
 							scrollwheel: false
 						});
-						var marker = new google.maps.Marker({
-							position: uluru,
-							map: map
+						codeAddress(document.getElementById('ZippyZip').value);
+					}
+					google.maps.event.addDomListener(window, "load", initialize);
+
+					function codeAddress(address) {
+						geocoder.geocode({
+							'address': address
+						}, function(results, status) {
+							if (status == google.maps.GeocoderStatus.OK) {
+								map.setCenter(results[0].geometry.location);
+								var marker = new google.maps.Marker({
+									map: map,
+									position: results[0].geometry.location
+								});
+							} else {
+								alert("Geocode was not successful: " + status);
+							}
 						});
 					}
 				</script>
@@ -88,7 +107,7 @@
 			</div>
 	</div>
 
-<!-- 
+<!--
 	<footer>
 		<div class="container-fluid" id="footer">
 			<p>
