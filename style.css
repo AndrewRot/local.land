@@ -6,10 +6,11 @@ html {
 body {
 	padding: 70px;
 	background-image:url('/Images/Trees.gif');
-	/*background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	font-family: "Patua One", sans-serif;
+	z-index:-1;
 }
 
 #content {
