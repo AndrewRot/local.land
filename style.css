@@ -102,13 +102,13 @@ input[type=text]:focus {
 h1 {
 	font-weight: 700;
 	font-family: 'Lobster', cursive;
-	font-size: 5em;
+	font-size: 8em;
 	color: #FFFFFF
 }
 
 h3 {
 	font-weight: 500;
-	font-size: 2em;
+	font-size: 3em;
 	color: #FFFFFF;
 	font-family: 'Abel', sans-serif;
 }
