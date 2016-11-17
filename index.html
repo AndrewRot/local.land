@@ -53,7 +53,7 @@
   					<div id="search">
     					<form>
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
-        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Zipcode">
+        				<input type="text" name="search" id = "ZippyZip" value="01609" placeholder="Enter Zipcode">
     					</form>
 						</div>
 					<button type="submit" class="btn btn-primary">Search</button>
@@ -71,10 +71,9 @@
 					var map;
 					function initMap() {
 						geocoder = new google.maps.Geocoder();
-						var uluru = {lat: 71.8023, lng: 42.2626};
 						var map = new google.maps.Map(document.getElementById('map'), {
-							zoom: 4,
-							center: uluru,
+							zoom: 13,
+							center: new google.maps.LatLng(37.4419, -122.1419),
 							scrollwheel: false
 						});
 						codeAddress(document.getElementById('ZippyZip').value);
@@ -130,7 +129,7 @@
 	</nav>
 
 <!-- SCRIPTS -->
-
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPEdZKfT-QclO5EjLMKGPFS9zuY1mnA-c&callback=initMap"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
