@@ -30,8 +30,9 @@ body {
 
 #circleimgs {
   height: 200px;
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
+  margin-left: 82.5px;
 }
 
 .img-circle-kurt, .img-circle-derek, .img-circle-rot {
@@ -48,7 +49,6 @@ body {
     height: 10px;
     width: 100%;
     margin: 50px 0 0 0;
-
 }
 
 h1 {
