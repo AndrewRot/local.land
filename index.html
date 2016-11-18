@@ -35,7 +35,7 @@
 	      <ul class="nav navbar-nav">
 	      	<li class="active"><a href="#"><i class="fa fa-home fa-1x" aria-hidden="true"></i> Home</a></li>
 	      	<li><a href="#"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i> About</a></li>
-	      	<li><a href="#"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Contact</a></li>
+	      	<li><a href="contact.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Contact</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#"><i class="fa fa-user-plus fa-1x" aria-hidden="true"></i> Sign Up</a></li>
@@ -62,8 +62,6 @@
 			</div>
 		</div>
 	</div>
-
-
 
 	<div id="gmap">
 			<div id="map">
@@ -104,8 +102,10 @@
 					// We add a DOM event here to show an alert if the DIV containing the
         // map is clicked.
         google.maps.event.addDomListener(map, 'click', function() {
-          window.alert('Map was clicked!');
+          //window.alert('Map was clicked!');
         });
+
+					//google.maps.event.addDomListener(window, "", initialize);
 
 					function codeAddress(address) {
 						geocoder.geocode({
@@ -117,7 +117,7 @@
 									map: map,
 									position: results[0].geometry.location
 								});
-							} 
+							}
 						});
 					}
 				</script>

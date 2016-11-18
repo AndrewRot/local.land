@@ -9,10 +9,26 @@ body {
 			 0px 18px 23px rgba(0,0,0,0.1);
 }
 
-.jumbotron {
+.jumbotron, .btn .btn-default {
+	text-align: center;
 	background-color: #222;
 	color: #FFFFFF;
 }
+
+#mainBody {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+#footer {
+    background-color: #222;
+    color: white;
+    height: 10px;
+    width: 100%;
+    margin: 50px 0 0 0;
+
+}
+
 
 h1 {
 	font-weight: 700;
