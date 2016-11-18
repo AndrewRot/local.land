@@ -15,6 +15,10 @@ body {
 	color: #FFFFFF;
 }
 
+.jumbotron {
+	opacity: .96;
+}
+
 #mainBody {
 	padding-top: 70px;
 	padding-bottom: 70px;
