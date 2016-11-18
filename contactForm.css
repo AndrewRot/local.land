@@ -25,12 +25,11 @@ body {
 }
 
 #footer {
-    background-color: #222;
-    color: white;
+    color: #9d9d9d;
     height: 10px;
     width: 100%;
     margin: 50px 0 0 0;
-
+		text-decoration: none;
 }
 
 
