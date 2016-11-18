@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- JQuery needs to come before bootstrap js file  -->
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
@@ -34,8 +34,8 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	      	<li class="active"><a href="#"><i class="fa fa-home fa-1x" aria-hidden="true"></i> Home</a></li>
-	      	<li><a href="#"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i> About</a></li>
-	      	<li><a href="contact.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Contact</a></li>
+	      	<li><a href="html/about.html"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i> About</a></li>
+	      	<li><a href="html/contact.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Contact</a></li>
 	      </ul>
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="#"><i class="fa fa-user-plus fa-1x" aria-hidden="true"></i> Sign Up</a></li>
@@ -83,7 +83,7 @@
 
 					function scrollToLocation(){
 						$('html, body').animate({
-        					scrollTop: $("#map").offset().top + (.15 * $("#map").height())
+        					scrollTop: $("#map").offset().top //+ (.15 * $("#map").height())
     					}, 1000);
 					}
 
@@ -94,10 +94,10 @@
 					var geocoder;
 					var map; //This must be declared outside scope of function
 
-					
+
 					//function that initializes map
 					//Can switch this all to 1 func if we can initial the this call and pass it a parameter. See bottom script code...
-					
+
 					function initMap() {
 						geocoder = new google.maps.Geocoder();
 						map = new google.maps.Map(document.getElementById('map'), {
@@ -118,7 +118,7 @@
 				            	};
 
 				           		infoWindow.setPosition(pos);
-				            	infoWindow.setContent('Location found.');
+				            	infoWindow.setContent('Your Location');
 				            	map.setCenter(pos);
 				          	}, function() {
 				            	handleLocationError(true, infoWindow, map.getCenter());
@@ -127,7 +127,7 @@
 				          // Browser doesn't support Geolocation
 				          handleLocationError(false, infoWindow, map.getCenter());
 				        }
-        
+
 					}
 
 					function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -136,7 +136,7 @@
 				                              'Error: The Geolocation service failed.' :
 				                              'Error: Your browser doesn\'t support geolocation.');
 				      }
-					
+
 
 					//google.maps.event.addDomListener(window, "load", initialize);
 					// We add a DOM event here to show an alert if the DIV containing the
