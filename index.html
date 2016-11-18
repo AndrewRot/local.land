@@ -62,8 +62,6 @@
 		</div>
 	</div>
 
-
-
 	<div id="gmap">
 			<div id="map">
 				<script>
@@ -78,7 +76,7 @@
 						});
 						codeAddress(document.getElementById('ZippyZip').value);
 					}
-					google.maps.event.addDomListener(window, "load", initialize);
+					google.maps.event.addDomListener(window, "", initialize);
 
 					function codeAddress(address) {
 						geocoder.geocode({
