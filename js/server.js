@@ -1,9 +1,30 @@
 
-var http = require('http')
-  , fs   = require('fs')
-  , url  = require('url')
-  , port = 8080;
+/*Express
+  author: Andrew Rottier
+*/
+var express = require('express');
+var path = require('path');
 
+var app = express();
+var port = process.env.PORT || 8080;
+
+//This must point to your home directory, express will traverse this directory
+//to look for files and serve them upon request
+app.use(express.static(path.join(__dirname, '../')));
+
+//Initiate homepage (index.html)
+app.use('/', function(req, res) {
+  res.sendFile(path.join(__dirname, '../index.html'));
+});
+
+app.listen(port, function() {
+  console.log('App is listening on port ' + port);
+});
+
+
+
+/*
+//Mongo attempt - im shit
 //lets require/import the mongodb native drivers.
 var mongodb = require('mongodb');
 
@@ -11,7 +32,7 @@ var mongodb = require('mongodb');
           var MongoClient = mongodb.MongoClient;
 
           // Connection URL. This is where your mongodb server is running.
-          var url = 'mongodb://localhost:27017/farmers';
+          var url = 'mongodb://localhost:27017/';
 
           // Use connect method to connect to the Server
           MongoClient.connect(url, function (err, db) {
@@ -23,80 +44,55 @@ var mongodb = require('mongodb');
 
               // do some work here with the database.
 
+              //create a promise while the database is loading
+               // We make a new promise: we promise a numeric count of this promise, starting from 1 (after waiting 3s)
+              var p1 = new Promise(
+                  // The resolver function is called with the ability to resolve or
+                  // reject the promise
+                  function(resolve, reject) {
+                    console.log("Gathering database");
+                    var collection = db.collection('farmers');
+                    
+                    //tst query
+                    //db.farmers.distinct( "data.0" )
+                   // Insert some users
+                    
+
+
+                       //log.insertAdjacentHTML('beforeend', thisPromiseCount +
+                       //   ') Promise started (<small>Async code started</small>)<br/>');
+                      // This is only an example to create asynchronism
+                      window.setTimeout(
+                          function() {
+                              // We fulfill the promise !
+                              resolve(thisPromiseCount);
+                          }, Math.random() * 2000 + 1000);
+                  }
+              );
+              // We define what to do when the promise is resolved/fulfilled with the then() call,
+              // and the catch() method defines what to do if the promise is rejected.
+              p1.then(
+                  // Log the fulfillment value
+                  function(val) {
+                    console.log(collection.distinct( "data.2.9" ));
+                    //console.log(collection.distinct( "data.0" ));
+                      //log.insertAdjacentHTML('beforeend', val +
+                      //    ') Promise fulfilled (<small>Async code terminated</small>)<br/>');
+                  })
+              .catch(
+                  // Log the rejection reason
+                  function(reason) {
+                      console.log('Handle rejected promise ('+reason+') here.');
+                  });
+
+
+
+              //console.log(db.farmers.distinct( "data.2.9" ));
+              //var collection = db.collection('farmers');
+              //console.log(collection.distinct( "data.2.9" ));
               //Close connection
               db.close();
             }
-          });
+          });*/
 
-var server = http.createServer (function (req, res) {
-  var uri = url.parse(req.url)
-
-  switch( uri.pathname ) {
-    case '/':
-      sendFile(res, '../index.html', 'text/html')
-      break
-    case '/index.html':
-      sendFile(res, '../index.html', 'text/html')
-      break
-    case '/contact.html':
-      sendFile(res, '../contact.html', 'text/html')
-      break
-    case '/style.css':
-      sendFile(res, '../css/style.css', 'text/css')
-      break
-    case '/contactForm.css':
-      sendFile(res, '../css/contactForm.css', 'text/css')
-      break
-    case 'images/BasketAndTable.jpg':
-      sendFile(res, '../images/BasketAndTable.jpg', 'image/jpg')
-      break
-    case 'images/Trees.jpg':
-      sendFile(res, '../images/Trees.jpg', 'image/jpg')
-      break
-    case 'images/cornimg.png':
-      sendFile(res, '../images/cornimage.png', 'image/png')
-      break
-    case 'images/beerimg.png':
-      sendFile(res, '../images/cornimage.png', 'image/png')
-      break
-
-    default:
-      res.end('404 not found')
-  }
-})
-
-server.listen(process.env.PORT || port);
-console.log('listening on 8080')
-
-// subroutines
-
-function sendFile(res, filename, contentType) {
-  contentType = contentType || 'text/html'
-
-  fs.readFile(filename, function(error, content) {
-    res.writeHead(200, {'Content-type': contentType})
-    res.end(content, 'utf-8')
-  })
-
-}
-
-
-
-//Express... Cant use
-/*var express = require('express');
-var path = require('path');
-
-var app = express();
-var port = process.env.PORT || 3000;
-
-//app.use(express.static('public'))
-app.use(express.static(path.join(__dirname, '/public')));
-
-app.use('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/public/index.html'));
-});
-
-app.listen(port, function() {
-  console.log('App is listening on port ' + port);
-});*/
 
