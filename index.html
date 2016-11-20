@@ -74,7 +74,7 @@
  					 if (e.which == 13) {
    						 codeAddress();
    						 scrollToLocation();
-   						 
+
    						 return false;    //<---- Add this line
   						}
 					});
@@ -91,7 +91,7 @@
 					}
 
 					//Attempting to read data from the text file
-					
+
 
 
 					var geocoder;
@@ -188,17 +188,17 @@
 
 					}
 
-					function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-				        infoWindow.setPosition(pos);
-				        infoWindow.setContent(browserHasGeolocation ?
-				                              'Error: The Geolocation service failed.' :
-				                              'Error: Your browser doesn\'t support geolocation.');
-				      }
+					//function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+				  //      infoWindow.setPosition(pos);
+				  //      infoWindow.setContent(browserHasGeolocation ?
+				  //                            'Error: The Geolocation service failed.' :
+				  //                            'Error: Your browser doesn\'t support geolocation.');
+				  //    }
 
 
 				     function populateMap(){
 				     	for (var i = 0; i < 40; i++) {
-  
+
 				     		//get random locations
 				     		var lo = Math.random() * (71 - 70) + 70;
 				     		var la = Math.random() * (42 - 41) + 41;
