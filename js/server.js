@@ -4,30 +4,60 @@ var http = require('http')
   , url  = require('url')
   , port = 8080;
 
+//lets require/import the mongodb native drivers.
+var mongodb = require('mongodb');
+
+          //We need to work with "MongoClient" interface in order to connect to a mongodb server.
+          var MongoClient = mongodb.MongoClient;
+
+          // Connection URL. This is where your mongodb server is running.
+          var url = 'mongodb://localhost:27017/farmers';
+
+          // Use connect method to connect to the Server
+          MongoClient.connect(url, function (err, db) {
+            if (err) {
+              console.log('Unable to connect to the mongoDB server. Error:', err);
+            } else {
+              //HURRAY!! We are connected. :)
+              console.log('Connection established to', url);
+
+              // do some work here with the database.
+
+              //Close connection
+              db.close();
+            }
+          });
+
 var server = http.createServer (function (req, res) {
   var uri = url.parse(req.url)
 
   switch( uri.pathname ) {
     case '/':
-      sendFile(res, 'index.html', 'text/html')
+      sendFile(res, '../index.html', 'text/html')
       break
     case '/index.html':
-      sendFile(res, 'index.html', 'text/html')
+      sendFile(res, '../index.html', 'text/html')
       break
     case '/contact.html':
-      sendFile(res, 'contact.html', 'text/html')
+      sendFile(res, '../contact.html', 'text/html')
       break
     case '/style.css':
-      sendFile(res, 'style.css', 'text/css')
+      sendFile(res, '../css/style.css', 'text/css')
       break
     case '/contactForm.css':
-      sendFile(res, 'contactForm.css', 'text/css')
+      sendFile(res, '../css/contactForm.css', 'text/css')
       break
-    case '/BasketAndTable.jpg':
-      sendFile(res, 'BasketAndTable.jpg', 'image/jpg')
+    case 'images/BasketAndTable.jpg':
+      sendFile(res, '../images/BasketAndTable.jpg', 'image/jpg')
       break
-    case '/Trees.jpg':
-      sendFile(res, 'Trees.jpg', 'image/jpg')
+    case 'images/Trees.jpg':
+      sendFile(res, '../images/Trees.jpg', 'image/jpg')
+      break
+    case 'images/cornimg.png':
+      sendFile(res, '../images/cornimage.png', 'image/png')
+      break
+    case 'images/beerimg.png':
+      sendFile(res, '../images/cornimage.png', 'image/png')
       break
 
     default:
