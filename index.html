@@ -129,7 +129,60 @@
 				          handleLocationError(false, infoWindow, map.getCenter());
 				        }
 
-				        populateMap(); //right now just use a test group
+				        //Custom icons test
+				        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+				        var icons = {
+				          beer: {
+				            //icon: iconBase + 'parking_lot_maps.png'
+				            icon: 'images/beerimg.png'
+				          },
+				          farm: {
+				            icon: 'images/cornimg.png'
+				          }
+				        };
+
+				        function addMarker(feature) {
+				          var marker = new google.maps.Marker({
+				            position: feature.position,
+				            icon: icons[feature.type].icon,
+				            map: map
+				          });
+				        }
+				        //create hardcoded locations - change to pull from db
+				        var features = [
+				          {
+				            position: new google.maps.LatLng(37.4419, -122.1419),
+				            type: 'farm'
+				          }, {
+				            position: new google.maps.LatLng(37.4429, -122.1499),
+				            type: 'farm'
+				          }, {
+				            position: new google.maps.LatLng(37.4529, -122.1439),
+				            type: 'farm'
+				          }, {
+				            position: new google.maps.LatLng(37.4422, -122.1475),
+				            type: 'farm'
+				          }, {
+				            position: new google.maps.LatLng(37.4420, -122.1417),
+				            type: 'farm'
+				          }, {
+				            position: new google.maps.LatLng(37.4590, -122.1447),
+				            type: 'beer'
+				          }, {
+				            position: new google.maps.LatLng(37.4459, -122.1400),
+				            type: 'beer'
+				          }, {
+				            position: new google.maps.LatLng(37.4390, -122.1390),
+				            type: 'beer'
+				          }
+				        ];
+
+				        for (var i = 0, feature; feature = features[i]; i++) {
+				          addMarker(feature);
+				        }
+				        //
+
+				        //populateMap(); //right now just use a test group
 
 					}
 
@@ -142,11 +195,11 @@
 
 
 				     function populateMap(){
-				     	for (var i = 0; i < 9; i++) {
+				     	for (var i = 0; i < 40; i++) {
   
 				     		//get random locations
-				     		var la = Math.random() * (80 - 0) + 0;
-				     		var lo = Math.random() * (80 - 0) + 0;
+				     		var lo = Math.random() * (71 - 70) + 70;
+				     		var la = Math.random() * (42 - 41) + 41;
 
 					     	var myLatLng = {lat: la, lng: lo};
 					     	var marker = new google.maps.Marker({
@@ -157,7 +210,7 @@
 
         				}
 				     }
-
+				     ///Users/andrewrottier/Desktop/CS4241/Homework/Project/local.land/mongodb-osx-x86_64-3.0.4/bin
 
 					//google.maps.event.addDomListener(window, "load", initialize);
 					// We add a DOM event here to show an alert if the DIV containing the
@@ -197,17 +250,6 @@
 			</div>
 	</div>
 
-<!--
-	<footer>
-		<div class="container-fluid" id="footer">
-			<p>
-	          	Copyright 2016 ©
-							<a href="https://github.com/dmmcmaster" target="_blank">Derek McMaster</a>,
-							<a href="https://github.com/Ksbugbee" target="_blank">Kurt Bugbee</a>,
-							<a href="https://github.com/AndrewRot" target="_blank"> Andrew Rottier</a>
-	        </p>
-		</div>
-	</footer> -->
   <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
