@@ -23,13 +23,13 @@ app.listen(port, function() {
 
 
 
-/*
+
 //Mongo attempt - im shit
 //lets require/import the mongodb native drivers.
 var mongodb = require('mongodb');
 
-          //We need to work with "MongoClient" interface in order to connect to a mongodb server.
-          var MongoClient = mongodb.MongoClient;
+//We need to work with "MongoClient" interface in order to connect to a mongodb server.
+var MongoClient = mongodb.MongoClient;
 
           // Connection URL. This is where your mongodb server is running.
           var url = 'mongodb://localhost:27017/';
@@ -53,20 +53,37 @@ var mongodb = require('mongodb');
                     console.log("Gathering database");
                     var collection = db.collection('farmers');
                     
+                    /*
+                    var docs = [{mykey:1}, {mykey:2}, {mykey:3}];
+
+                    collection.insert(docs, {w:1}, function(err, result) {
+
+                      collection.find().toArray(function(err, items) {});
+
+                      var stream = collection.find({mykey:{$ne:2}}).stream();
+                      stream.on("data", function(item) {});
+                      stream.on("end", function() {});
+
+                      collection.findOne({"meta.view.id":1}, function(err, item) {
+                        console.log(item);
+                      });
+
+                    });*/
                     //tst query
                     //db.farmers.distinct( "data.0" )
                    // Insert some users
                     
-
+                  
+                    resolve(collection.count());
 
                        //log.insertAdjacentHTML('beforeend', thisPromiseCount +
                        //   ') Promise started (<small>Async code started</small>)<br/>');
                       // This is only an example to create asynchronism
-                      window.setTimeout(
+                      /*window.setTimeout(
                           function() {
                               // We fulfill the promise !
-                              resolve(thisPromiseCount);
-                          }, Math.random() * 2000 + 1000);
+                              resolve(collection.count());
+                          }, Math.random() * 2000 + 1000);*/
                   }
               );
               // We define what to do when the promise is resolved/fulfilled with the then() call,
@@ -74,8 +91,9 @@ var mongodb = require('mongodb');
               p1.then(
                   // Log the fulfillment value
                   function(val) {
-                    console.log(collection.distinct( "data.2.9" ));
-                    //console.log(collection.distinct( "data.0" ));
+                    //console.log(collection.count());
+                    //console.log(collection.distinct( "data.2.9" ));
+                    console.log("****"+val);
                       //log.insertAdjacentHTML('beforeend', val +
                       //    ') Promise fulfilled (<small>Async code terminated</small>)<br/>');
                   })
@@ -93,6 +111,6 @@ var mongodb = require('mongodb');
               //Close connection
               db.close();
             }
-          });*/
-
+          });
+          
 
