@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	<!-- JQuery needs to come before bootstrap js file  -->
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
@@ -52,7 +53,7 @@
   					<div id="search">
     					<form action="submit" method="submit">
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
-        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Zipcode" required title="Zip Code Must Be 5 Numbers">
+        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Location" required title="Zip Code Must Be 5 Numbers">
     					</form>
 						</div>
 					<button type="submit" class="btn btn-primary">Search</button>
@@ -64,7 +65,6 @@
 	<div id="gmap">
 			<div id="map">
 				<script>
-
 
 
 					//Input box enter search
@@ -90,12 +90,8 @@
 
 					//Attempting to read data from the text file
 
-
-
 					var geocoder;
 					var map; //This must be declared outside scope of function
-
-
 
 					//function that initializes map
 					function initMap() {
@@ -105,8 +101,6 @@
 							center: new google.maps.LatLng(37.4419, -122.1419),
 							scrollwheel: false
 						});
-
-
 
 						var infoWindow = new google.maps.InfoWindow({map: map});
 
@@ -244,11 +238,10 @@
 				</script>
 			</div>
 			<div id="vis">
-					<div id="datavis">
-						<h3>DATA VIS GOES HERE!
-					</div>
+				<div id="datavis">
+					<h3>DATA VIS GOES HERE!</h3>
+				</div>
 			</div>
-	</div>
 
   <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
 	  <div class="container-fluid">
@@ -264,6 +257,7 @@
 	</nav>
 
 <!-- SCRIPTS -->
+	<script src="js/vis1.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPEdZKfT-QclO5EjLMKGPFS9zuY1mnA-c&callback=initMap"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>

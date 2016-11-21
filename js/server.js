@@ -75,6 +75,11 @@ var MongoClient = mongodb.MongoClient;
                     
                   
                     resolve(collection.count());
+                    //tst query
+                    //db.farmers.distinct( "data.0" )
+                   // Insert some users
+
+
 
                        //log.insertAdjacentHTML('beforeend', thisPromiseCount +
                        //   ') Promise started (<small>Async code started</small>)<br/>');
@@ -112,5 +117,3 @@ var MongoClient = mongodb.MongoClient;
               db.close();
             }
           });
-          
-

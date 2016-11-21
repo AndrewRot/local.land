@@ -1,2 +1,3 @@
 # local.land
-Data vis for local farmers markets
+
+Connecting people to local farmers markets
