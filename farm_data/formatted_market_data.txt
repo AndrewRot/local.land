@@ -1,4 +1,4 @@
-Caledonia Farmers Market Association - Danville,44.411013,-72.140305
+﻿Caledonia Farmers Market Association - Danville,44.411013,-72.140305
 Stearns Homestead Farmers' Market,41.375118,-81.7285969
 100 Mile Market,42.296024,-85.574887
 106 S. Main Street Farmers Market,34.8042,-82.8187
@@ -99,7 +99,7 @@ Agritopia Farm Stand,33.321658,-111.726215
 Ahwatukee Farmers Market,33.331331,-111.983242
 Aiken County Farmers Market,33.5568819,-81.7084941
 Airport Farmers and Flea Market,28.48114,-82.441117
-Akebono Farmersâ€™ Market,19.4975,-154.951
+Akebono Farmers Market,19.4975,-154.951
 Akers of Strawberries,30.7986832,-86.7012813
 Akron Farmers Market,42.8309,-96.5573
 Akwesasne Farmers Market,44.9739,-74.6677
@@ -8653,7 +8653,7 @@ Yreka Community Certified Farmers Market,41.712825,-122.642124
 Yuba City Certified Farmers Market-Saturday,39.133181,-121.613835
 Yuba City Downtown Certified Farmers Market,39.138392,-121.616935
 Yucaipa CFM,34.0339,-117.039
-Z''s Touch Farmers Market,44.1742,-103.328
+Z's Touch Farmers Market,44.1742,-103.328
 Zanesville Farmers Market,39.9239,-82.023
 Zeeland Main Place Market,42.8123,-86.0165
 Zerns Farmers Market and Auction,40.3216,-75.6184
