@@ -23,7 +23,7 @@ app.listen(port, function() {
 
 
 
-/*
+
 //Mongo attempt - im shit
 //lets require/import the mongodb native drivers.
 var mongodb = require('mongodb');
@@ -52,11 +52,11 @@ var mongodb = require('mongodb');
                   function(resolve, reject) {
                     console.log("Gathering database");
                     var collection = db.collection('farmers');
-                    
+
                     //tst query
                     //db.farmers.distinct( "data.0" )
                    // Insert some users
-                    
+
 
 
                        //log.insertAdjacentHTML('beforeend', thisPromiseCount +
@@ -93,6 +93,4 @@ var mongodb = require('mongodb');
               //Close connection
               db.close();
             }
-          });*/
-
-
+          });
