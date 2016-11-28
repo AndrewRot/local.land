@@ -88,8 +88,8 @@ if (err) {
     // Execute the each command, triggers for each document
     myCursor.each(function(err, item) {
       if(item != null){
-        //places.push("xxx");
-        farms.push({ name: item.MarketName, lat: item.y, lon: item.x });
+        //Naming of the variables pulled from the DB
+        farms.push({FMID: item.FMID, MarketName: item.MarketName, Website: item.Website, Facebook: item.Facebook, Twitter: item.Twitter, Youtube: item.Youtube, street: item.street, city: item.city, County: item.County, State: item.State, zip: item.zip, Season1Date: item.Season1Date, Season1Time: item.Season1Time, Credit: item.Credit, Organic: item.Organic, Eggs: item.Eggs, Vegetables: item.Vegetables, lat: item.y, lon: item.x, });
         console.log(item.MarketName + ", Lat: " + item.y + ", Lon: " + item.x);
         //farms.push({ name: item.name, lat: item.lat, lon: item.lon });
         //console.log(item.name + ", Lat: " + item.lat + ", Lon: " + item.lon);
