@@ -11,6 +11,9 @@ var port = process.env.PORT || 8080;
 
 ///app.use(express.session());
 
+//temp global array
+var farms = [{name: "farmtest", lat: 100, lon: 100}];
+
 //When we click the search bar
 app.post('/searchMovies', function(req, res){
   var body = ''
@@ -30,18 +33,14 @@ app.post('/searchMovies', function(req, res){
   console.log("Lat: "+ lati + ", Lon: "+ long);
   console.log("************************");
   //calculate the four corners to use later
-  var top = (lati + 1);
-  var bottom = (lati - 1);
-  var left = (long + 1);
-  var right = (long - 1);
+  var top = Math.ceil( lati );
+  var bottom = Math.floor( lati );
+  var left = Math.ceil( long  );
+  var right = Math.floor( long );
   console.log("Top : " + top);
   console.log("Bottom : " + bottom);
   console.log("Left : " + left); //maybe?
   console.log("Right : " + right);
-
-  //req.session.topvar = top;
-  //var T = req.session.topvar;
-  //console.log("T : " + T);
 
   //Chopped good!
 
@@ -66,14 +65,14 @@ if (err) {
     console.log("Inside Promise");
     var places = [];
     //37.4256448,-122.1703695
-    var number = db.collection('farms').find({ lat: {$lt: 100} }).count();
+    //var number = db.collection('farms').find({ lat: {$lt: 100} }).count();
     var count = 0;
     //Query the areas in the square
     var myCursor = db.collection('farms')
     /*.find({ $and: [{lat: {$lt: 38} },
                     {lat: {$gt: 37} },
                     {lon: {$lt: -121} },
-                    {lon: {$gt: -122} }]});*/
+                    {lon: {$gt: -122} }]});
                       //DOESNT WORK WITH VARIABLES??? wtf - works with hardcode
     /*
     .find({ $and: [{lat: {$lt: top} },
@@ -91,22 +90,20 @@ if (err) {
       if(item != null){
         //places.push("xxx");
         farms.push({ name: item.name, lat: item.lat, lon: item.lon });
-        console.log(item.name);
+        console.log(item.name + ", Lat: " + item.lat + ", Lon: " + item.lon);
         count ++;
       }
 
-
-      
       // If the item is null then the cursor is exhausted/empty and closed
       if(item == null) {
                     
-      // Show that the cursor is closed
-      myCursor.toArray(function(err, items) {
+        // Show that the cursor is closed
+        myCursor.toArray(function(err, items) {
                         
         //resolve when we get to the end of the query
-        farms = places;
-        //fetchLocationData();
-        resolve(number);
+        console.log("array length (INSIDE PROMISE): "+ farms.length);
+        //farms = places;
+        resolve(farms);
         // Let's close the db
         //db.close();
       });
@@ -117,7 +114,9 @@ if (err) {
   });
 
   p1.then(function(value) {
-    console.log("Number of found markets: "+value); // Success!
+    console.log("Number of found markets: "+value.length); // Success!
+    res.end(JSON.stringify(value)   );
+
   }, function(reason) {
     console.log("fail: "+reason); // Error!
   });
@@ -130,13 +129,9 @@ if (err) {
   });
 
 
- // input value from search
- //var val = req.query.search;
- //console.log(val+"In here!!!");
- //res.send("WHEEE");
 
  // pass back the results to client side
-  res.send("hi");
+  
 });
 
 //This must point to your home directory, express will traverse this directory
@@ -154,8 +149,7 @@ app.listen(port, function() {
 
 
 
-//temp global array
-var farms = [{name: "farmtest", lat: 100, lon: 100}];
+
 
 
 
