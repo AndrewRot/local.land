@@ -1,4 +1,4 @@
-﻿Caledonia Farmers Market Association - Danville,44.411013,-72.140305
+Caledonia Farmers Market Association - Danville,44.411013,-72.140305
 Stearns Homestead Farmers' Market,41.375118,-81.7285969
 100 Mile Market,42.296024,-85.574887
 106 S. Main Street Farmers Market,34.8042,-82.8187
@@ -216,9 +216,9 @@ Anson County Farmers Market,34.940829,-80.052567
 Antelope Valley Winery Farmer's Market,34.6470421,-118.1662288
 Anthem Farmers Market,33.862997,-112.136313
 Anthony Farmers Market,37.1521,-98.038
-Antigo Farmers Market, Inc.,45.14188,-89.15228
+Antigo Farmers Market Inc.,45.14188,-89.15228
 Apex Farmers Market,35.7320152,-78.849899
-Appalachian (Newport) Farmers Market, Cocke County TN,35.96175,-83.194852
+Appalachian (Newport) Farmers Market Cocke County TN,35.96175,-83.194852
 Appalachian Farmers' Market,36.4183,-82.4819
 Apple Country Farmers Market,33.57785,-101.8364
 Apple Country Farmers Market,33.666336,-101.611862
@@ -289,7 +289,7 @@ Ashe County Farmers Market,36.402494,-81.493514
 Asheville City Market,35.593481,-82.548852
 Asheville City Market - South,35.486275,-82.554646
 Ashfield Farmers Market,42.525744,-72.790325
-ASHFORD FARMERSâ€™ MARKET,41.8663,-72.1646
+ASHFORD FARMERS MARKET,41.8663,-72.1646
 Ashland Area Farmers Market,46.5882,-90.8907
 Ashland Farmers Market,37.758739,-77.483393
 Ashland Farmers Market,42.260027,-71.461538
@@ -317,7 +317,7 @@ Athens Farmers Market,39.9602,-89.723
 Athens Farmers Market,39.3359163,-82.0584387
 Athens Farmers Market at Market Park,35.441046,-84.591849
 Athens Farmers Market Downtown,33.959569,-83.376055
-Athens Farmers Market, LLC,33.9644564,-83.4121317
+Athens Farmers Market LLC,33.9644564,-83.4121317
 Athens Locally Grown,33.956318,-83.383849
 Athens Saturday Market,34.8013039,-86.9735003
 Atherton Market,35.20844,-80.86127
@@ -466,7 +466,7 @@ Beacon Farmers Market (Summer),41.504816,-73.985119
 Bean Blossom Farmers' Market,39.265474,-86.252467
 Bear Creek Farmers Market,34.5108,-88.2108
 Beaumont Farmers Market,30.067909,-94.164226
-Beaumont Hospital Royal Oak, Farmers Market,42.5139,-83.19199
+Beaumont Hospital Royal Oak Farmers Market,42.5139,-83.19199
 Beaver County Fruit Company I,40.7199,-80.3239
 Beaver Dam Farmer's Market,37.400207,-86.870931
 Beaver Falls Farmers Market,40.7596,-80.3207
@@ -476,13 +476,13 @@ Beaverton Farmers Market - Wednesday,45.484265,-122.805002
 Bedford Farmer's Market,41.765307,-83.596275
 Bedford Farmers Market,37.3337321,-79.5252117
 Bedford Farmers Market,38.861548,-86.483982
-Bedford Farmers' Market, Inc.,42.9481941,-71.5294248
+Bedford Farmers' Market Inc.,42.9481941,-71.5294248
 Bedner's Farm Fresh Market,26.4917,-80.2051
 Bee Hive Farmers' Market,36.7588,-90.3849
 Beechmont Open Air Market,38.183957,-85.767385
 BeeHaven Farm Roadside Market,41.442823,-103.651789
-Beets, Beats, and Eats Farmers Market,42.852734,-83.443812
-Beginning May 11, 2011,40.0406,-91.0753
+Beets Beats and Eats Farmers Market,42.852734,-83.443812
+Beginning May 11 2011,40.0406,-91.0753
 Bel Air Farmers' Market,39.535321,-76.350562
 Belchertown Farmers Market,42.277868,-72.40138
 Belding Beatnik Bazaar,43.096859,-85.228826
@@ -548,7 +548,7 @@ Berkshire - Rome Vendors' Market,43.210056,-75.458307
 Berkshire Area Farmers Market,42.49,-73.207
 Berkshire Grown Winter Farmers' Market Great Barrington,42.2441394,-73.3288593
 Berkshire Grown Winter Farmers' Market- Williamstown,42.7088388,-73.2035441
-Berkshire Harmony Downtown Pittsfield Farmers Markets, Music, and Creative Arts Fair,42.448217,-73.253489
+Berkshire Harmony Downtown Pittsfield Farmers Markets Music and Creative Arts Fair,42.448217,-73.253489
 Berlin  Farmers' Market,39.0641,-76.8194
 Berlin Farmers & Artists Market,43.968876,-88.942278
 BERLIN FARMERS MARKET,41.643845,-72.786014
@@ -641,13 +641,13 @@ Blount County Farmers Market,33.94431867,-86.47024043
 Blountville Farmer's Market,36.53404722,-82.32010833
 Blowing Rock Fresh Market,36.1322,-81.6799
 Blue Hill Farmers Market,44.427436,-68.577132
-Blue Moon Acres Farm Market- Pennington, NJ,40.3467,-74.7885
+Blue Moon Acres Farm Market- Pennington NJ,40.3467,-74.7885
 Blue Springs Farmers Market,39.0183736,-94.2778137
 Blue Water Farmers Market,42.8332,-82.483
 Bluebird Market,32.8906,-84.3264
-Bluefield, VA Farmers Market,37.251613,-81.27162
-Bluegrass Farmers' Market, Inc.,38.014459,-84.419562
-Bluegrass Farmers' Market, Inc.,38.016553,-84.555073
+Bluefield VA Farmers Market,37.251613,-81.27162
+Bluegrass Farmers' Market Inc.,38.014459,-84.419562
+Bluegrass Farmers' Market Inc.,38.016553,-84.555073
 Bluegrass Global Growers Market,38.178432,-85.763805
 Bluelicks Farmers Market,38.441814,-83.98544
 Bluffton Farmers Market,40.8879,-83.8902
@@ -713,7 +713,7 @@ Bowling Green Community Farmers Market,38.05177,-77.347563
 Bowling Green Farmers' and Artists' Market,39.3421,-91.1948
 Bowling Green Greenmarket,40.704587,-74.014313
 Bowling Green's Original Farmers Market,36.968788,-86.433927
-Boyd County Farmersâ€™ Market,38.4248,-82.6995
+Boyd County Farmers Market,38.4248,-82.6995
 Boyle County Farmers' Market,37.6494547,-84.7668198
 Boylston Farmers Market,42.3529735,-71.7342857
 Boyne City Farmers Market,45.21679,-85.014911
@@ -747,7 +747,7 @@ Braxton County Tailgate Market,38.6753,-80.7719
 Brazos Valley Farmers Market,30.6744,-96.37
 Brea Farmers Market,34.0391,-118.236
 Breaux Bridge Farmers Market,30.2807,-91.9014
-Breckinridge County Farmersâ€™ Produce Market,37.7683,-86.4585
+Breckinridge County Farmers Produce Market,37.7683,-86.4585
 Breezy Acres Orchard,39.6017,-83.9353
 Bremerton Farmers Market,47.574239,-122.629652
 Bremerton Farmers Market - Ferry Terminal,47.5635107,-122.6255143
@@ -781,7 +781,7 @@ Brimfield Farmers Market,41.1002,-81.3458
 Brimhall CFM,35.3696,-119.108
 Bringing Home Grown to U 1,38.63605,-90.244299
 Bringing Homegrown to U 2,38.63605,-90.244299
-Bristol - Housing Authority Farmersâ€™ Market,41.694,-72.9273
+Bristol - Housing Authority Farmers Market,41.694,-72.9273
 Bristol County Agricultural High School,41.835966,-71.112588
 Bristol Farmers Market,42.5576,-88.0431
 Bristol Farmers Market,41.673,-72.9453
@@ -839,7 +839,7 @@ Brown Deer Farmers Market,43.181343,-87.961935
 Brown University Farmers Market,41.826784,-71.400122
 Brownsburg Farmers Market,39.844393,-86.396798
 Brownstown Farmers Market,42.1504155,-83.2645968
-Brownstown, Indiana Farmer's Market,38.8794,-86.053
+Brownstown Indiana Farmer's Market,38.8794,-86.053
 Brownsville Community Farmers Market,40.6653,-73.9098
 Brownsville Farmers Market,39.457104,-121.283162
 Brownsville Farmers Market,44.393595,-122.98464
@@ -908,7 +908,7 @@ Bushwick Farmers' Market,40.690002,-73.92285
 Bushwick Farmers' Market,40.70281,-73.925389
 Bushwick Farmers' Market at Maria Hernandez Park,40.702826,-73.9253
 Bushwick Farmers' Market Satellite Farm Stand,40.697454,-73.911992
-Butler County Farmers Market, Greenville, AL,31.6371,-86.7419
+Butler County Farmers Market Greenville AL,31.6371,-86.7419
 Butler Farmers Market,43.104857,-88.069654
 Butler Plaza Satellite Market,29.6223,-82.3794
 Butler Walkabout Farmers Market,32.0938,-88.2376
@@ -1072,11 +1072,11 @@ Carroll County Farmer's Market,39.555942,-77.00017
 Carroll Farmers Market,42.0722,-94.8641
 Carroll Gardens Greenmarket,40.680703,-73.99543
 Carrollton Farmers Market,39.358097,-93.496941
-Carrollton, Illinois Chamber of Commerce Farmer's Market,39.2994549,-90.4076327
+Carrollton Illinois Chamber of Commerce Farmer's Market,39.2994549,-90.4076327
 Carrolton Weekly Farmers Market,40.572,-81.0869
 Carson City Saturday,39.1625789,-119.7678437
 Carson Farmers Market,33.8316,-118.259
-Carter County Farmersâ€™ Market,38.332,-82.9037
+Carter County Farmers Market,38.332,-82.9037
 Carthage Farm & Craft Farmers Market,43.977,-75.6125
 Carthage Farmers Market,40.41271,-91.13503
 Carthage Farmers' Market,37.167703,-94.313535
@@ -1097,12 +1097,12 @@ Cassopolis Farmers Market,41.9115,-86.0023
 Cassville Farmers Market,42.7262,-90.986
 Castine Farmers' Market,44.3903,-68.7983
 Castle Hills Farm To Market,29.534131,-98.5224
-Castle Rock Farmers Market, aka Plum Creek Valley Farmers Market,39.3722755,-104.8600299
+Castle Rock Farmers Market aka Plum Creek Valley Farmers Market,39.3722755,-104.8600299
 Castleton Village Farmers' Market,43.6116,-73.1779
 Castro Certified Farmers' Market,37.764428,-122.433102
 Castro Valley Farmers' Market,37.6925557,-122.0739386
 Caswell County Local Foods Council "Caswell Farmers Market",36.4993399,-79.152655
-CATALINA, Saturday Market,32.499,-110.925
+CATALINA Saturday Market,32.499,-110.925
 Catawba County Public Health Farmers Market,35.712066,-81.269507
 Catawba Farmers Market,45.5389,-90.4864
 Catawba Farms Farmers' Market,35.637794,-81.221788
@@ -1140,7 +1140,7 @@ Center for Design Practice - Mobile Farmers Market,,
 Center Market,61.1881,-149.868
 Center Point Farmer's Market,33.6425,-86.6837
 CENTER POINT PARKWAY MARKET,33.63,-86.6746
-Centerponite Mallâ€™s Farmers Market,42.9154,-85.5809
+Centerponite Malls Farmers Market,42.9154,-85.5809
 Centerville Farmers Market,35.7906,-87.4449
 Centerville Farmers Market,39.8195,-84.9963
 Centerville Farmers Market,39.61535,-84.1598756
@@ -1205,7 +1205,7 @@ Charleston's Farmers Market,36.910365,-89.350007
 Charlestown Farmers Market,30.22645,-93.21766
 Charlestown Farmers Market,30.172242,-93.25038
 Charlestown Farmers Market,42.3752,-71.0648
-Charlestown Land Trust Farmersâ€™ Market,41.384884,-71.630089
+Charlestown Land Trust Farmers Market,41.384884,-71.630089
 Charlevoix Farmers Market,45.316373,-85.2584
 Charlotte DDA Farmers Market,42.565077,-84.836318
 Charlotte Harbor Farmers Market,26.956452,-82.079759
@@ -1249,7 +1249,7 @@ Chester Farmers Market,43.3568,-92.3172
 Chester Farmers Market,43.1976,-72.5053
 Chester Farmers Market,37.358857,-77.447348
 Chester Farmers Market,40.78402,-74.696592
-Chester Sunday Farmersâ€™ Market,41.4028,-72.4502
+Chester Sunday Farmers Market,41.4028,-72.4502
 Chesterfield County Farmers Market,37.376728,-77.504419
 Chesterfield Farmers Market,37.507573,-77.609299
 Chesterton's European Market,41.6108,-87.0536
@@ -1343,7 +1343,7 @@ City of Mebane Parks & Recreation Farmers Markeet,36.0982,-79.2717
 CIty of Momence,41.162026,-87.662984
 City of North Adams Farmers' Market,42.700473,-73.113178
 City of Otsego Farmers Market,42.4606,-85.6988
-City of Papillion, Farmers Market,41.154774,-96.043954
+City of Papillion Farmers Market,41.154774,-96.043954
 City of Plymouth Farmers Market,45.023297,-93.477256
 City of Sherrill Farmers Market,43.072252,-75.599008
 City of Union Farmers' Market,38.444743,-91.004716
@@ -1392,7 +1392,7 @@ Clarkston Farmers Market,42.7615,-83.4096
 Clarkston Farmers Market,33.805672,-84.239409
 Clarksville Farmers Market,35.4703,-93.4704
 Clawson Farmers Market,42.54195,-83.152922
-Clay Center Farmersâ€™,39.7033,-96.4167
+Clay Center Farmers,39.7033,-96.4167
 Clay County Farmers Market,33.2472,-85.8491
 Clay County Farmers Market,38.4601,-81.0845
 Claysburg Farmers Market,40.0943,-78.5253
@@ -1470,7 +1470,7 @@ COFFO Harvest Farmers' Market,25.4635,-80.4834
 Cohasset farmer's market,42.2326,-70.8234
 Cohoes Farmers' Market,42.77162,-73.70068
 Colbert County Farmers Market,34.7597,-87.6946
-Colchester Farmersâ€™ Market,41.568,-72.3241
+Colchester Farmers Market,41.568,-72.3241
 Cold Spring Farmers Market,44.995,-93.4539
 Cold Springs Farmers Market,41.4195,-73.9497
 Colden Community Farmers Market,42.6453,-78.6826
@@ -1512,9 +1512,9 @@ Columbia University Greenmarket,40.807345,-73.96436
 Columbia-Pacific Farmer's Market,46.350134,-124.053969
 Columbinana Farmers Market,33.1795,-86.62
 Columbus City Farmers Market,39.223468,-85.900278
-Columbus County Community Farmers Market, Inc.,34.354903,-78.706229
+Columbus County Community Farmers Market Inc.,34.354903,-78.706229
 Columbus Downtown Farmer's Market,43.3389,-89.0147
-Columbus Farmer's Market, Columbus, Indiana,39.203327,-85.924544
+Columbus Farmer's Market Columbus Indiana,39.203327,-85.924544
 columbus farmers market,40.0554,-74.7251
 Columbus Farmers Market,41.42964,-97.359503
 Columbus Farmers' Market,35.251205,-82.198595
@@ -1550,7 +1550,7 @@ Concord Farmers Market Association,43.206451,-71.538411
 Concord Farmers' Market,37.9777842,-122.0339936
 CONCORD MARKET,42.2485,-84.4234
 Concordia Farmers Market,39.5665,-97.661
-Concordia Farmersâ€™,39.8236,-97.6304
+Concordia Farmers,39.8236,-97.6304
 Condon Community Farmers Market,45.232559,-120.184691
 CONECUH COUNTY FARMERS MARKET,31.433057,-86.956701
 Coney Island Farmers Market,40.581106,-73.98365
@@ -1581,7 +1581,7 @@ Coop City Market,40.8726,-73.8255
 Cooper Park Farmers Market,40.716065,-73.939017
 Cooper Young Community Farmers Market,35.1188424,-89.990683
 Cooperativa OrgÃ¡nica Madre Tierra,18.416678,-66.06528
-Cooperative Community Food Compact, Inc.,42.514498,-73.606772
+Cooperative Community Food Compact Inc.,42.514498,-73.606772
 Cooperative Farmers Market of Scranton,41.4246,-75.6605
 Cooperstown Farmers Market,47.4444,-98.124
 Cooperstown Farmers' Market,42.700118,-74.925057
@@ -1613,7 +1613,7 @@ Cornish Farmers' Market,43.5074,-72.2766
 Cornucopia Farmers Market,46.8578,-91.1014
 Cornville Farmer's Market,34.718187,-111.918668
 Cornwall Farmers Market,41.43972,-74.029338
-CORNWALL FARMERSâ€™ MARKET,41.8734,-73.3577
+CORNWALL FARMERS MARKET,41.8734,-73.3577
 Corona Del Mar Farmers Market,33.6004,-117.869
 Corona Greenmarket,40.7499046,-73.8626778
 CoronaCFM,33.886153,-117.56526
@@ -1709,7 +1709,7 @@ Crisp! Mobile Farmers Market,41.8951778,-87.6323748
 Crocker Farms LLC,39.118058,-92.136565
 Crockett Farmers Market at Maury City,35.8149,-89.2205
 Crofton Farmers Market,39.004666,-76.696765
-Cromwell Farmersâ€™ Market,41.5849274,-72.6456367
+Cromwell Farmers Market,41.5849274,-72.6456367
 Crookston Farmers Market I,47.7746,-96.6094
 Crookston Farmers Market II,47.7893,-96.6035
 Crosby Farmers Market,48.9088,-103.297
@@ -1740,7 +1740,7 @@ Crystal Farmers Market,43.2581,-84.9149
 Crystal Lake Farmers Market,42.243752,-88.31701
 Crystal Springs Farmers Market,31.987521,-90.358772
 CSA Farmers Market,43.20661001,-83.23636673
-Cuba, New Mexico Farmers Market,36.02222,-106.9584
+Cuba New Mexico Farmers Market,36.02222,-106.9584
 Cudahy Farmers Market,43.0376,-87.9163
 Cuero Farmers Market,28.9695,-97.1686
 CUESA Jack London Square Farmers Market,37.794714,-122.277186
@@ -1995,7 +1995,7 @@ Downtown Farmers Market II,34.7742,-79.4628
 Downtown Farmers Market III,32.7235,-97.4555
 Downtown Farmers' Market,46.786855,-92.098221
 Downtown Farmers' Market - Des Moines,41.5853202,-93.6204386
-Downtown Farmers' Market of Fort Pierce, Inc.,27.448944,-80.321655
+Downtown Farmers' Market of Fort Pierce Inc.,27.448944,-80.321655
 Downtown Farmers' Market Victoria,28.799726,-97.006456
 Downtown Festival Market,46.8744,-96.788
 Downtown Fond du Lac Farmers Market - Saturday,43.775364,-88.446973
@@ -2008,7 +2008,7 @@ Downtown Hampton Farmers Market,37.0125,-76.3232
 Downtown Hays Market,38.8718,-99.3309
 Downtown Henderson Farmers Market,36.0395247,-114.9817213
 Downtown Hickory Farmers Market,35.732301,-81.340927
-Downtown Houma Farmers, Fishermen and Artisans Market,29.6086166,-90.7437249
+Downtown Houma Farmers Fishermen and Artisans Market,29.6086166,-90.7437249
 Downtown Indiana Farmers Market,40.6216,-79.1547
 Downtown Jackson Grand River Farmers Market,42.248764,-84.40602
 Downtown Jamestown Farmers Market,42.095708,-79.242358
@@ -2046,7 +2046,7 @@ Downtown Ravenna Farmers Market,41.1575566,-81.2420473
 Downtown Rochester Farmers Market,43.2989,-71.031
 Downtown Rochester Farmers' Market,42.679095,-83.13195
 Downtown Rogers Farmers Market,36.33035,-94.115855
-Downtown Saginaw Farmers' Market, Inc.,43.428552,-83.941012
+Downtown Saginaw Farmers' Market Inc.,43.428552,-83.941012
 Downtown San Jose Farmers' Market,37.3350887,-121.892862
 Downtown San Leandro Certified Farmers' Market,37.72235,-122.153614
 Downtown Santa Ana Certified Farmers' Market,33.747265,-117.866067
@@ -2056,11 +2056,11 @@ Downtown South Boston Farmers' Market,36.697279,-78.900165
 Downtown Sparta Farmers Market,43.1624,-85.7072
 Downtown Steubenville Farmers' Market,40.3573,-80.6169
 Downtown Sumter Farmers Market,33.9204,-80.3417
-Downtown Sylvester Farmers Market, INC.,31.5252235,-83.8356554
+Downtown Sylvester Farmers Market INC.,31.5252235,-83.8356554
 Downtown Syracuse Farmers Market,43.0509435,-76.1528314
 Downtown Terre Haute Farmers' Market,39.4675452,-87.4044397
 Downtown Tifton Farmers' Market,31.452692,-83.508489
-Downtown Topeka Farmers Market, Inc.,39.047915,-95.72514
+Downtown Topeka Farmers Market Inc.,39.047915,-95.72514
 Downtown Tracy Certified Farmers Market,37.738328,-121.426885
 Downtown Troy Farmers Market,40.039448,-84.204574
 Downtown Tulsa Farmers Market,36.15396,-95.99038
@@ -2083,7 +2083,7 @@ Doylestown Farmers Market,40.9706,-81.6956
 Dr. Phillips Farmers Market,28.459412,-81.493887
 Drake Farmers Market,47.927228,-100.371695
 Drake Neighborhood Farmers Market,41.6003891,-93.6521667
-Drake Road Farmers' Market, LLC,40.552988,-105.091045
+Drake Road Farmers' Market LLC,40.552988,-105.091045
 Draper Valley Farmer's Market,37.0009,-80.7422
 Dresden Farmers Market,36.285611,-88.705486
 Dripping Springs Farmers Market,30.1922992,-98.0864453
@@ -2131,7 +2131,7 @@ Dutch Pantry Farmers Market,40.38029,-95.839362
 Duvall Farmers Market,47.7382671,-121.985974
 Dyersville Area Farmers' Market,42.48014,-91.11279
 Dysart Farmers Market,42.1718,-92.3063
-E & E Acres, LLC,38.701724,-90.317994
+E & E Acres LLC,38.701724,-90.317994
 E. Santa Clara St. Farmers' Market,37.342978,-121.877095
 Eagan Market Fest,44.839864,-93.1739
 Eagle Eye Flea and Farmers' Market,39.6546,-106.834
@@ -2144,7 +2144,7 @@ Earlimart (Tuesday),35.8844,-119.271
 Earlville's Indoor Farmers Market,42.7399,-75.5456
 Early Bird Farmers Market,42.854,-74.9864
 Earlysville Farmers Market,38.1545,-78.480913
-Earth Markets, Greenville SC,34.848,-82.401
+Earth Markets Greenville SC,34.848,-82.401
 Easley Farmers Market,34.8303,-82.605
 East Asheville Tailgate Market,35.5899,-82.5004
 East Atlanta Village Farmers Market,33.738834,-84.344092
@@ -2159,13 +2159,13 @@ East End Market,29.757511,-95.342978
 East End Market at Bown Crossing,43.57426,-116.1549
 East Falls Farmers' Market,40.00755,-75.191964
 East Goshen Farmers Market,,
-East Granby Farmersâ€™ Market,41.9431,-72.7264
-East Greenwich Farmersâ€™ Market,41.660858,-71.453619
+East Granby Farmers Market,41.9431,-72.7264
+East Greenwich Farmers Market,41.660858,-71.453619
 East Hampton Farmers Market LLC,40.972416,-72.180675
 East Hanover Farmers Market,40.8331,-74.3469
 East Harlem Farmer's Market,40.7902,-73.9456
 East Hartford Farmers Market,41.771,-72.5209
-EAST HAVEN FARMERSâ€™ MARKET,41.2777,-72.8717
+EAST HAVEN FARMERS MARKET,41.2777,-72.8717
 East Hill Plaza Farmers' Market,42.4383679,-76.466382
 East Hollywood Certified Farmers' Market,34.101499,-118.309017
 East Holmes Market,40.5554,-81.8264
@@ -2195,7 +2195,7 @@ East TN Farmers Association for Retail Marketing  (F.A.R.M.),35.947813,-83.96159
 East Town Market,43.0418863,-87.9050517
 East Vassalboro Farmers' Market,44.4521,-69.5414
 East Village Long Beach CFM,33.7681,-118.188
-EAST WINDSOR FARMERSâ€™ MARKET,41.8064,-72.7329
+EAST WINDSOR FARMERS MARKET,41.8064,-72.7329
 Eastbank Saturday Market,43.547619,-96.722763
 EASTCHASE FARMERS MARKET,32.359808,-86.164634
 Eastern Market,40.0384,-76.2987
@@ -2236,7 +2236,7 @@ Eden Valley New Heritage Public Market,42.288,-122.845
 Eden's Organic Garden Center,32.7062,-96.6011
 Edenton Farmers Market,36.070023,-76.607355
 Edgebrook Farmers Market,42.2856,-89.0288
-Edgefield Farmers, Artist & Craft Market,33.7894,-81.9292
+Edgefield Farmers Artist & Craft Market,33.7894,-81.9292
 Edgewater Farmers Market,41.9898,-87.659974
 Edgewood Farmer's Market,39.415967,-76.292139
 Edgewood Farmers Market,42.6445,-91.5679
@@ -2249,7 +2249,7 @@ Edinburgh Commons Green Market,36.6534,-76.2313
 Edison Farmers Market,40.534,-74.3354
 Edmond Farmers Market,35.6541,-97.4797
 Edmonds Museum Summer Market,47.811372,-122.376658
-Edmonson County Farmersâ€™ Market,37.1916,-86.2559
+Edmonson County Farmers Market,37.1916,-86.2559
 Edmore Farmers Market,43.4060489,-85.037581
 Edwards CO Farmers' Market,39.644032,-106.594119
 Edwards County Farmers Market,38.3785,-88.0586
@@ -2260,7 +2260,7 @@ El Centro de Laredo Farmers Market,27.505348,-99.508713
 El Cerrito Farmers Market,37.8997,-122.3
 El Dorado Farmers Market,33.222386,-92.665108
 El Dorado Farmers' Market,37.8319,-96.8495
-El Dorado Hills, Thursday Farmers Market,38.683538,-121.075495
+El Dorado Hills Thursday Farmers Market,38.683538,-121.075495
 El Maercado Familiar,17.96862,-66.061721
 El Mercadito de Centro,43.038611,-89.395424
 El Mercado Familiar,17.979207,-66.093809
@@ -2341,7 +2341,7 @@ Ellettsville Farmers Market,39.231787,-86.63878
 Ellicottville Farmers Market by REAP,42.2756,-78.6752
 Ellington Farmers Market,41.9032806,-72.4652021
 Ellington Winter Farmers' Market,41.8697886,-72.49035
-Elliott County Farmersâ€™ Market,38.1232,-83.1052
+Elliott County Farmers Market,38.1232,-83.1052
 Ellisville Farmers' Market,38.5852013,-90.587554
 Elloree Farmers Market,33.5332,-80.5745
 Ellsworth Farmer's Market,45.165787,-85.246155
@@ -2377,7 +2377,7 @@ Encinitas Station Certified Farmers Market,33.043816,-117.292563
 Encino Farmers Market,34.1862306,-118.5128542
 Enderlin Farmer's Market,46.6252,-97.6022
 Enfield Farmers Market,43.6445,-72.1438
-ENFIELD FARMERSâ€™ MARKET,41.975,-72.5494
+ENFIELD FARMERS MARKET,41.975,-72.5494
 Englewood Farmers Market,41.7761,-87.6645
 Englewood Farmers Market,40.8977,-73.973
 English Farmers Market,38.3511,-86.4432
@@ -2389,7 +2389,7 @@ Eno River Farmers Market in Downtown Hillsborough,36.074025,-79.097775
 Enosburgh Falls Farmers Market,44.906854,-72.805183
 Enterprise Farmers Market,31.3137726,-85.8550515
 EPHRATA FARMERS' MARKET,47.3209,-119.551
-Epping Farmersâ€™ Market,43.0325,-71.0734
+Epping Farmers Market,43.0325,-71.0734
 Erie Farmers Market,42.1221,-80.082
 Erie Farmers' Market,40.0491741,-105.0474201
 Erie Street Farmers Market,41.8939,-87.6414
@@ -2407,7 +2407,7 @@ Ester Community Market,64.8459,-148.01
 Estes Valley Farmers Market,40.3716,-105.502
 Esther's Place,41.7641777,-88.5505521
 Estherville Farmers Market,43.402007,-94.827697
-Estill County Farmersâ€™ Market,37.6874,-83.975
+Estill County Farmers Market,37.6874,-83.975
 Estrella Lakeside Market,33.352917,-112.429459
 Euclid Farmers Market,41.607434,-81.525914
 Eudora's Market On Main,38.9457966,-95.0985747
@@ -2434,7 +2434,7 @@ Everyone's Harvest - Greenfield,36.3186,-121.241
 Everyone's Harvest - Salinas,36.696,-121.633
 Ewa Beach Community Park (People's Open Market),21.314954,-158.007174
 Excelsior Farmers' Market,44.90111,-93.570583
-Exeter Farmersâ€™ Market,42.983633,-70.950053
+Exeter Farmers Market,42.983633,-70.950053
 Exit 20 Farmers' Market at Tanger Outlet,43.45818,-71.56186
 Extraordinary Farmers Market,41.599928,-98.931649
 Eyota Farmers Market,43.985033,-92.238327
@@ -2467,23 +2467,23 @@ Fairview Farmers Market,40.8126,-73.999
 Fairview Farmers Market,32.3465,-86.363
 Fairview Tailgate Market,35.5462,-82.4505
 Fairview WV Farmer's Market,39.5924,-80.2474
-Faith in Place Winter Farmers Market - Augustana Lutheran Church of Hyde Park, Chicago,41.7948812,-87.5973835
+Faith in Place Winter Farmers Market - Augustana Lutheran Church of Hyde Park Chicago,41.7948812,-87.5973835
 Faith in Place Winter Farmers Market - Berry Memorial United Methodist Church,41.968131,-87.684336
-Faith in Place Winter Farmers Market - Beverly Unitarian Church, Chicago,41.706861,-87.671314
+Faith in Place Winter Farmers Market - Beverly Unitarian Church Chicago,41.706861,-87.671314
 Faith in Place Winter Farmers Market - Calvary Episcopal Church,41.883775,-88.020798
 Faith in Place Winter Farmers Market - Church of St. Benedict,41.6895677,-88.1071232
 Faith in Place Winter Farmers Market - Congregational Church of Jefferson Park,41.9665391,-87.7607762
 Faith in Place Winter Farmers Market - Countryside Church Unitarian Universalist,42.128913,-88.0476
 Faith in Place Winter Farmers Market - DuPage Unitarian Universalist Church,41.8044225,-88.1184804
-Faith in Place Winter Farmers Market - Euclid Avenue United Methodist Church, Oak Park,41.8811965,-87.7930585
+Faith in Place Winter Farmers Market - Euclid Avenue United Methodist Church Oak Park,41.8811965,-87.7930585
 Faith in Place Winter Farmers Market - First Congregational Church of Geneva,41.889453,-88.308656
 Faith in Place Winter Farmers Market - Good Shepherd Lutheran Church - Oak Park,41.883229,-87.78993
 Faith in Place Winter Farmers Market - Greenstone United Methodist Church - Pullman,41.6907148,-87.6083398
-Faith in Place Winter Farmers Market - Our Saviour's Lutheran Church, Arlington Heights,42.098657,-87.981105
-Faith in Place Winter Farmers Market - St. Luke's Lutheran Church, Park Ridge,42.013972,-87.829032
+Faith in Place Winter Farmers Market - Our Saviour's Lutheran Church Arlington Heights,42.098657,-87.981105
+Faith in Place Winter Farmers Market - St. Luke's Lutheran Church Park Ridge,42.013972,-87.829032
 Faith in Place Winter Farmers Market - St. Stephen's Lutheran Church - Chicago,41.740975,-87.584824
-Faith in Place Winter Farmers Market - Temple Sholom, Chicago,41.9461049,-87.6420127
-Faith, Hope, and Charity Worship Center Farm Stand,43.1415308,-77.6203997
+Faith in Place Winter Farmers Market - Temple Sholom Chicago,41.9461049,-87.6420127
+Faith Hope and Charity Worship Center Farm Stand,43.1415308,-77.6203997
 Falcon Heights Farmers Market,44.9609,-93.0877
 Falconer Farmers Market,42.1173149,-79.1983614
 Fall Line Farmers Market on First Fridays,33.0796,-83.2266
@@ -2520,9 +2520,9 @@ Farmer's Market at Piala's Nursery,42.973475,-88.301861
 Farmer's Market at Sandpoint,48.2501658,-116.606641
 Farmer's Market in Hershey,40.2627427,-76.6869689
 Farmer's Market Oceanside,27.6497,-80.3554
-Farmer's Market of Carbondale, Illinois,37.728892,-89.242743
-Farmerâ€™s Market Express,,
-Farmerâ€™s Market on the Mountain,44.5196,-85.99
+Farmer's Market of Carbondale Illinois,37.728892,-89.242743
+Farmers Market Express,,
+Farmers Market on the Mountain,44.5196,-85.99
 Farmers & Artisans Community Market,39.759025,-104.433355
 Farmers & Artisans Market Dearborn,42.3057198,-83.246248
 Farmers and Artisans Market,40.013,-82.523
@@ -2536,8 +2536,8 @@ Farmers Market,44.5179,-103.872
 Farmers Market,41.5359,-86.021
 Farmers Market,32.3027,-95.6143
 Farmers Market & Beyond,46.8644077,-96.9084422
-Farmers Market - Clyde, Texas,32.4067,-99.4975
-Farmers Market - Greenville, TX,33.1399,-96.1089
+Farmers Market - Clyde Texas,32.4067,-99.4975
+Farmers Market - Greenville TX,33.1399,-96.1089
 Farmers Market - Riceville,43.3638272,-92.5560624
 Farmers Market - Wilbraham/The Rice Market,42.1037,-72.4359
 Farmers Market and Auction in Charlotte Hall Maryland,38.489309,-76.773777
@@ -2643,7 +2643,7 @@ Fayette County Farmers Market,38.0561,-81.104507
 Fayette County Farmers Market,39.53522,-83.438638
 Fayette County Farmers Market,35.2487,-89.3463
 Fayette County Farmers Market,33.7322,-87.8079
-Fayettevill, Arkansas Farmers' Market,36.0616132,-94.160861
+Fayettevill Arkansas Farmers' Market,36.0616132,-94.160861
 Fayetteville Farmers Market,35.1398394,-78.8742027
 Fayetteville Farmers Market CNY,43.033413,-76.019508
 FCTC Farmers Market,29.895928,-81.311586
@@ -2707,7 +2707,7 @@ Flat Rock Produce,36.013404,-80.303248
 Flat Rock Tailgate Market,35.2707502,-82.4413145
 Flatbush-Canton Farmers Market,40.5479,-74.1901
 Flatwoods Farmers Market,38.7232,-80.6498
-Fleming County Farmersâ€™ Market,38.4208,-83.7592
+Fleming County Farmers Market,38.4208,-83.7592
 Fletcher Allen's Farmers' Market,44.4789,-73.1955
 Flint Farmers' Market,43.017436,-83.687308
 Flomaton Farmers Market,31.0015,-87.26
@@ -2748,8 +2748,8 @@ FoodInRoot Rancho Sahuarita Twilight Market,31.969911,-110.968242
 FoodInRoot St. Philip's Plaza Farmers' Market,32.285328,-110.942875
 FoodInRoot Sycamore Park Twilight Market,32.0857786,-110.8323159
 Foodlink's Washington Square Farmers Market,43.153305,-77.605276
-Foothills Farmers' Market, Inc.,35.292285,-81.541682
-Foothills Farmers' Market, Inc.,35.2920003,-81.5411997
+Foothills Farmers' Market Inc.,35.292285,-81.541682
+Foothills Farmers' Market Inc.,35.2920003,-81.5411997
 Forest Acres Farmers Market,34.015314,-80.9875
 Forest Farmer's Market,40.8019,-83.51205
 Forest farmers market,37.36437,-79.285443
@@ -2769,7 +2769,7 @@ Forsyth Farmers' Market,36.684367,-93.112429
 Fort Atkinson Farmers Market,42.9263,-88.8296
 Fort Bragg CFM,39.44592,-123.804781
 Fort Collins Farmers Market,40.522309,-105.059691
-Fort Dodge Area Fruit/Vegetable Growers, Inc.,42.5058,-94.1794
+Fort Dodge Area Fruit/Vegetable Growers Inc.,42.5058,-94.1794
 Fort Farmers Market,42.9267,-88.8317
 Fort Green Park Greenmarket,40.6921,-73.9746
 Fort Jones Scott Valley Farmers Market,41.6164,-122.837
@@ -2831,14 +2831,14 @@ Frederic Farmers Market,45.661912,-92.466452
 Frederick City Market,39.418699,-77.410755
 Frederick Market,40.0986653,-104.9412813
 Fredericksburg City Farmers Market,38.302011,-77.462549
-Fredericksburg Farmers Market, Fredericksburg TX,30.27608,-98.873134
+Fredericksburg Farmers Market Fredericksburg TX,30.27608,-98.873134
 Fredericktown Farmers' Market,37.5638214,-90.2927065
 Fredonia Farmers Market - Summer,42.440634,-79.3323515
 Fredonia Farmers Market - Winter,42.4476107,-79.3152986
 Freedom Farmers Market,38.742988,-76.999859
 Freedom Farmers Market at the Carter Center,33.76759,-84.35682
 Freedom Farmers' Market,37.8388566,-122.2617897
-Freeman Health System, West - Farmers Market,37.0526877,-94.526846
+Freeman Health System West - Farmers Market,37.0526877,-94.526846
 Freeport Farmers Market,43.857519,-70.102783
 Freeport Farmers' Market,40.6544713,-73.574956
 Freetown Farmer's Market,30.2184,-92.0139
@@ -2859,8 +2859,8 @@ Fresh Start Farmers Market,48.7116722,-94.5861247
 Fresh2You Mobile Market,39.9845692,-75.815943
 fresh52 Farmers & Artisan Market  @ Sansone Park Place,36.0687779,-115.1768402
 fresh52 Farmers & Artisan Market @ Tivoli Village,36.0687779,-115.1768402
-Freshest Cargo: Mobile Farmersâ€™ Market,,
-FRESHFARM Market, by the White House,38.90075,-77.03487
+Freshest Cargo: Mobile Farmers Market,,
+FRESHFARM Market by the White House,38.90075,-77.03487
 Freshfields Village Farmers Market,32.6079,-80.1491
 Fresno Fulton Plaza Farmers Market,36.7339,-119.79
 Fresno Grizzlies Farm Grown Friday Farmer's Market,36.731951,-119.790525
@@ -2903,7 +2903,7 @@ Fulton County Medical Center Farmers Market,39.931838,-77.995682
 Fulton Farmers Market,44.913604,-93.32496
 Fulton Farmers Market,43.322899,-76.416521
 Fulton Farmers' Market,38.832357,-91.95963
-Fulton Fresh Mobile Farmerâ€™s Market,,
+Fulton Fresh Mobile Farmers Market,,
 Fulton Street Farmers Market,42.963913,-85.640479
 G&G Winter Farmers Market,40.9092,-73.558
 Gadsden Farmers Market,34.0029,-86.004
@@ -2961,7 +2961,7 @@ Geary Community Hospital Farmers Market,39.014265,-96.850471
 Geauga Family Farm Market,41.5198,-81.5123
 Geauga Fresh Farmers' Market,41.430986,-81.33689
 Geist Farmers Market,39.9034,-85.9564
-Genesee Country Farmers Market, Inc,43.0009,-78.1938
+Genesee Country Farmers Market Inc,43.0009,-78.1938
 Geneseo Farmers' Market,42.796196,-77.816409
 Geneva Farmers Market,42.868966,-76.980922
 Geneva Farmers Market,40.525226,-97.601539
@@ -3139,19 +3139,19 @@ Graves County Mayfield Farmers' Market,36.741412,-88.635185
 Gravette Farmers' Market,36.4219834,-94.4451148
 Gray Street Farmers Market,38.24639,-85.74641
 Grayslake Farmers Market,42.3443252,-88.0402633
-Grayson County Farmersâ€™ Market,37.4845,-86.2876
+Grayson County Farmers Market,37.4845,-86.2876
 Grayson Farmers' Market,33.8931891,-83.9579741
 Great Barrington Farmers Market I,42.190138,-73.364776
 Great Barrington/Thursdays,42.2135,-73.3444
 Great Bend Summer Street Stroll Farmers Market,38.364694,-98.764112
 Great Falls Community Farmers Market,38.996177,-77.288773
-Great Falls Farmers Market, Turners Falls,42.609053,-72.556098
+Great Falls Farmers Market Turners Falls,42.609053,-72.556098
 Great Falls Original Farmer's Market,47.505283,-111.306786
 Great Frederick Farmers' Market,39.410493,-77.393392
 Great Mall CFM,37.41196,-121.896894
 Great Plains Produce Assn. Community FM (Fargo),46.8719,-96.7834
 Greater Androscoggin Farmers' and Artisans' Market - Great Falls Art Center,44.0856,-70.2322
-Greater Androscoggin Farmers' and Artisans' Market - St. Maryâ€™s Hospital,44.1016,-70.1999
+Greater Androscoggin Farmers' and Artisans' Market - St. Marys Hospital,44.1016,-70.1999
 Greater Baldwinsville & Camillus Farmers' Market (Baldwinsville Location),43.15645,-76.321903
 Greater Baldwinsville & Camillus Farmers' Market (Camillus Location),43.04478,-76.248044
 Greater Bellport Community Youth Farmers Market,40.775186,-72.948282
@@ -3200,13 +3200,13 @@ Greene County Farmers Market,42.0157699,-94.3740951
 Greene Public Library Association Farmers Market,41.688079,-71.749493
 Greene's Country Store and Feed,38.766267,-90.777806
 Greene/Sumter County Farmers' Market Cooperative,32.8340744,-87.8816179
-Greeneville Farmers' Market, Inc.,36.181744,-82.783059
+Greeneville Farmers' Market Inc.,36.181744,-82.783059
 Greenfield Farmer's Market,39.34727,-83.400832
 Greenfield Farmers Market,39.7932,-85.7559
 Greenfield Farmers Market,41.9053,-87.8003
 Greenfield Farmers Market,41.1617,-73.2844
 Greenfield Farmers Market,42.95883,-87.977083
-Greenfield Farmers Market, LLC,42.5875055,-72.6008978
+Greenfield Farmers Market LLC,42.5875055,-72.6008978
 Greenfield Sunday's Market,36.3177,-121.239
 Greening Princeton Farmers Market,40.3474,-74.6563
 Greenland Farmers' Market,43.033189,-70.831728
@@ -3238,8 +3238,8 @@ Greenwood County Farmers' Market,37.81825,-96.280037
 Greenwood Farmers Market,34.2115,-82.1403
 Greenwood Farmers Market,35.2129,-94.2552
 Greenwood Farmers Market,39.6219807,-86.1121474
-Greenwood, WI Farmers Market,44.762635,-90.597968
-Grenada, MS Farmers Market,33.784,-89.81
+Greenwood WI Farmers Market,44.762635,-90.597968
+Grenada MS Farmers Market,33.784,-89.81
 Grenora Farmers Market,48.6178,-103.937
 Gresham Saturday Market at MHCC,45.518722,-122.397929
 Gretna Farmers Market,29.9168,-90.0647
@@ -3301,8 +3301,8 @@ Halls Mill Road Farmers Market,30.6609,-88.0961
 Hallsville Farmers' Market,39.111242,-92.211029
 Hamakua Harvest Farmers' Market,20.070524,-155.449151
 Hamburg Farmers' Market,42.716843,-78.831018
-HAMDEN - DOWNTOWN FARMERSâ€™ MARKET,41.3818,-72.9113
-HAMDEN - SPRING GLEN FARMERSâ€™ MARKET,41.3658,-72.9082
+HAMDEN - DOWNTOWN FARMERS MARKET,41.3818,-72.9113
+HAMDEN - SPRING GLEN FARMERS MARKET,41.3658,-72.9082
 Hamilton County Farmers Market,37.98303,-101.746863
 Hamilton Farmers Market,34.1554,-88.0161
 Hamilton Farmers Market,42.8195,-75.5413
@@ -3359,9 +3359,9 @@ Harrisonburg Farmers Market,38.446777,-78.870949
 Harrisville Farmers Market,44.6560742,-83.4029566
 Hart County Farmers Market,37.276249,-85.888994
 Hartford - Capital Avenue Farmers Market,41.7621,-72.6796
-Hartford - Market 21 Farmersâ€™ Market,41.7674,-72.6775
-HARTFORD - OLD STATE HOUSE FARMERSâ€™ MARKET,41.766,-72.6733
-Hartford - Park Street Farmersâ€™ Market,41.7579,-72.6823
+Hartford - Market 21 Farmers Market,41.7674,-72.6775
+HARTFORD - OLD STATE HOUSE FARMERS MARKET,41.766,-72.6733
+Hartford - Park Street Farmers Market,41.7579,-72.6823
 Hartford - West End Farmers Market,41.7662,-72.7111
 Hartford Farmers Market,42.2071,-86.1696
 Hartford Farmers Market,43.3604,-73.3934
@@ -3455,7 +3455,7 @@ Heart of the Ozarks Farmers' Market,36.7098028,-91.8216913
 Heartland Whole Life,37.693294,-85.85819
 Heathsville Farmers Market,37.916485,-76.4722
 Heber Valley Farmers Market and Concert in the Park,40.50427,-111.4144
-HEBRON FARMERSâ€™ MARKET,41.6528,-72.3914
+HEBRON FARMERS MARKET,41.6528,-72.3914
 Heights City Market,43.201885,-86.242558
 Heirloom Farmers Market at Trail Dust Town,32.247152,-110.853156
 Heirloom Farmers Markets at the Rillito Park Food Pavilion,32.289541,-110.960495
@@ -3561,7 +3561,7 @@ Hilo Coffee Mill Market @ The Mill,19.56462,-155.088475
 Hilo Farmers Market,19.723358,-155.0848
 Hines Veterans Hospital Farmers Market,41.846149,-87.837614
 Hinesburg Lions Farmers' Market,44.3302,-73.1107
-Hingham Farmers Market, Inc.,42.247351,-70.888967
+Hingham Farmers Market Inc.,42.247351,-70.888967
 Hinkebein Hills Farm and Market,37.369965,-89.492388
 Hinsdale Farmers Market,41.8036543,-87.928694
 Hip Donelson Community Farmers Market,36.168542,-86.665156
@@ -3828,7 +3828,7 @@ Jaffrey Farmers Market,42.8139651,-72.0231238
 Jamaica Farmers Market,40.704156,-73.799557
 Jamaica Plain/Loring-Greenough,42.3237,-72.045
 Jamestown Farmers Market,46.9798,-98.6911
-Janesville Farmers Market, Inc.,42.683703,-89.023327
+Janesville Farmers Market Inc.,42.683703,-89.023327
 Japantown Certified Farmers Market,37.3498,-121.893
 Jasper County Farmers Market,41.7032,-93.0564
 Jasper County Farmers Market,32.4818,-80.9802
@@ -3902,7 +3902,7 @@ Jump Start Jackson Farmers Market,32.367615,-90.192756
 Junction City Farmers Market I,39.0303,-96.8314
 Junction City Farmers Market II,39.0282,-96.8333
 Juneau Farmers Market,43.407,-88.7035
-Juneau Food Fest, Farmers Market & Local Food Festival,58.299893,-134.4136
+Juneau Food Fest Farmers Market & Local Food Festival,58.299893,-134.4136
 Juniata Farmers Market,40.5424,-78.4171
 Ka' U Farmers' Market,19.0646,-155.575
 Kahle Park Farmers Market,38.9704,-119.935
@@ -4070,7 +4070,7 @@ Kooskia/Kamiah Farmers Market,46.2271,-116.029
 Kootenai County Farmers Market I,47.7444,-116.792
 Kootenai County Farmers Market II,47.766,-116.787
 Koreshan Sunday Farmers' Market,26.433792,-81.813049
-Kosciusko County Farmers' Market, LLC,41.2322,-85.8379
+Kosciusko County Farmers' Market LLC,41.2322,-85.8379
 Kossuth County Farmers Market,43.3755,-94.0956
 Kronenwetter Farmer's Market,44.853861,-89.623096
 Ktizo UCC Farmers' Market,33.565282,-112.134509
@@ -4152,7 +4152,7 @@ Lake Placid Farmers' Market,44.29231,-73.988205
 Lake Saint Louis Farmers and Artists Market,38.805214,-90.770229
 Lake Wales Downtown Farmer's Market,27.902152,-81.588227
 Lake Wedowee Local Produce,33.316503,-85.484529
-Lake Worth Farmer's Market, Waterside,26.6147,-80.0386
+Lake Worth Farmer's Market Waterside,26.6147,-80.0386
 Lake Zurich Area Farmers Market,42.1936,-88.1092
 Lakehurst Revitalization Assocciation Farmer's Market,40.0087,-74.3228
 Lakeland Downtown Farmers Curb Market,28.045897,-81.955223
@@ -4249,7 +4249,7 @@ Le Mars Area Farmers Market II,42.7896,-96.1697
 Le Mars Area Farmers' Market,42.7943,-96.1156
 Le Roy Farmers' Market,42.9775464,-77.9859128
 Lean Fat Organic Market,39.9612,-82.9988
-Learn It, Grow It, Eat It YM,40.8312056,-73.9002169
+Learn It Grow It Eat It YM,40.8312056,-73.9002169
 Leavenworth Community Farmers Market,47.5962,-120.661
 Leavenworth Farmers Market,39.316574,-94.917787
 Lebanon Downtown Farmers' Market,44.5384263,-122.9070482
@@ -4263,7 +4263,7 @@ Lebanon Market,37.56926,-85.255667
 Lebanon Valley Farmers Market,42.46738,-73.390796
 Lebo Farmers Market,38.4156,-95.8638
 LeClaire Riverfront Farmers Market,41.598092,-90.345157
-LEDYARD â€“ TRI-TOWN FARMERSâ€™ MARKET,41.4397,-72.015
+LEDYARD  TRI-TOWN FARMERS MARKET,41.4397,-72.015
 Lee Farmers Market,42.3058,-73.2497
 Lee Farmers" Market,43.1268522,-71.0060464
 Leeds Farmer's Market,33.54512,-86.54514
@@ -4387,7 +4387,7 @@ Livonia Farmers Market,42.362024,-83.331886
 Lloyd Farmers Market,45.52967,-122.6573
 LMU Farmers Market,34.0522342,-118.2436849
 Loachapoka Farmers Market,32.603725,-85.597524
-Local Bounty Coshocton, LLC,40.2866,-81.8695
+Local Bounty Coshocton LLC,40.2866,-81.8695
 Local Farmers Market,46.9221402,-95.0582582
 Local Farmers Market at the Shoppes at the Flight Deck in Lexington,33.9878,-81.2465
 Local Harvest Farmers Mkt at the Longmeadow Shops,42.056558,-72.55693
@@ -4488,7 +4488,7 @@ Lyndon Farmers Market,44.536297,-72.004983
 Lyndon Farmers' Market,38.272937,-85.612424
 Lyndonville Farmers' Market,44.5363,-72.005
 Lynn Haven Farmers Market,30.244424,-85.648127
-Lynn, Central Square,42.463643,-70.94378
+Lynn Central Square,42.463643,-70.94378
 Lynwood Farmers Market,37.248,-121.972
 Lyon Farmers Market,38.3467,-98.2103
 Lyons Falls Farmers' Market,43.614659,-75.356929
@@ -4522,7 +4522,7 @@ Madison County Saturday Farmers' Market,37.5638215,-90.2927069
 Madison Farm to Fork Farmers Market,45.34925,-111.731129
 Madison Farmers Market,38.7369,-85.3831
 Madison Farmers Market,45.0087575,-96.1754168
-MADISON FARMERSâ€™ MARKET,41.3371,-72.6302
+MADISON FARMERS MARKET,41.3371,-72.6302
 Madison Garden Center,39.8177,-82.7353
 Madison NJ Farmers Market,40.759454,-74.416769
 Madras Saturday Market Holiday Market,44.6178903,-121.1385911
@@ -4565,7 +4565,7 @@ Main Street Greenfield's Farmers Market,41.3049,-94.4613
 Main Street Hanford Thursday Night Market Place,36.3263829,-119.6472532
 Main Street Maple Shade Farmers Market,39.955443,-75.001726
 Main Street Market,42.1769389,-71.0496975
-Main Street MArket - Roselle, Il.,41.981323,-88.071299
+Main Street MArket - Roselle Il.,41.981323,-88.071299
 Main Street Market of Carrolton,39.359239,-93.496054
 Main Street Marketplace,34.0054,-81.0357
 Main Street Marshfield Farmers Market,44.6612,-90.1768
@@ -4580,14 +4580,14 @@ Main Street Statesboro Farmers Market,32.448625,-81.782923
 Main Street Wadsworth Farmers Market,41.0239638,-81.7284945
 Main Street Woodbury Farmers Market,39.8367003,-75.1500467
 Main Street Woodstock Farmers Market,34.1001595,-84.5202979
-Main Street Wooste, Inc.,40.7976,-81.9454
+Main Street Wooste Inc.,40.7976,-81.9454
 MainStreet Libertyville Farmers Market,42.286858,-87.955073
 MainStreet's Dowtown Farmers Market,32.9446,-85.9547
 Maitland Farmers' Market,28.6212,-81.3671
 Maize Valley Farmers Market,40.9549,-81.2792
 Makawao Marketplace,20.8545,-156.311
-Makeke Kapolei, a farmers' & green market,21.328806,-158.070177
-Makeke Waianae, a farmers' & green market,21.451627,-158.182357
+Makeke Kapolei a farmers' & green market,21.328806,-158.070177
+Makeke Waianae a farmers' & green market,21.451627,-158.182357
 Makiki District Park (People's Open Market),21.303969,-157.836433
 Maku'u Farmers Market,19.536657,-154.971986
 Malabar Farm Market,40.6428,-82.401
@@ -4604,7 +4604,7 @@ Mamo Street Market,19.7226,-155.086
 Manachester Farmers Market,42.1568,-84.0333
 Manakin Market,37.671905,-77.685336
 Mancelona Farmers Market,44.90273,-85.059364
-MANCHESTER COMMUNITY COLLEGE FARMERSâ€™ MARKET,41.7622,-72.5688
+MANCHESTER COMMUNITY COLLEGE FARMERS MARKET,41.7622,-72.5688
 Manchester Farmers Market,42.484,-91.4543
 Manchester Farmers Market,41.7675,-72.5205
 Manchester Farmers Market,42.99272,-71.459973
@@ -4674,10 +4674,10 @@ Mark's Farm Market & Greenhouses,41.6903,-86.7849
 Market & Penn Streets Farmers' Market,39.9593,-76.7363
 Market at 15th & High,40.0006,-83.0082
 Market at DC Ranch,33.6734,-111.89
-Market at Echterâ€™s Garden Center,39.7897,-105.1
+Market at Echters Garden Center,39.7897,-105.1
 Market at Lock 3,41.079982,-81.520422
 Market at the Fareway,40.0741932,-75.2030576
-Market at the Parkway, Richland, WA,46.27525,-119.274231
+Market at the Parkway Richland WA,46.27525,-119.274231
 Market Common Farmers Market,33.6699343,-78.9390094
 Market Day RCAC,40.9172,-80.6061
 Market Days at Marcellus Park,42.9753,-76.3358
@@ -4703,7 +4703,7 @@ Market Place at Sheriff Road,38.9048,-77.0163
 Market Place On Broadway,34.173642,-97.12678
 Market Place Thursdays,43.316314,-73.847538
 Market Square,36.358765,-79.664057
-Market Square, Farmers Market,33.657897,-95.557366
+Market Square Farmers Market,33.657897,-95.557366
 Marketplace at Armstrong Park,29.963626,-90.070346
 Marketplace at Westfield,40.1388,-86.1281
 Marketplace@Sprout!,44.0470594,-123.0207983
@@ -4712,7 +4712,7 @@ Markleville Farmers Market,39.978019,-85.618732
 Marks of Excellence Farmers Market,40.698986,-73.409214
 Marksville Farmers Market,31.12706,-92.06615
 Marlboro County Farmers Market,34.61099,-79.6812
-MARLBOROUGH FARMERSâ€™ MARKET,41.6328,-72.4642
+MARLBOROUGH FARMERS MARKET,41.6328,-72.4642
 Marne Farmers Market,41.4483,-95.1114
 Mars Farmers Market,40.7022,-80.0516
 Marseilles Farmers Market,41.3312,-88.6698
@@ -4787,7 +4787,7 @@ McMinn County Farmers Market,35.394518,-84.567284
 McMinnville Farmers Market,45.2136,-123.197
 McMinnville Public Market,45.2119,-123.19
 McPherson City Farmers Market,38.373708,-97.673908
-Meade County Farmers Market, Inc,37.9925042,-86.166849
+Meade County Farmers Market Inc,37.9925042,-86.166849
 Meadow Farm Market,42.2794247,-73.2541579
 Meadville Farmers Market,41.6387,-80.1534
 Mechanicsburg Farmers Market,40.1774,-76.9839
@@ -4835,7 +4835,7 @@ Mercado Agricola Natural Viejo San Juan,18.46822,-66.117209
 Mercado Agroecologico de Rincon,18.33636,-67.2363
 Mercado del Valle,45.625517,-121.541646
 Mercado Mayapan,31.771173,-106.467575
-Merced Countyâ€™s mobile farmers market,,
+Merced Countys mobile farmers market,,
 Merced Original County Farmers Market,33.7255,-117.843
 Mercer County Farmers Market,37.75425,-84.847281
 Mercer County Farmers' Market,40.3984,-93.5767
@@ -4864,7 +4864,7 @@ Metro Health Farm Market,42.85824,-85.72025
 Mettowee Valley Farmers' Market,43.30585,-73.155942
 Metuchen Farmers Market,40.541014,-74.364472
 Mexico Farm Market,43.4594,-76.2113
-Mexico Farmers Market, Inc.,39.1435316,-91.8906487
+Mexico Farmers Market Inc.,39.1435316,-91.8906487
 Miami Children's Hospital Farmer's Market,25.741264,-80.29403
 Miami County Farmers Market,40.0559,-84.2404
 Michelangelo's Flea & Farmers Market,41.0144,-80.4368
@@ -4880,7 +4880,7 @@ Middleburg Market and Auction,40.7863,-77.0848
 Middlebury Farmers' Market,44.0159551,-73.1702102
 Middlebury Farmers' Market,44.010538,-73.16221
 Middlebury Farmers' Market,44.0155618,-73.1699403
-MIDDLEBURY FARMERSâ€™ MARKET,41.5278,-73.1213
+MIDDLEBURY FARMERS MARKET,41.5278,-73.1213
 Middlefield Market,41.4792,-81.0766
 Middleport Community Farmers Market,43.2055,-78.4878
 Middlesex County Farmers Market,37.6359,-76.5771
@@ -4907,8 +4907,8 @@ Milbridge Farmer's Market,44.5421092,-67.8900241
 Mile High Flea Market,39.8589,-104.904494
 Miles City Farmers Market,46.408215,-105.840096
 Miles Farmers Market INC,41.4243,-81.4768
-MILFORD -  WOODMONT FARMERSâ€™ MARKET,41.2279,-72.9984
-MILFORD - DOWNTOWN FARMERSâ€™ MARKET,41.223372,-73.057634
+MILFORD -  WOODMONT FARMERS MARKET,41.2279,-72.9984
+MILFORD - DOWNTOWN FARMERS MARKET,41.223372,-73.057634
 Milford Farmers Market,42.589528,-83.599662
 Milford Farmers Market,41.325863,-74.809264
 Milford Hospital Farmers Market,42.1324,-71.5282
@@ -4918,7 +4918,7 @@ Milford Winter Market,42.8353619,-71.6489836
 Milford's Riverwalk Farmers Market,38.913006,-75.428176
 Mililani District Park (People's Open Market),21.439344,-158.017902
 Mililani Farmers' Market,21.4513314,-158.0152807
-Mill City Farmers Market, Inc.,44.978211,-93.256278
+Mill City Farmers Market Inc.,44.978211,-93.256278
 Mill City Grows Mobile Market,42.6334247,-71.3161718
 Mill Street Market,36.186813,-94.130402
 Millbrae Farmers Market,37.6002,-122.391
@@ -5043,7 +5043,7 @@ Montoursville Outdoor Growers Market,41.2542,-76.9205
 Montpelier Farmers Market,38.863671,-76.72298
 Montrose Farmers Market,38.4802387,-107.8756668
 Montrose Harvest Market Farmers Market,34.4222,-119.713
-Montrose Riverfront, Inc. Farmers Market,40.534,-91.4159
+Montrose Riverfront Inc. Farmers Market,40.534,-91.4159
 Montross Market Days,38.0954214,-76.8285523
 Monument Hill Farmers' Market,38.824673,-104.840856
 Monument Market,37.5588,-77.4687
@@ -5135,12 +5135,12 @@ Mountain Home Farmers Market,43.1316,-115.696
 Mountain Home Farmers Market,36.3385,-92.3724
 Mountain Lakes Market,40.2017,-77.2783
 Mountain Market and Art Walk,34.3464,-110.271
-Mountain Park Health Center, Maryvale Clinic,33.4797307,-112.2013984
+Mountain Park Health Center Maryvale Clinic,33.4797307,-112.2013984
 Mountain People Organics,38.029395,-120.410011
 Mountain Valley Farmers Market,35.0645,-83.7449
 Mountain View Certified Farmers' Market,37.393579,-122.074677
 Mountain View Farmers' Market,36.992413,-91.703172
-Mountain View Farmersâ€™ Market,61.22431,-149.814174
+Mountain View Farmers Market,61.22431,-149.814174
 Mountain View Sunday Growers' Market,32.296873,-106.772518
 Mountainair Farm & Garden Market,34.519914,-106.242158
 MountainTraders,62.32311,-150.118018
@@ -5276,10 +5276,10 @@ New Garden Growers Market,39.809987,-75.755475
 New Gloucester Community Market,43.9916,-70.289
 New Hampton Farmers Market,43.0593,-92.3154
 New Harmony Farmers Market,38.6804,-87.5314
-NEW HARTFORD FARMERSâ€™ MARKET,41.8793,-72.9752
+NEW HARTFORD FARMERS MARKET,41.8793,-72.9752
 New Harvest Park Farmers Market,36.040025,-83.884558
 New Haven - CitySeed Downtown Farmers Market,41.2952046,-72.9268326
-New Haven - Upper State Street Farmersâ€™ Market,41.3161,-72.9089
+New Haven - Upper State Street Farmers Market,41.3161,-72.9089
 New Haven Farmers Market,41.0691493,-85.0164173
 New Haven Farmers' Market,38.615501,-91.214845
 New Highland Baptist Church Farmers Market,37.699238,-77.410676
@@ -5324,7 +5324,7 @@ Newmarket Winter Farmers' Market,43.078268,-70.936445
 Newport Farmer's Market,44.6344577,-124.0543361
 Newport Farmers' Market,43.365959,-72.174168
 Newport News Farmers Market,36.9834,-76.4223
-Newport, VT Farmers Market,44.9364356,-72.2051022
+Newport VT Farmers Market,44.9364356,-72.2051022
 Newton County Farmer's Market,36.008513,-93.186362
 Newton County Farmer's Market,36.006042,-93.192519
 Newton Farmers' Market Depot,42.357832,-71.216376
@@ -5352,7 +5352,7 @@ Norcross Community Market,33.941331,-84.21132
 Norcross Whistle Stop Farmer's Market,33.9617,-84.0235
 Norfolk Farmers Market - Saturday,42.018947,-97.431307
 Norfolk Farmers Market - Tuesday and Thursday,42.02667,-97.420492
-NORFOLK FARMERSâ€™ MARKET,41.990739,-73.197873
+NORFOLK FARMERS MARKET,41.990739,-73.197873
 Norman Farmers Market,35.2329,-97.4373
 Normandy Village Marketplace,25.85537,-80.1287
 Norpoint Farmers Market,47.300824,-122.402709
@@ -5385,7 +5385,7 @@ North End Farmers Market,40.769716,-82.523583
 North End Farmers Market,41.563893,-72.652
 North Grand Farmers Market Association,42.0494,-93.6205
 North Greenbush Farmers Market,42.691363,-73.676923
-NORTH GUILFORD - DUDLEY FARMERSâ€™ MARKET,41.3531,-72.7191
+NORTH GUILFORD - DUDLEY FARMERS MARKET,41.3531,-72.7191
 North Haven Farmers' Market,44.1279,-68.8735
 North Hollywood Valley Farmers Market,34.1864,-118.399
 North Iowa Farmers Market,43.149597,-93.2476
@@ -5412,7 +5412,7 @@ North Providence Farmers Market,41.86999,-71.46218
 North Quincy Farmers Market,42.2776,-71.0348
 North Raleigh Farmers' Market,35.906849,-78.58866
 North Royalton Farmers Market,41.3096,-81.7245
-North San Diego (Sikes Adobe) Certified Farmers Market, at the Sikes Adobe Historic Farmstead,33.06752,-117.067032
+North San Diego (Sikes Adobe) Certified Farmers Market at the Sikes Adobe Historic Farmstead,33.06752,-117.067032
 North Scituate Farmers Market,41.833758,-71.585906
 North Scottsdale Farmers Market,33.582474,-111.892551
 North Side Citiparks Farmers Market,40.0172,-79.5834
@@ -5468,14 +5468,14 @@ Northville Farmers Market,42.426989,-83.483326
 Northville Farmers' Market,43.2258,-74.1702
 Northway Mall Wednesday Farmers Market,61.1505,-149.112
 Northwest Detroit Farmers' Market,42.4068148,-83.2236095
-Northwest Farmers Market, Inc.,44.811538,-73.084462
+Northwest Farmers Market Inc.,44.811538,-73.084462
 Northwind Perennial Farm Market,42.654478,-88.408442
 Northwood Farmers Market,43.4442,-93.2183
 Norton County Farmers Market,39.8249,-99.8844
 Norton Friends & Farmers Market,36.933188,-82.629976
-Norwalk - Calvary Baptist Church Farmersâ€™ Market,41.0934,-73.4178
-Norwalk - Health Department Farmersâ€™ Market,41.1123,-73.4077
-Norwalk - Rowayton Farmersâ€™ Market,41.0698,-73.4437
+Norwalk - Calvary Baptist Church Farmers Market,41.0934,-73.4178
+Norwalk - Health Department Farmers Market,41.1123,-73.4077
+Norwalk - Rowayton Farmers Market,41.0698,-73.4437
 Norwalk Area Farmers Market,41.4787,-93.6798
 Norwalk Farmers Market,41.241406,-82.617223
 Norwalk Farmers Market,33.8877,-118.082
@@ -5536,7 +5536,7 @@ Ocala Farm Market,29.186635,-82.135651
 Occidental Bohemian Farmers Market,38.4068168,-122.9475448
 Ocean Beach Certified Farmers Market,32.74619,-117.25016
 Ocean City Farmers Market,38.4477,-75.0531
-Ocean City, NJ Farmers & Crafters Market,39.282143,-74.572082
+Ocean City NJ Farmers & Crafters Market,39.282143,-74.572082
 Ocean Shores Farmers Market,46.9736986,-124.1562852
 Ocean Springs Fresh Market,30.4151,-88.8274
 Oceanside Certified Farmer's Market,33.1967616,-117.3802623
@@ -5564,7 +5564,7 @@ Okaloosa County Farmers Market,30.4654,-86.6187
 Okanogan Valley Farmers Market - Okanogan,48.3718393,-119.5712323
 Okanogan Valley Farmers Market - Omak,48.410245,-119.530555
 Okawville Farmers Market,38.434503,-89.550447
-Oklahoma Dept. of Agriculture, Food, and Forestry (ODAFF) Farmers' Market,35.4976,-97.5024
+Oklahoma Dept. of Agriculture Food and Forestry (ODAFF) Farmers' Market,35.4976,-97.5024
 Okmulgee Farmers Market,35.6232196,-95.9726596
 Olalla Valley Farmers Market,47.43027,-122.558708
 Olathe Farmers Market,38.8538,-94.7454
@@ -5648,7 +5648,7 @@ Orange County HomeGrown Farmers Markets - Orleans,38.5561663,-86.468321
 Orange County HomeGrown Farmers Markets - Paoli,38.5561663,-86.468321
 Orange County HomeGrown Farmers Markets - Valley,38.5561663,-86.468321
 Orange Cove Farmers Market,36.6244,-119.314
-ORANGE FARMERSâ€™ MARKET,41.2723,-73.0216
+ORANGE FARMERS MARKET,41.2723,-73.0216
 Orangeburg County Farmers Market,33.481,-80.8532
 Orangecrest Certified Farmers Market,33.895,-117.313
 Orangevale Farmers Market,38.678449,-121.207654
@@ -5678,7 +5678,7 @@ Orlando Farmer's Market,28.542606,-81.370778
 Orleans County Farmers' Market - Erie Canal Basin,43.221089,-78.386261
 Orleans County Farmers' Market - Save-A-Lot Plaza,43.240635,-78.20268
 Orleans Farmers Market,40.129,-99.4498
-Orleans Farmers' Market, Inc.,41.78727,-69.99411
+Orleans Farmers' Market Inc.,41.78727,-69.99411
 Orleans Winter Farmers' Market,41.78406,-69.988846
 Ormond Beach Farmers Market,29.284852,-81.055484
 Orofino Farmers Market,46.478448,-116.256659
@@ -5713,7 +5713,7 @@ Ottawa Farmers Market,38.6156,-95.2678
 Ottsville Farmers Market,40.48894,-75.17261
 Ottumwa Farmers Market,41.016,-92.4259
 OU-Tulsa Farmers  Market,36.1022,-95.9233
-Our Community Farmers' Market, Inc. - Peachtree City,33.395961,-84.604756
+Our Community Farmers' Market Inc. - Peachtree City,33.395961,-84.604756
 Our Local Bounty Farmers Market at St. Thomas Church,38.748198,-76.75891
 Our Valley Community Farmers' Market,42.7178586,-73.3725286
 Ouray Farmers' Market,38.022,-107.672
@@ -5823,7 +5823,7 @@ Pasquotank Farmers Market,35.3746,-83.5101
 Pastore Complex Farmers' Market,41.7433,-71.4599
 Patagonia Farmers Market,31.5383,-110.756
 Pataskala Farmers Market,39.9917,-82.6774
-Paterson Market Growers, Inc.,40.892887,-74.150787
+Paterson Market Growers Inc.,40.892887,-74.150787
 Patrick County Farmers Market,36.6555,-80.2384
 Patterson True Value Farmers Market,37.4661216,-121.1425792
 Paul Smiths College Farmers Markets,44.44273,-74.256516
@@ -5949,10 +5949,10 @@ Piggott Farmer's Market,36.381623,-90.182874
 Pigtown Community Farmers Market,39.2796022,-76.6367416
 Pike Central Market,39.047595,-77.118914
 Pike County Farmers Market Association,38.490033,-87.2749235
-Pike County Pop-Up Farmers' Markets - Beaver, Ohio,39.0350046,-82.8216316
-Pike County Pop-Up Farmers' Markets - Idaho, Ohio,39.09843,-83.161292
-Pike County Pop-Up Farmers' Markets - Piketon, Ohio,39.068187,-83.01216
-Pike County Pop-Up Farmers' Markets - Waverly, Ohio,39.11329,-82.993338
+Pike County Pop-Up Farmers' Markets - Beaver Ohio,39.0350046,-82.8216316
+Pike County Pop-Up Farmers' Markets - Idaho Ohio,39.09843,-83.161292
+Pike County Pop-Up Farmers' Markets - Piketon Ohio,39.068187,-83.01216
+Pike County Pop-Up Farmers' Markets - Waverly Ohio,39.11329,-82.993338
 Pike Place Market - 1st Hill Farmers Market,47.610091,-122.328889
 Pike Place Market - Evening Farmers Market,47.609566,-122.341986
 Pike Place Market - Microsoft Commons Farmers Market,47.644322,-122.13733
@@ -6045,7 +6045,7 @@ Point Pleasant Beach Farmers Market,40.092009,-74.049973
 Point Reyes Farmers Market,38.067805,-122.805359
 Point Richmond CFM,37.926258,-122.385099
 Pokai Bay Beach Park (People's Open Market),21.442803,-158.188426
-Poland Farmersâ€™ Market,44.0706562,-70.4116814
+Poland Farmers Market,44.0706562,-70.4116814
 Polk City Farmers Market,41.771136,-93.713658
 Polk County Bounty Market - Dallas,44.924361,-123.316846
 Polk County Farmers' Market,34.582356,-94.23728
@@ -6090,7 +6090,7 @@ Portage WI Farmers Market,43.5394299,-89.461376
 Portales Farmers Market,34.1853,-103.339
 Porter School Farmers' Market,46.04679,-88.377348
 Porterville Farmers Market,36.0679,-119.016
-PORTLAND - TRI TOWN FOODS FARMERSâ€™ MARKET,41.6146,-72.5774
+PORTLAND - TRI TOWN FOODS FARMERS MARKET,41.6146,-72.5774
 Portland Farmers Market,42.8745,-84.9036
 Portland Farmers Market - Kenton,45.583106,-122.686888
 Portland Farmers Market - King,45.5573069,-122.6585746
@@ -6136,7 +6136,7 @@ Prescott Farmers Market,34.546291,-112.453003
 Prescott Farmers Market,34.557867,-112.479484
 Presque Isle Farmers Market,46.70061,-68.0093
 Preston Farmers Market,42.0585,-90.4115
-Preston Farmersâ€™ Market,41.4881,-71.9841
+Preston Farmers Market,41.4881,-71.9841
 Priest River Farmer's and Flea Market,48.1844,-116.908
 Primghar Farmers Market,43.0853,-95.6269
 Prince George County Farmer's Market,37.224441,-77.287352
@@ -6240,7 +6240,7 @@ REC Mobile Farmers Market - Family Health Center of Worcester,42.258897,-71.8136
 REC Mobile Farmers Market - Green Hill Towers,42.277007,-71.788278
 REC Mobile Farmers Market - Lincoln Park Towers,42.272996,-71.758319
 REC Mobile Farmers Market - Lincoln Village,42.297673,-71.775521
-REC Mobile Farmers Market - Out to Lunch Concert Series, City Hall Common,42.262366,-71.801112
+REC Mobile Farmers Market - Out to Lunch Concert Series City Hall Common,42.262366,-71.801112
 REC Mobile Farmers Market - Plumley Village,42.270086,-71.795536
 REC Mobile Farmers Market - Seabury Heights Apartments,42.2719811,-71.7818616
 REC Mobile Farmers Market - Seven Hills Foundation,42.2312848,-71.8255759
@@ -6328,15 +6328,15 @@ Richmond Farmers' Market,41.49949,-71.66026
 Richmond Main St. Farmers' Market,37.9368235,-122.3571356
 Richmond VAMC Farmers Market,37.4969,-77.4666
 Ridge Ferry Park Farmer's Market,34.268744,-85.17165
-RIDGEFIELD FARMERSâ€™ MARKET,41.292,-73.4936
+RIDGEFIELD FARMERS MARKET,41.292,-73.4936
 Ridgeville Park District Farmers Market,42.028009,-87.685197
 Ridgeway Farmers Market,41.203322,-77.194525
 Ridgewood YM,40.70011,-73.906193
-Ridgmar Farmers Market, Inc. I,32.8372,-97.0659
-Ridgmar Farmers Market, Inc. II,32.8208,-97.4583
+Ridgmar Farmers Market Inc. I,32.8372,-97.0659
+Ridgmar Farmers Market Inc. II,32.8208,-97.4583
 Ridgway Farmers Market,38.1518,-107.749
 Rifle Centennial Market,39.5349,-107.786
-Right Choice, Fresh Start Farmer's Market,33.5306,-80.8378
+Right Choice Fresh Start Farmer's Market,33.5306,-80.8378
 Riling Produce Farmers Market,44.3627,-100.339
 Rincon Valley Farmers Market,32.127833,-110.723595
 Rindge Farmers and Crafters market,42.7658,-72.036
@@ -6840,7 +6840,7 @@ Sheldon Farmers Market,43.1855,-95.85
 Shellsburg Farmers Market,42.0929,-91.8707
 Shelter Cove CFM,40.026,-124.067
 Shelter Cove Farmers Market,32.1876979,-80.7189462
-Shelton - Jones Family Farm Farmersâ€™ Market,41.3329,-73.1728
+Shelton - Jones Family Farm Farmers Market,41.3329,-73.1728
 Shelton Farmers Market,47.2143,-123.102214
 Shelton Farmers Market,41.3037,-73.1226
 Shelton's Farm Market & Garden Center,41.798574,-86.248443
@@ -6900,7 +6900,7 @@ Simi Valley City Hall Certified Farmers' Market,34.285295,-118.718091
 Simple Living Farmers Market,43.525658,-91.773553
 Simply Homegrown:  A Farmers' Market,34.8703554,-83.4665588
 Simpsonville Farmers Market,34.7365,-82.2582
-SIMSBURY FARMERSâ€™ MARKET,41.8616,-72.81
+SIMSBURY FARMERS MARKET,41.8616,-72.81
 Sioux City Farmers Market,42.490552,-96.408445
 Sistersville Farmers Market,39.5609,-81.0001
 Sitka Farmers Market,57.050853,-135.340965
@@ -6949,7 +6949,7 @@ Solon  Market,43.240603,-85.611628
 SOLON FARMERS MARKET,46.3485,-91.836
 Solon Springs Family Fun Days Farmers' Market,46.3532743,-91.8224113
 Solvang CFM,34.595,-120.14
-SOMERS FARMERSâ€™ MARKET,41.9856,-72.4442
+SOMERS FARMERS MARKET,41.9856,-72.4442
 Somerset County Farmers' Market Inc.,40.0214849,-79.0758065
 Somerset Farmers Market,36.9267,-84.5215
 Somersville CFM,38.0033,-121.842
@@ -6984,7 +6984,7 @@ South East Area Farmers' Market,42.927457,-85.659542
 South East Area Farmers' Market,42.9471993,-85.6591793
 South East Area Farmers' Market,42.9464661,-85.6393938
 South East Erie Farmers Market,42.1085,-80.0498
-South Fork Farmers, Local Artisan and Antique Market,37.6734709,-106.6160037
+South Fork Farmers Local Artisan and Antique Market,37.6734709,-106.6160037
 South Gate Farmers Market,33.942098,-118.184745
 South Glens Falls Farmers Market,43.3031,-73.6337
 South Hadley Farmers' Market,42.259051,-72.575386
@@ -7037,16 +7037,16 @@ South Wayne Farmer's Market,42.5692,-89.8701
 South Wedge Farmers Market,43.145982,-77.602433
 SOUTH WHIDBEY TILTH FARMERS' MARKET,48.009257,-122.473261
 SOUTH WHIDBEY TILTH FARMERS' MARKET,48.009171,-122.474481
-South Windsor Farmersâ€™ Market,41.8409794,-72.5519436
+South Windsor Farmers Market,41.8409794,-72.5519436
 Southaven Farmers Market,34.9918,-90.0225
-SOUTHBURY FARMERSâ€™ MARKET,41.4692,-73.2261
+SOUTHBURY FARMERS MARKET,41.4692,-73.2261
 Southcentral Wisconsin Regional Harvest,42.7171,-89.0017
 Southeast Idaho Farmers Market,42.8648,-112.453
 Southern Fauquier Farmers Market,38.5853,-77.7892
 Southern Price Cty Farmers Market,45.5371,-90.5294
 Southern Tier Farmers Market - Olean,42.211214,-78.041832
 Southern Village Farmers Market,35.881018,-79.0659
-SOUTHINGTON - PLANTSVILLE FARMERSâ€™ MARKET,41.5799,-72.8945
+SOUTHINGTON - PLANTSVILLE FARMERS MARKET,41.5799,-72.8945
 Southlands Farmer's Market,39.6185,-104.77
 SouthPonte Farmers Market,39.891,-82.997
 Southport Farmers Market,39.6653499,-86.115354
@@ -7059,7 +7059,7 @@ Southside Vendors Market,37.4518,-77.6294
 Southwest Community Farmers Market at Tropical Park,25.732763,-80.324075
 Southwest DC Farmer's Market,38.87689,-77.018177
 SOUTHWEST FARMERS MARKET,43.0365,-89.4724
-Southwest Farmers Market Louisville, KY,38.10686,-85.868753
+Southwest Farmers Market Louisville KY,38.10686,-85.868753
 Southwest Harbor Farmers' Market,44.27766,-68.3214
 Southwest Plaza Farmers Market,39.610856,-105.092671
 Southwest Sustainable Farmers' Market,37.207987,-93.260549
@@ -7169,10 +7169,10 @@ St. Ursula Parish,40.5595,-79.9624
 St.John Farmers Market,38.0024,-98.7616
 Stadium Village Farmers Market,39.7564,-86.1589
 Stafford Community Farmers' Market,41.9575977,-72.2842559
-STAMFORD - BARTLETT ARBORETUM & GARDENS FARMERSâ€™ MARKET,41.055,-73.5377
+STAMFORD - BARTLETT ARBORETUM & GARDENS FARMERS MARKET,41.055,-73.5377
 Stamford - High RidgeFarmers' Market,41.1057,-73.5483
 Stamford Farmers Market,41.0566,-73.5351
-Stamford Museum & Nature Center Farmersâ€™ Market,41.1236,-73.5452
+Stamford Museum & Nature Center Farmers Market,41.1236,-73.5452
 Stanford CFM,37.4244,-122.171
 Stanford Farmers Market,47.2719,-110.349
 STANLEY FARMERS MARKET,44.9598,-90.9366
@@ -7190,7 +7190,7 @@ State Street Farmers Market,36.5844,-82.1388
 Statehouse Market,39.7686865,-86.1653813
 Staten Island Ferry/Whitehall Greenmarket,40.701952,-74.013648
 Staten Island Mall Greenmarket,40.603429,-74.162908
-Statesville Market and Exchange, Inc.,35.9002,-80.93
+Statesville Market and Exchange Inc.,35.9002,-80.93
 Stateville Rotary Farmers Market,35.7725,-80.9019
 Statham Farmers Market,33.9681,-83.6024
 Staunton/Augusta Farmers' Market,38.147889,-79.073882
@@ -7269,7 +7269,7 @@ Sulphur Farmers Market,30.230054,-93.376929
 Summer Nights Market,37.418506,-76.527123
 Summers Tailgate Market,37.6568,-80.8878
 Summerside Farmers Market,36.6268,-95.2034
-Summersville Tailgate Market, Inc,38.2862,-80.8502
+Summersville Tailgate Market Inc,38.2862,-80.8502
 Summerville Farmers' Market,33.018378,-80.17712
 Summit Farmers Market,40.71897,-74.35873
 Summit Farmers Market,42.5795203,-74.5882017
@@ -7421,7 +7421,7 @@ Terra Alta Farmers Market,37.8696,-80.5429
 Terra Local,41.8037,-80.9501
 Teton Valley Farmers Market,43.7232239,-111.1110771
 Tewksbury Farmer's Market on the Common,42.611902,-71.2342732
-Texarkana, Texas Farmers' Market,33.421527,-94.045817
+Texarkana Texas Farmers' Market,33.421527,-94.045817
 Texas Farmers' Market at Lakeline,30.469332,-97.806404
 Texas Farmers' Market at Mueller,30.296618,-97.707269
 Texas Township Farmers' Market,42.201092,-85.687999
@@ -7463,7 +7463,7 @@ The Farmer's Market at Ginghamsburg Church,39.9403423,-84.1922356
 The Farmer's Market at Playwicki Farm,40.1601,-74.9896
 The Farmer's Market of Keene,42.932303,-72.279211
 The Farmers Market @ St. Stephen's,37.5733,-77.5221
-The Farmers Market Association of Taylor County, Inc,37.3513,-85.377
+The Farmers Market Association of Taylor County Inc,37.3513,-85.377
 The Farmers Market at Attleboro Farms,41.96785,-71.37045556
 The Farmers Market at Bridgeland,29.9551,-95.7194
 The Farmers Market at Clear Lake Shores,29.54096,-95.03278
@@ -7547,15 +7547,15 @@ The Market Square Farmers' Market,35.9646521,-83.9193932
 THE MARKETPLACE,37.0453871,-80.7800281
 THE MARKETPLACE,37.0458736,-80.7792887
 The Marketplace in Woodrige,38.928445,-76.959856
-The MarketPlace Somerset, MA,41.727737,-71.160158
+The MarketPlace Somerset MA,41.727737,-71.160158
 The Markets at Shrewsbury,39.8051137,-76.6790509
 The Mason City Market,42.9332,-78.826
 The Maui's Fresh Produce Farmers' Market,20.8887,-156.472
 The Mid-Week Farmers Market,40.8647,-82.3205
-The Minted Market, Grampians Community Farmers Market,40.965729,-78.612509
+The Minted Market Grampians Community Farmers Market,40.965729,-78.612509
 The Minturn Market,39.58839,-106.4315
 The Mo' Better Food Market,37.805,-122.294
-The Monroe Farmersâ€™ Market,41.332389,-73.207702
+The Monroe Farmers Market,41.332389,-73.207702
 The Montalvo House Market,29.313715,-100.415215
 The Morris Marketplace,41.6827,-73.181
 The New Dana Point CFM,33.46779,-117.699022
@@ -7677,14 +7677,14 @@ Tolland Farmers Market,41.8728,-72.3695
 Toluca Lake CFM,34.1726,-118.549
 Tomah Area Farmers Market Association,43.974,-90.504
 Tomahawk Main Street Farmers' Market,45.471147,-89.730749
-Tomahawk, Wisconsin Original Farmers' Market,45.4714,-89.7285
+Tomahawk Wisconsin Original Farmers' Market,45.4714,-89.7285
 Tomball Farmers Market,30.0028,-95.6095
 Tompinks Square Greenmarket,40.726056,-73.983535
 Toms River Farmers Market,39.9512,-74.1975
 Tonasket Farmers Market,48.7106,-119.436
 Topanga Canyon Certified Farmer's Market,34.0906,-118.605
 Topsfield Farmers Market,42.6296,-70.9453
-Torrance Certified Farmers' Market -Tuesday and saturday- 2200 Crenshaw Blvd Torrance,Ca.90501,33.8249448,-118.328444
+Torrance Certified Farmers' Market -Tuesday and saturday- 2200 Crenshaw Blvd TorranceCa.90501,33.8249448,-118.328444
 Torrington Farmer's Market,42.06537,-104.184394
 Torrington Farmers Market,41.8147,-73.1154
 Torrington Farmers Market,42.079598,-104.223495
@@ -7707,7 +7707,7 @@ Town Of Mancos Farmers' Market,37.3451,-108.289
 Town of Orange Park Farmers' and Art's Market,30.164969,-81.701868
 Town of Pendleton Farmers Market,43.107704,-78.774631
 Town of Unicoi Farmers' Market,36.207772,-82.350705
-Town of West Point, Virginia,37.538998,-76.793868
+Town of West Point Virginia,37.538998,-76.793868
 Town Square Farmers Market,47.9253,-97.0305
 Towns County Farmers Market,34.963227,-83.771331
 Townshend Farmers Market,43.084256,-72.711717
@@ -7764,14 +7764,14 @@ Tucker Farmers Market,33.853283,-84.214282
 Tucker Square Greenmarket,40.773602,-73.981573
 Tuckerton Farmers Market at the Seaport,39.6033,-74.3382
 Tucumcari Farmers' Market,35.1718,-103.708
-Tuesday Delmar Farmersâ€™ Market (Capital District Farmersâ€™ Market Assoc.),42.622625,-73.836047
+Tuesday Delmar Farmers Market (Capital District Farmers Market Assoc.),42.622625,-73.836047
 Tuesday Farmers Market,41.3846,-71.6312
 Tuesday Market in Lauraville,39.340417,-76.572479
 Tuesday Morning Market at Steele Wines,38.993068,-122.875078
 Tularosa Farmers Market,33.07966,-106.0109
 Tullahoma Locally Grown Market,35.3634,-86.2108
 Tullos Farmer's Fest,31.820457,-92.328323
-Tumaâ€™s Farmers Market,45.2407,-96.576
+Tumas Farmers Market,45.2407,-96.576
 Tumbleweed Farmers' & Crafters' Market,43.238036,-120.688492
 Tumwater Town Center Farmers Market,46.985164,-122.907776
 Tuolumne Memorial Park CFM,37.9604,-120.237
@@ -7845,7 +7845,7 @@ University District Farmers Market,47.665626,-122.313033
 University Farmers' Market,39.28894,-76.622772
 University of Minnesota Farmers Market,44.9756501,-93.2338903
 University of Minnesota Farmers Market - St. Paul,44.981399,-93.184859
-University of Rhode Island Farmersâ€™ Market,41.4827,-71.5368
+University of Rhode Island Farmers Market,41.4827,-71.5368
 University Of San Francisco FM,37.7756,-122.452
 University Square Farmers' Market,39.953275,-75.194895
 University Village Colorado Farmers Market,38.906163,-104.817274
@@ -7876,7 +7876,7 @@ Uptown Whittier CFM,33.9791,-118.036
 Urban Acres Produce,39.742037,-75.542582
 URBAN COOKHOUSE FARMER'S MARKET - HOMEWOOD,33.480175,-86.790909
 URBAN COOKHOUSE FARMER'S MARKET - THE SUMMIT,33.450034,-86.730085
-Urban Farmer's Market (Madison, FL),30.471328,-83.422333
+Urban Farmer's Market (Madison FL),30.471328,-83.422333
 Urban Garden Farmers Market,41.6806376,-86.2880407
 Urban Growers Market,45.6385,-122.6714
 Urban Harvest,46.8063,-100.784
@@ -7898,7 +7898,7 @@ UT Farmers Market,35.9449944,-83.9384194
 UTC Certified Farmers Market,32.85889,-117.222193
 Utica Farmers Market,43.09982,-75.22513
 UTMC Farmers Market,41.61998,-83.615387
-Utopia Farmers Market, LLC,33.913762,-81.524422
+Utopia Farmers Market LLC,33.913762,-81.524422
 VA Medical Center Farmer's Market,40.757869,-111.840755
 VA Palo Alto Farmers' Market,37.404409,-122.139744
 VA San Francisco Certified Farmers' Market,37.78176,-122.503942
@@ -8055,7 +8055,7 @@ Waikiki Farmers' Market,21.2754,-157.821
 Waikoloa Village Farmers Market,19.9304,-155.788
 Wailua Homesteads Park (Sunshine Markets),22.0597,-159.369
 Waimanalo Beach Park (People's Open Market),21.331534,-157.694482
-Waimea Homestead Farmers Market, Inc.,20.018308,-155.668368
+Waimea Homestead Farmers Market Inc.,20.018308,-155.668368
 Waimea Midweek Farmers Market,20.006422,-155.650086
 Waimea Town Market at Parker School,20.022262,-155.669737
 Waipahu District Park (People's Open Market),21.387619,-157.999181
@@ -8136,7 +8136,7 @@ Washington County Farmers Market,35.8476,-76.7449
 Washington County Farmers Market,31.4649,-88.2596
 Washington County Farmers Market,38.605955,-86.094468
 Washington County Farmers Market - Agricultural Education Center,39.6246,-77.7298
-WASHINGTON DEPOT FARMERSâ€™ MARKET,41.6397,-73.3205
+WASHINGTON DEPOT FARMERS MARKET,41.6397,-73.3205
 Washington Farmer's Market,39.8238,-97.0541
 Washington Farmers Market,44.0833,-72.4219
 Washington Farmers Market,33.7372,-82.7407
@@ -8148,10 +8148,10 @@ Wasilla Farmers Market,61.582613,-149.440155
 Watauga County Farmers' Market,36.209499,-81.669862
 water canyon farmers market,34.121082,-116.432134
 Water Valley main Street Farmers Market,34.168,-89.6307
-WATERBURY - FULTON PARK FARMERSâ€™ MARKET,41.569,-73.0376
-WATERBURY - MALL FARMERSâ€™ MARKET,41.5544,-73.0433
-Waterbury - South End Farmersâ€™ Market,41.5401,-73.0279
-WATERBURY - TOWN GREEN FARMERSâ€™ MARKET,41.5866,-73.0835
+WATERBURY - FULTON PARK FARMERS MARKET,41.569,-73.0376
+WATERBURY - MALL FARMERS MARKET,41.5544,-73.0433
+Waterbury - South End Farmers Market,41.5401,-73.0279
+WATERBURY - TOWN GREEN FARMERS MARKET,41.5866,-73.0835
 Waterbury Farmers Market,44.3393474,-72.7578619
 Waterbury Farmers Market,44.339485,-72.75383
 WaterColor Coastal Farmers' Market,30.334741,-86.169608
@@ -8228,7 +8228,7 @@ Webster City Farmers Market,42.46893,-93.81654
 Webster County Farmers Market,33.5407,-89.2656
 Webster Groves Farmers Market,38.591238,-90.338837
 Webster Springs Farmer's Market,38.477463,-80.414772
-Webster's Joe Obbie Farmers' Market, Inc.,43.212229,-77.452948
+Webster's Joe Obbie Farmers' Market Inc.,43.212229,-77.452948
 Wednesday Farmers Market,39.164,-86.3927
 Wednesday Farmers' Market,42.1898,-73.3694
 Wednesday Ft. Pierce Green Market-Food-Co-Op,27.448039,-80.321572
@@ -8297,7 +8297,7 @@ West Fork Farmers Market,35.98,-94.2147
 West Frankfort Farmers Market,37.892,-88.9166
 West Frederick Farmers' Market,39.4101326,-77.4377142
 West Glen Farmers Market,41.5507,-93.7793
-WEST HARTFORD â€“ WHOLE FOODS FARMERSâ€™ MARKET,41.7616,-72.7396
+WEST HARTFORD  WHOLE FOODS FARMERS MARKET,41.7616,-72.7396
 West Hartford Farmers Market,41.757,-72.752
 West Haven Farmers Market,41.2723,-72.9498
 West Hollywood Thursday Farmers Market,34.0821,-118.384
@@ -8377,9 +8377,9 @@ WestoshaMarket,42.517562,-88.179523
 Westover Farmers Market,38.886205,-77.141807
 Westover Hills Farmers Market,34.770334,-92.345477
 Westown Farmers Market,43.0371,-87.9153
-Westphalia Trading Co., LLC,38.440436,-92.000164
+Westphalia Trading Co. LLC,38.440436,-92.000164
 Westport,41.53274,-71.104717
-WESTPORT - SAUGATUCK FARMERSâ€™ MARKET,41.134,-73.373
+WESTPORT - SAUGATUCK FARMERS MARKET,41.134,-73.373
 WESTPORT FARMERS MARKET,41.1397,-73.3583
 Westport Road Baptist Farmers Market,38.2873,-85.5729
 Westside CFM,36.9598,-122.057
@@ -8418,7 +8418,7 @@ White Salmon Farmers' Market,45.7271523,-121.4840161
 White's Creek Organic Farmers Market,36.3367,-86.7169
 Whitefield Farmers' Market,43.6852,-71.5778
 Whitefish Downtown Farmers Market,48.4124822,-114.336712
-Whitehall Farmer's Market, Produce & Crafts,45.869514,-112.09848
+Whitehall Farmer's Market Produce & Crafts,45.869514,-112.09848
 Whitehall Farmers Market,43.5584,-73.4075
 Whitehall Road Farmers Market,42.6485,-73.8061
 Whitehorse Farmers Market,48.254526,-121.607954
@@ -8433,8 +8433,8 @@ Whitney Point Farmers Market,42.3353,-75.9727
 Whittemore Farmers Market,43.0647,-94.422
 Whittier Host Lions Certified Farmers Market,33.95316,-118.044332
 Whittier Tuesday Evening Summer CFM,33.980873,-118.038187
-Whole Foodsâ€”Garden City Farmersâ€™ Market,41.7559,-71.4561
-Whole Foodsâ€”University Farmersâ€™ Market,41.8366,-71.4095
+Whole FoodsGarden City Farmers Market,41.7559,-71.4561
+Whole FoodsUniversity Farmers Market,41.8366,-71.4095
 Wholesale Greenmarket,40.80894,-73.894834
 WIC downtown Pittsburgh,40.4451,-80.0088
 WIC Satellite,38.4525,-122.766
@@ -8462,7 +8462,7 @@ Williamsport Growers Farmers Market I,41.2441,-77.0491
 Williamsport Growers Farmers Market II,41.245,-76.8829
 Williamston Farmers' Market,42.6900859,-84.283265
 Williamstown Farmers Market,42.709661,-73.204879
-WILLIMANTIC FARMERSâ€™ MARKET,41.1415,-73.3579
+WILLIMANTIC FARMERS MARKET,41.1415,-73.3579
 Willis Tower Farmers Market,41.8788,-87.6366
 Williston Farmers Market,44.4392,-73.0756
 Willits CFM,39.4129,-123.359
@@ -8490,7 +8490,7 @@ Wilson Farmers Market,41.8796,-72.7318
 Wilson Farmers Market,35.698575,-77.930705
 Wilson Farmers Market,35.725588,-77.908252
 Wilson's Creek Farmers Market,37.1228,-93.3683
-Wilton Farmersâ€™ Market,41.1882,-73.4246
+Wilton Farmers Market,41.1882,-73.4246
 Wimberley Farmers Market,30.0452,-98.1953
 Winchester Clark County Farmers' Market,37.996158,-84.174459
 Winchester Farmers Market,42.449872,-71.144062
@@ -8507,7 +8507,7 @@ Windsor Certified Farmers Market,38.548842,-122.813734
 Windsor Farmers Market,36.9821,-76.6313
 Windsor Farmers Market,43.480716,-72.38807
 Windsor Farmers' Market,40.479711,-104.904106
-WINDSOR FARMERSâ€™ MARKET,41.8513,-72.6441
+WINDSOR FARMERS MARKET,41.8513,-72.6441
 Windsor Terrace - PS154,40.657208,-73.976263
 Windy Hill Farm Market,39.462228,-92.212673
 Winfield Farmers Market,41.4165651,-87.382092
@@ -8569,7 +8569,7 @@ Woodbine Farmers Market,39.2413,-74.8136
 Woodbridge Farmers Market,40.5555,-74.276
 Woodburn Farmers Market,45.1374,-122.859
 Woodbury Farmers Market,44.9202,-92.9461
-WOODBURY FARMERSâ€™ MARKET,41.5347,-73.21
+WOODBURY FARMERS MARKET,41.5347,-73.21
 Woodford County Farmers Market Saturday,38.0529,-84.730453
 Woodinville Farmers Market,47.75298,-122.161499
 Woodlake FM,36.4156,-119.098
@@ -8602,7 +8602,7 @@ Wyandot County Farmers Market,40.8441,-83.2805
 Wyandotte Farmers Market,42.2031602,-83.1500042
 Wyckoff Farmhouse Farmers' Market,40.6447,-73.9206
 Wymore Farmers Market,40.122585,-96.670892
-Wyoming Ave. Farmers' Market, LLC,39.2272117,-84.4659469
+Wyoming Ave. Farmers' Market LLC,39.2272117,-84.4659469
 Wyoming County Cooperative Farmers Market,41.4412,-76.0246
 Wyoming Farmers Market,45.335262,-92.999283
 Wytheville Farmers Market,36.951632,-81.080771
@@ -8653,7 +8653,7 @@ Yreka Community Certified Farmers Market,41.712825,-122.642124
 Yuba City Certified Farmers Market-Saturday,39.133181,-121.613835
 Yuba City Downtown Certified Farmers Market,39.138392,-121.616935
 Yucaipa CFM,34.0339,-117.039
-Z's Touch Farmers Market,44.1742,-103.328
+Z''s Touch Farmers Market,44.1742,-103.328
 Zanesville Farmers Market,39.9239,-82.023
 Zeeland Main Place Market,42.8123,-86.0165
 Zerns Farmers Market and Auction,40.3216,-75.6184

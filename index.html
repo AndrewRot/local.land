@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="js/server.js" type="text/javascript"></script>
 	<!-- JQuery needs to come before bootstrap js file  -->
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
@@ -53,7 +53,7 @@
   					<div id="search">
     					<form action="submit" method="submit">
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
-        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Location" required title="Zip Code Must Be 5 Numbers">
+        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Zipcode" required title="Zip Code Must Be 5 Numbers">
     					</form>
 						</div>
 					<button type="submit" class="btn btn-primary">Search</button>
@@ -66,10 +66,80 @@
 			<div id="map">
 				<script>
 
+				//Make sure that data inside this function is the data from the query, then use it to display markers. - assuming data doesnt have to be html content and can just be any variable
+					$(function(){
+					 $('#ZippyZip').on('keyup', function(e){
+					   if(e.keyCode === 13) {
+					     var parameters = { search: $(this).val() };
+					       $.get( '/searching',parameters, function(data) {
+					       	//#store results 
+					       $('#results').html(data);
+					     });
+					    };
+					 });
+					});
+
+					//From A5
+					function searchFor() {
+					  //Get value from search box
+					  var searchMovieDiv = document.getElementById('ZippyZip')
+					  var convertedLocation;
+
+
+					  var resultsMap = map;
+					  //Google geocoding
+					  var geocoder = new google.maps.Geocoder();
+					  var address = document.getElementById('ZippyZip').value;
+				       geocoder.geocode({'address': address}, function(results, status) {
+				          if (status === 'OK') {
+				            resultsMap.setCenter(results[0].geometry.location);
+				            //console.log(results[0].geometry.location);
+				            convertedLocation = results[0].geometry.location; //update the searched location
+				            var marker = new google.maps.Marker({
+				              map: resultsMap,
+				              position: results[0].geometry.location
+				            });
+				            reqListener();//wait till now to pass coordinates to server
+				          } else {
+				          	convertedLocation = "no location";
+				          	console.log("****Fucked up");
+				            alert('Geocode was not successful for the following reason: ' + status);
+				          }
+				      });
+
+					  var oReq = new XMLHttpRequest();
+				      //Isnt called till end of geolocation above
+					  function reqListener () {
+					  	oReq.open("POST", "/searchMovies", true);
+					 	 // MAJOR KEY-- build form in XML http request SEND function
+					  	console.log('search='+convertedLocation);
+
+					  	//THIS ISSNT SENDING THE RESQUEST PROPERLY
+					  	oReq.send('search='+convertedLocation);
+
+
+					    //makeGet('/listFound')
+					    console.log("received server response");
+					  }
+					  
+					  
+					//  oReq.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+					  /*
+					  // defining behavior for when the response comes back to us
+					  oReq.addEventListener("load", reqListener);
+					  oReq.open("POST", "/searchMovies", true);
+					  // MAJOR KEY-- build form in XML http request SEND function
+					  console.log('search='+searchMovieDiv.value);
+
+					  //THIS ISSNT SENDING THE RESQUEST PROPERLY
+					  oReq.send('search='+searchMovieDiv.value);*/
+					}
+
 
 					//Input box enter search
 					$('#ZippyZip').keypress(function (e) {
  					 if (e.which == 13) {
+ 					 		searchFor();
    						 codeAddress();
    						 scrollToLocation();
 
@@ -78,53 +148,36 @@
 					});
 					//search by clicking search button
 					$('.btn').click(function() {
+						searchFor();
 						codeAddress();
 						scrollToLocation();
   					});
 
 					function scrollToLocation(){
+						//popMap();
+
 						$('html, body').animate({
         					scrollTop: $("#map").offset().top //+ (.15 * $("#map").height())
     					}, 1000);
 					}
 
-					//Attempting to read data from the text file
+					function popMap(){
+							for (var i = 0; i < 40; i++) {
 
-					var geocoder;
-					var map; //This must be declared outside scope of function
+				     		//get random locations
+				     		var lo = Math.random() * (71 - 70) + 70;
+				     		var la = Math.random() * (42 - 41) + 41;
 
-					//function that initializes map
-					function initMap() {
-						geocoder = new google.maps.Geocoder();
-						map = new google.maps.Map(document.getElementById('map'), {
-							zoom: 13,
-							center: new google.maps.LatLng(37.4419, -122.1419),
-							scrollwheel: false
-						});
+					     	var myLatLng = {lat: la, lng: lo};
+					     	var marker = new google.maps.Marker({
+	          					position: myLatLng,
+	         					map: map,
+	          					title: 'Bristol'
+          					});
 
-						var infoWindow = new google.maps.InfoWindow({map: map});
-
-				        // Geolocation services, start user at current geolocation
-				        if (navigator.geolocation) {
-				          	navigator.geolocation.getCurrentPosition(function(position) {
-				            	var pos = {
-				             	 	lat: position.coords.latitude,
-				              		lng: position.coords.longitude
-				            	};
-
-				           		infoWindow.setPosition(pos);
-				            	infoWindow.setContent('Your Location');
-				            	map.setCenter(pos);
-				          	}, function() {
-				            	handleLocationError(true, infoWindow, map.getCenter());
-				          	});
-				        } else {
-				          // Browser doesn't support Geolocation
-				          handleLocationError(false, infoWindow, map.getCenter());
-				        }
-
-				        //Custom icons test
-				        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        				}
+						/*
+						var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 				        var icons = {
 				          beer: {
 				            //icon: iconBase + 'parking_lot_maps.png'
@@ -142,6 +195,22 @@
 				            map: map
 				          });
 				        }
+*/
+				        //console.log(fetchLocationData());
+				        
+//populate map
+
+						var features = [];
+				        var farms = fetchLocationData(); //will send string but not array
+
+				        console.log("xxxx");
+				        for (var i = 0; i < farms.length; i++) {
+							console.log("new loc");
+						  // use array[i] here
+						  features.push({position: new google.maps.LatLng(farms[i].lat, farms[i].lon), type: 'farm'});
+						}
+				        
+
 				        //create hardcoded locations - change to pull from db
 				        var features = [
 				          {
@@ -170,10 +239,54 @@
 				            type: 'beer'
 				          }
 				        ];
+				        //for (var i = 0, feature; feature = features[i]; i++) {
+				          //addMarker(feature);
+				        //}
+					}
 
-				        for (var i = 0, feature; feature = features[i]; i++) {
-				          addMarker(feature);
-				        }
+					//Attempting to read data from the text file
+
+
+
+					var geocoder;
+					var map; //This must be declared outside scope of function
+
+
+
+					//function that initializes map
+					function initMap() {
+						geocoder = new google.maps.Geocoder();
+						map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 13,
+							center: new google.maps.LatLng(37.4419, -122.1419),
+							scrollwheel: false
+						});
+
+
+
+						var infoWindow = new google.maps.InfoWindow({map: map});
+
+				        // Geolocation services, start user at current geolocation
+				        /*if (navigator.geolocation) {
+				          	navigator.geolocation.getCurrentPosition(function(position) {
+				            	var pos = {
+				             	 	lat: position.coords.latitude,
+				              		lng: position.coords.longitude
+				            	};
+
+				           		infoWindow.setPosition(pos);
+				            	infoWindow.setContent('Your Location');
+				            	map.setCenter(pos);
+				          	}, function() {
+				            	handleLocationError(true, infoWindow, map.getCenter());
+				          	});
+				        } else {
+				          // Browser doesn't support Geolocation
+				          handleLocationError(false, infoWindow, map.getCenter());
+				        }*/
+
+				        //Custom icons test
+				        
 				        //
 
 				        //populateMap(); //right now just use a test group
@@ -238,10 +351,11 @@
 				</script>
 			</div>
 			<div id="vis">
-				<div id="datavis">
-					<h3>DATA VIS GOES HERE!</h3>
-				</div>
+					<div id="datavis">
+						<h3>DATA VIS GOES HERE!
+					</div>
 			</div>
+	</div>
 
   <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
 	  <div class="container-fluid">
@@ -256,8 +370,7 @@
 	  </div>
 	</nav>
 
-<!-- SCRIPTS -->
-	<script src="js/vis1.js"></script>
+<!-- SCRIPTS AIzaSyCDOrBPsEiCUDcIruZU79x5qxbb4VhhlAM-->
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPEdZKfT-QclO5EjLMKGPFS9zuY1mnA-c&callback=initMap"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
