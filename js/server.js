@@ -58,7 +58,7 @@ if (err) {
   //$.when(function1(db)).then(function2());
   console.log("Gathering database");
   //get the name of the collection from the database
-  var collection = db.collection('farms');
+  var collection = db.collection('markets');
               
   //Create a promise here
   var p1 = new Promise(function(resolve, reject) {
@@ -68,7 +68,7 @@ if (err) {
     //var number = db.collection('farms').find({ lat: {$lt: 100} }).count();
     var count = 0;
     //Query the areas in the square
-    var myCursor = db.collection('farms')
+    var myCursor = db.collection('markets')
     /*.find({ $and: [{lat: {$lt: 38} },
                     {lat: {$gt: 37} },
                     {lon: {$lt: -121} },
@@ -79,8 +79,8 @@ if (err) {
                     {lat: {$gt: bottom} },
                     {lon: {$lt: left} },
                     {lon: {$gt: right} }]});*/
-     .find({ $and: [{lat: {$lt: top, $gt: bottom} },
-                    {lon: {$lt: left, $gt: right} }]});
+     .find({ $and: [{y: {$lt: top, $gt: bottom} },
+                    {x: {$lt: left, $gt: right} }]});
 //find( { score: { $gt: 0, $lt: 2 } } )
      //IS IT BECAUSE LAT AND LON ARE STORED AS STRINGS????????????
      //start = new Date("01/01/2007")
@@ -89,8 +89,10 @@ if (err) {
     myCursor.each(function(err, item) {
       if(item != null){
         //places.push("xxx");
-        farms.push({ name: item.name, lat: item.lat, lon: item.lon });
-        console.log(item.name + ", Lat: " + item.lat + ", Lon: " + item.lon);
+        farms.push({ name: item.MarketName, lat: item.y, lon: item.x });
+        console.log(item.MarketName + ", Lat: " + item.y + ", Lon: " + item.x);
+        //farms.push({ name: item.name, lat: item.lat, lon: item.lon });
+        //console.log(item.name + ", Lat: " + item.lat + ", Lon: " + item.lon);
         count ++;
       }
 
@@ -162,7 +164,7 @@ var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
 //test is the nameof the database
-var url = 'mongodb://localhost:27017/test';
+var url = 'mongodb://localhost:27017/farmsDB';
 
 
 
@@ -178,28 +180,28 @@ if (err) {
   //$.when(function1(db)).then(function2());
   console.log("Gathering database");
   //get the name of the collection from the database
-  var collection = db.collection('farms');
+  var collection = db.collection('markets');
               
   //Create a promise here
   var p1 = new Promise(function(resolve, reject) {
 
     var places = [];
     //37.4256448,-122.1703695
-    var number = db.collection('farms').find({ lat: {$lt: 29} }).count();
+    var number = db.collection('markets').find({ y: {$lt: 29} }).count();
 
     //Query the areas in the square
-    var myCursor = db.collection('farms')
-     .find({ $and: [{lat: {$lt: 38} },
-                    {lat: {$gt: 37} },
-                    {lon: {$lt: -121} },
-                    {lon: {$gt: -122} }]});
+    var myCursor = db.collection('markets')
+     .find({ $and: [{y: {$lt: 38} },
+                    {y: {$gt: 37} },
+                    {x: {$lt: -121} },
+                    {x: {$gt: -122} }]});
 
     // Execute the each command, triggers for each document
     myCursor.each(function(err, item) {
       if(item != null){
         //places.push("xxx");
-        farms.push({ name: item.name, lat: item.lat, lon: item.lon });
-        //console.log(item.name);
+        farms.push({ name: item.MarketName, lat: item.y, lon: item.x });
+        console.log(item.MarketName);
       }
 
 

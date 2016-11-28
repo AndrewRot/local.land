@@ -1,0 +1,148 @@
+/* Style for index.html */
+html {
+	height: 100%
+}
+
+body {
+	padding: 70px;
+	background-image:url('Trees.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+input[type=text] {
+    width: 15%;
+    box-sizing: border-box;
+    border: 1px solid rgba(204, 204, 204, .5);
+    border-radius: 2px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+		border-bottom: none;
+    font-size: 16px;
+    text-align: center;
+    /*background-image: url('searchicon.png');*/
+    background-color: rgba(0, 0, 0, 0.75);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 12px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 20%;
+		background-color: rgba(0, 0, 0, 0.5);
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+#search {
+    /*position: fixed;*/
+    display: inline;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    /*
+    -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+/*
+    -webkit-transform: translate(0px, -100%) scale(0, 0);
+	-moz-transform: translate(0px, -100%) scale(0, 0);
+	-o-transform: translate(0px, -100%) scale(0, 0);
+	-ms-transform: translate(0px, -100%) scale(0, 0);
+	transform: translate(0px, -100%) scale(0, 0);
+    */
+    opacity: .7;
+}
+.searchinput {
+	background-color : rgba(192,192,192,0.0);
+}
+
+#search .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 61px;
+    margin-left: -45px;
+}
+
+#content button {
+	/*color: #FFD700;*/
+	color: #9d9d9d;
+	background-color: #222;
+	margin-top: 5px;
+}
+
+#gmap {
+	background-color: #000000;
+	width: 100%;
+	height: 900px;
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	z-index: 0;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+#vis {
+	background-color: #000000;
+	width: 100%;
+	height: 900px;
+	position: absolute;
+	left: 0px;
+	margin-top: 0px;
+	text-align: center;
+}
+
+h1 {
+	font-weight: 700;
+	font-family: 'Lobster', cursive;
+	font-size: 8em;
+	color: #FFFFFF
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 3em;
+	color: #FFFFFF;
+	font-family: 'Abel', sans-serif;
+}
+
+hr {
+	width: 400px;
+	border-top: 1px solid #FFD700;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+#footer {
+    background-color: #222;
+    color: white;
+    height: 10px;
+    width: 100%;
+    margin: 50px 0 0 0;
+
+}

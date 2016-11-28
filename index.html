@@ -108,7 +108,8 @@
 				      });
 
 					  var oReq = new XMLHttpRequest();
-				      //Isnt called till end of geolocation above
+
+				      //Handle result from geocoding
 					  function reqListener () {
 					  	oReq.open("POST", "/searchMovies", true);
 					 	 // MAJOR KEY-- build form in XML http request SEND function
@@ -120,19 +121,18 @@
 
 					    //makeGet('/listFound')
 					    console.log("received server response");
+					    oReq.addEventListener("load", receivedResponse);
+
+
 					  }
 					  
-					  
-					//  oReq.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-					  /*
-					  // defining behavior for when the response comes back to us
-					  oReq.addEventListener("load", reqListener);
-					  oReq.open("POST", "/searchMovies", true);
-					  // MAJOR KEY-- build form in XML http request SEND function
-					  console.log('search='+searchMovieDiv.value);
+					  //Handle the server response
+					  function receivedResponse(){
+					  	console.log(" req.responseText: "+oReq.response);//oReq.response); JSON.parse(oReq.responseText)
 
-					  //THIS ISSNT SENDING THE RESQUEST PROPERLY
-					  oReq.send('search='+searchMovieDiv.value);*/
+					  	popMap( JSON.parse(oReq.response) );
+					  }
+					  
 					}
 
 
@@ -161,7 +161,8 @@
     					}, 1000);
 					}
 
-					function popMap(){
+					function popMap(foundMarkets){
+						/*
 							for (var i = 0; i < 40; i++) {
 
 				     		//get random locations
@@ -175,8 +176,8 @@
 	          					title: 'Bristol'
           					});
 
-        				}
-						/*
+        				}*/
+						
 						var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 				        var icons = {
 				          beer: {
@@ -189,30 +190,67 @@
 				        };
 
 				        function addMarker(feature) {
+				          //switch to datapassed from DB
 				          var marker = new google.maps.Marker({
-				            position: feature.position,
-				            icon: icons[feature.type].icon,
-				            map: map
-				          });
+				            	position: feature.position,
+				            	icon: icons[feature.type].icon,
+				            	map: map,
+				            	title: feature.marketName
+				          	});
+				          var contentString = '<div id="content">'+
+					            '<div id="siteNotice">'+
+					            '</div>'+
+					            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+					            '<div id="bodyContent">'+
+					            '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+					            'sandstone rock formation in the southern part of the '+
+					            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+					            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+					            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+					            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+					            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+					            'Aboriginal people of the area. It has many springs, waterholes, '+
+					            'rock caves and ancient paintings. Uluru is listed as a World '+
+					            'Heritage Site.</p>'+
+					            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+					            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+					            '(last visited June 22, 2009).</p>'+
+					            '</div>'+
+					            '</div>';
+
+					        var infowindow = new google.maps.InfoWindow({
+					          content: contentString
+					        });
+
+					        /*var marker = new google.maps.Marker({
+					          position: uluru,
+					          map: map,
+					          title: 'Uluru (Ayers Rock)'
+					        });*/
+					        
+					        marker.addListener('click', function() {
+					          infowindow.open(map, marker);
+					        });
 				        }
-*/
+
 				        //console.log(fetchLocationData());
 				        
 //populate map
 
 						var features = [];
-				        var farms = fetchLocationData(); //will send string but not array
 
 				        console.log("xxxx");
-				        for (var i = 0; i < farms.length; i++) {
+				        for (var i = 0; i < foundMarkets.length; i++) {
 							console.log("new loc");
-						  // use array[i] here
-						  features.push({position: new google.maps.LatLng(farms[i].lat, farms[i].lon), type: 'farm'});
+						  features.push({marketName: foundMarkets[i].name, position: new google.maps.LatLng(foundMarkets[i].lat, foundMarkets[i].lon), type: 'farm'});
 						}
-				        
+
+				        for (var i = 0, feature; feature = features[i]; i++) {
+				          addMarker(feature);
+				        }
 
 				        //create hardcoded locations - change to pull from db
-				        var features = [
+				        /*var features = [
 				          {
 				            position: new google.maps.LatLng(37.4419, -122.1419),
 				            type: 'farm'
@@ -238,10 +276,8 @@
 				            position: new google.maps.LatLng(37.4390, -122.1390),
 				            type: 'beer'
 				          }
-				        ];
-				        //for (var i = 0, feature; feature = features[i]; i++) {
-				          //addMarker(feature);
-				        //}
+				        ];*/
+				        
 					}
 
 					//Attempting to read data from the text file
