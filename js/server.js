@@ -44,18 +44,14 @@ app.post('/searchMovies', function(req, res){
 
   //Chopped good!
 
-  //now that we have lat and lon, query the database**
-
 // Use connect method to connect to the Server -MAY BE ABLE TO THROW AWAY THIS DUPLICATE CODE LATER
 MongoClient.connect(url, function (err, db) {
 if (err) {
   console.log('Unable to connect to the mongoDB server. Error:', err);
 } else {
-  //HURRAY!! We are connected. :)
   console.log('Connection re-established to', url);
 
   // do some work here with the database.
-  //$.when(function1(db)).then(function2());
   console.log("Gathering database");
   //get the name of the collection from the database
   var collection = db.collection('markets');
@@ -63,28 +59,14 @@ if (err) {
   //Create a promise here
   var p1 = new Promise(function(resolve, reject) {
     console.log("Inside Promise");
-    var places = [];
-    //37.4256448,-122.1703695
+   
     //var number = db.collection('farms').find({ lat: {$lt: 100} }).count();
     var count = 0;
     //Query the areas in the square
     var myCursor = db.collection('markets')
-    /*.find({ $and: [{lat: {$lt: 38} },
-                    {lat: {$gt: 37} },
-                    {lon: {$lt: -121} },
-                    {lon: {$gt: -122} }]});
-                      //DOESNT WORK WITH VARIABLES??? wtf - works with hardcode
-    /*
-    .find({ $and: [{lat: {$lt: top} },
-                    {lat: {$gt: bottom} },
-                    {lon: {$lt: left} },
-                    {lon: {$gt: right} }]});*/
      .find({ $and: [{y: {$lt: top, $gt: bottom} },
                     {x: {$lt: left, $gt: right} }]});
-//find( { score: { $gt: 0, $lt: 2 } } )
-     //IS IT BECAUSE LAT AND LON ARE STORED AS STRINGS????????????
-     //start = new Date("01/01/2007")
-     //db.users.find({"registered" : {"$lt" : start}})
+
     // Execute the each command, triggers for each document
     myCursor.each(function(err, item) {
       if(item != null){
@@ -104,7 +86,7 @@ if (err) {
                         
         //resolve when we get to the end of the query
         console.log("array length (INSIDE PROMISE): "+ farms.length);
-        //farms = places;
+        
         resolve(farms);
         // Let's close the db
         //db.close();
@@ -121,17 +103,14 @@ if (err) {
 
   }, function(reason) {
     console.log("fail: "+reason); // Error!
+    //fill in res.end with error
   });
   
 
   }
 });
 
-  //*******
   });
-
-
-
  // pass back the results to client side
   
 });
@@ -148,11 +127,6 @@ app.use('/', function(req, res) {
 app.listen(port, function() {
   console.log('App is listening on port ' + port);
 });
-
-
-
-
-
 
 
 //Mongo attempt - im shit
@@ -185,8 +159,6 @@ if (err) {
   //Create a promise here
   var p1 = new Promise(function(resolve, reject) {
 
-    var places = [];
-    //37.4256448,-122.1703695
     var number = db.collection('markets').find({ y: {$lt: 29} }).count();
 
     //Query the areas in the square
@@ -204,16 +176,12 @@ if (err) {
         console.log(item.MarketName);
       }
 
-
-      
       // If the item is null then the cursor is exhausted/empty and closed
       if(item == null) {
                     
       // Show that the cursor is closed
       myCursor.toArray(function(err, items) {
-                        
-        //resolve when we get to the end of the query
-        farms = places;
+                   
         //fetchLocationData();
         resolve(number);
         // Let's close the db
@@ -235,15 +203,6 @@ if (err) {
   }
 });
 
-
-//test this with global array
-function fetchLocationData(){
- 
-  //console.log("num farms:"+farms.length);
-  return farms;
-}
-
-fetchLocationData();
 
 
 
