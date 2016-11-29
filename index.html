@@ -53,7 +53,7 @@
   					<div id="search">
     					<form action="submit" method="submit">
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
-        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Zipcode" required title="Zip Code Must Be 5 Numbers">
+        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Location..." required title="Zip Code Must Be 5 Numbers">
     					</form>
 						</div>
 					<button type="submit" class="btn btn-primary">Search</button>
@@ -78,6 +78,30 @@
 					    };
 					 });
 					});
+
+					//Input box enter search
+					$('#ZippyZip').keypress(function (e) {
+ 					 if (e.which == 13) {
+ 					 		searchFor();
+   						 codeAddress();
+   						 scrollToLocation();
+
+   						 return false;    //<---- Add this line
+  						}
+					});
+					//search by clicking search button
+					$('.btn').click(function() {
+						searchFor();
+						codeAddress();
+						scrollToLocation();
+  					});
+
+					function scrollToLocation(){
+						$('html, body').animate({
+        					scrollTop: $("#map").offset().top //+ (.15 * $("#map").height())
+    					}, 1000);
+					}
+
 
 					//From A5
 					function searchFor() {
@@ -117,66 +141,21 @@
 
 					  	//THIS ISSNT SENDING THE RESQUEST PROPERLY
 					  	oReq.send('search='+convertedLocation);
-
-
-					    //makeGet('/listFound')
-					    console.log("received server response");
 					    oReq.addEventListener("load", receivedResponse);
-
-
 					  }
 					  
 					  //Handle the server response
 					  function receivedResponse(){
-					  	console.log(" req.responseText: "+oReq.response);//oReq.response); JSON.parse(oReq.responseText)
-
+					  	console.log(" req.responseText: "+oReq.response);
 					  	popMap( JSON.parse(oReq.response) );
 					  }
 					  
 					}
 
 
-					//Input box enter search
-					$('#ZippyZip').keypress(function (e) {
- 					 if (e.which == 13) {
- 					 		searchFor();
-   						 codeAddress();
-   						 scrollToLocation();
-
-   						 return false;    //<---- Add this line
-  						}
-					});
-					//search by clicking search button
-					$('.btn').click(function() {
-						searchFor();
-						codeAddress();
-						scrollToLocation();
-  					});
-
-					function scrollToLocation(){
-						//popMap();
-
-						$('html, body').animate({
-        					scrollTop: $("#map").offset().top //+ (.15 * $("#map").height())
-    					}, 1000);
-					}
 
 					function popMap(foundMarkets){
-						/*
-							for (var i = 0; i < 40; i++) {
-
-				     		//get random locations
-				     		var lo = Math.random() * (71 - 70) + 70;
-				     		var la = Math.random() * (42 - 41) + 41;
-
-					     	var myLatLng = {lat: la, lng: lo};
-					     	var marker = new google.maps.Marker({
-	          					position: myLatLng,
-	         					map: map,
-	          					title: 'Bristol'
-          					});
-
-        				}*/
+					
 						
 						var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 				        var icons = {
@@ -189,100 +168,44 @@
 				          }
 				        };
 
-				        function addMarker(feature) {
+				        function addMarker(foundMarkets) {
+				        	//get position
+				        	var position =  new google.maps.LatLng(foundMarkets.lat, foundMarkets.lon);
+
 				          //switch to datapassed from DB
 				          var marker = new google.maps.Marker({
-				            	position: feature.position,
-				            	icon: icons[feature.type].icon,
+				            	position: position,
+				            	icon: icons['farm'].icon,
 				            	map: map,
-				            	title: feature.marketName
+				            	title: foundMarkets.MarketName
 				          	});
-				          var contentString = '<div id="content">'+
+				          var contentString = 
+				          '<div id="MarkerContent">'+
 					            '<div id="siteNotice">'+
 					            '</div>'+
-					            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+					            '<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'+
 					            '<div id="bodyContent">'+
-					            '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-					            'sandstone rock formation in the southern part of the '+
-					            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-					            'south west of the nearest large town, Alice Springs; 450&#160;km '+
-					            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-					            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-					            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-					            'Aboriginal people of the area. It has many springs, waterholes, '+
-					            'rock caves and ancient paintings. Uluru is listed as a World '+
-					            'Heritage Site.</p>'+
-					            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-					            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-					            '(last visited June 22, 2009).</p>'+
-					            '</div>'+
-					            '</div>';
+					            	'<p><b>State: </b>'+ foundMarkets.State+' <b>City:</b> '+ foundMarkets.city+' </p>'+
+					            	'<p><b>Season: </b>'+ foundMarkets.Season1Date+' <b>Time:</b> '+ foundMarkets.Season1Time+' </p>'+
+					           			
+					       	 	'</div>'+
+					       '</div>';
 
 					        var infowindow = new google.maps.InfoWindow({
 					          content: contentString
 					        });
 
-					        /*var marker = new google.maps.Marker({
-					          position: uluru,
-					          map: map,
-					          title: 'Uluru (Ayers Rock)'
-					        });*/
-					        
 					        marker.addListener('click', function() {
 					          infowindow.open(map, marker);
 					        });
 				        }
 
-				        //console.log(fetchLocationData());
-				        
-//populate map
-
-						var features = [];
-
-				        console.log("xxxx");
 				        for (var i = 0; i < foundMarkets.length; i++) {
-							console.log("new loc");
-						  features.push({marketName: foundMarkets[i].name, position: new google.maps.LatLng(foundMarkets[i].lat, foundMarkets[i].lon), type: 'farm'});
-						}
-
-				        for (var i = 0, feature; feature = features[i]; i++) {
-				          addMarker(feature);
+				          addMarker(foundMarkets[i]);
 				        }
-
-				        //create hardcoded locations - change to pull from db
-				        /*var features = [
-				          {
-				            position: new google.maps.LatLng(37.4419, -122.1419),
-				            type: 'farm'
-				          }, {
-				            position: new google.maps.LatLng(37.4429, -122.1499),
-				            type: 'farm'
-				          }, {
-				            position: new google.maps.LatLng(37.4529, -122.1439),
-				            type: 'farm'
-				          }, {
-				            position: new google.maps.LatLng(37.4422, -122.1475),
-				            type: 'farm'
-				          }, {
-				            position: new google.maps.LatLng(37.4420, -122.1417),
-				            type: 'farm'
-				          }, {
-				            position: new google.maps.LatLng(37.4590, -122.1447),
-				            type: 'beer'
-				          }, {
-				            position: new google.maps.LatLng(37.4459, -122.1400),
-				            type: 'beer'
-				          }, {
-				            position: new google.maps.LatLng(37.4390, -122.1390),
-				            type: 'beer'
-				          }
-				        ];*/
-				        
 					}
 
 					//Attempting to read data from the text file
-
-
 
 					var geocoder;
 					var map; //This must be declared outside scope of function
@@ -337,23 +260,7 @@
 				  //    }
 
 
-				     function populateMap(){
-				     	for (var i = 0; i < 40; i++) {
-
-				     		//get random locations
-				     		var lo = Math.random() * (71 - 70) + 70;
-				     		var la = Math.random() * (42 - 41) + 41;
-
-					     	var myLatLng = {lat: la, lng: lo};
-					     	var marker = new google.maps.Marker({
-	          					position: myLatLng,
-	         					map: map,
-	          					title: 'Bristol'
-          					});
-
-        				}
-				     }
-				     ///Users/andrewrottier/Desktop/CS4241/Homework/Project/local.land/mongodb-osx-x86_64-3.0.4/bin
+				   
 
 					//google.maps.event.addDomListener(window, "load", initialize);
 					// We add a DOM event here to show an alert if the DIV containing the
