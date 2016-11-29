@@ -138,7 +138,9 @@ var MongoClient = mongodb.MongoClient;
 
 // Connection URL. This is where your mongodb server is running.
 //test is the nameof the database
-var url = 'mongodb://localhost:27017/farmsDB';
+//var url = 'mongodb://localhost:27017/farmsDB';
+
+var url = 'mongodb://heroku_x2qwnz17:c5qu6veuv001ia9snr4vut4fg8@ds113678.mlab.com:13678/heroku_x2qwnz17';
 
 
 
