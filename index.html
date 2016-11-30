@@ -53,7 +53,7 @@
   					<div id="search">
     					<form action="submit" method="submit">
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
-        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Location..." required title="Zip Code Must Be 5 Numbers">
+        				<input type="text" name="search" id = "ZippyZip" placeholder="Enter Zip Code..." required title="Zip Code Must Be 5 Numbers">
     					</form>
 						</div>
 					<button type="submit" class="btn btn-primary">Search</button>
@@ -72,7 +72,7 @@
 					   if(e.keyCode === 13) {
 					     var parameters = { search: $(this).val() };
 					       $.get( '/searching',parameters, function(data) {
-					       	//#store results 
+					       	//#store results
 					       $('#results').html(data);
 					     });
 					    };
@@ -143,20 +143,20 @@
 					  	oReq.send('search='+convertedLocation);
 					    oReq.addEventListener("load", receivedResponse);
 					  }
-					  
+
 					  //Handle the server response
 					  function receivedResponse(){
 					  	console.log(" req.responseText: "+oReq.response);
 					  	popMap( JSON.parse(oReq.response) );
 					  }
-					  
+
 					}
 
 
 
 					function popMap(foundMarkets){
-					
-						
+
+
 						var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 				        var icons = {
 				          beer: {
@@ -179,7 +179,7 @@
 				            	map: map,
 				            	title: foundMarkets.MarketName
 				          	});
-				          var contentString = 
+				          var contentString =
 				          '<div id="MarkerContent">'+
 					            '<div id="siteNotice">'+
 					            '</div>'+
@@ -187,7 +187,7 @@
 					            '<div id="bodyContent">'+
 					            	'<p><b>State: </b>'+ foundMarkets.State+' <b>City:</b> '+ foundMarkets.city+' </p>'+
 					            	'<p><b>Season: </b>'+ foundMarkets.Season1Date+' <b>Time:</b> '+ foundMarkets.Season1Time+' </p>'+
-					           			
+
 					       	 	'</div>'+
 					       '</div>';
 
@@ -245,7 +245,7 @@
 				        }*/
 
 				        //Custom icons test
-				        
+
 				        //
 
 				        //populateMap(); //right now just use a test group
@@ -260,7 +260,7 @@
 				  //    }
 
 
-				   
+
 
 					//google.maps.event.addDomListener(window, "load", initialize);
 					// We add a DOM event here to show an alert if the DIV containing the
@@ -296,11 +296,55 @@
 			<div id="vis">
 				<div id="datavis">
 					<h3>DATA VIS GOES HERE!</h3>
-				</div>
-				<script>
-				
-				</script>
-			</div>
+					<svg width="960" height="500"></svg>
+					<script src="https://d3js.org/d3.v4.min.js"></script>
+					<script>
+						var svg = d3.select("svg"),
+						margin = {top: 20, right: 20, bottom: 30, left: 40},
+						width = +svg.attr("width") - margin.left - margin.right,
+						height = +svg.attr("height") - margin.top - margin.bottom;
+
+						var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+								y = d3.scaleLinear().rangeRound([height, 0]);
+
+						var g = svg.append("g")
+								.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+						d3.tsv("states.tsv", function(d) {
+							d.number = +d.number;
+							return d;
+						}, function(error, data) {
+							if (error) throw error;
+
+							x.domain(data.map(function(d) { return d.name; }));
+							y.domain([0, d3.max(data, function(d) { return d.number; })]);
+
+							g.append("g")
+									.attr("class", "axis axis--x")
+									.attr("transform", "translate(0," + height + ")")
+									.call(d3.axisBottom(x));
+
+							g.append("g")
+									.attr("class", "axis axis--y")
+									.call(d3.axisLeft(y).ticks(50))
+								.append("text")
+									.attr("transform", "rotate(-90)")
+									.attr("y", 6)
+									.attr("dy", "0.71em")
+									.attr("text-anchor", "end")
+									.text("Number of Markets");
+
+							g.selectAll(".bar")
+								.data(data)
+								.enter().append("rect")
+									.attr("class", "bar")
+									.attr("x", function(d) { return x(d.name); })
+									.attr("y", function(d) { return y(d.number); })
+									.attr("width", x.bandwidth())
+									.attr("height", function(d) { return height - y(d.number); });
+						});
+
+					</script>
 	</div>
 
   <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
