@@ -160,16 +160,32 @@ hr {
 	text-decoration: none;
 }
 
+/* For data vis 1*/
+#svgPanel {
+	stroke: #000000;
+	background-color: rgba(255,255,255,0.4);
+	margin: 100px;
+	-webkit-box-shadow: 6px 6px 13px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 13px -3px rgba(0,0,0,0.75);
+     box-shadow: 6px 6px 13px -3px rgba(0,0,0,0.75);
+}
+
+
+
 .bar{
 	fill: steelblue;
+	opacity: 1;
 }
 
 .bar:hover{
 	fill: brown;
+	opacity: 1;
 }
 
 .axis {
 	font: 10px sans-serif;
+	opacity: 1;
+	color:white;
 }
 
 .axis path,
@@ -177,22 +193,14 @@ hr {
 	fill: none;
 	stroke: #000;
 	shape-rendering: crispEdges;
+	opacity: 1;
+	color: white;
 }
 
-/* For data vis 1*/
-/*svg {
-	stroke: #000000;
-	fill: #FFFFFF;
-}*/
-
-.bar {
-	fill: steelblue;
-}
-
-.bar:hover {
-	fill: brown;
-}
 
 .axis--x path {
 	display: none;
 }
+
+
+

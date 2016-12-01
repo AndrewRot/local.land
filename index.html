@@ -323,19 +323,23 @@
 
 				</script>
 			</div>
-			<div id="vis">
-				<div id="datavis">
+			<div id="vis" style='background-image: url("https://source.unsplash.com/tI_Odb7ZU6M"); background-size: cover;'>
+				<div id="datavis" >
 					<h3>DATA VIS GOES HERE!</h3>
-					<svg width="960" height="500"></svg>
+					<div id = "svgPanel">
+					<svg width="960" height="500" ></svg>
+					</div>
 					<script src="https://d3js.org/d3.v4.min.js"></script>
 					<script>
-						var svg = d3.select("svg"),
+					//https://source.unsplash.com/tI_Odb7ZU6M
+					//https://unsplash.com/search/wood?photo=x7JLwunX0M0
+						var svg1 = d3.select("svg"),
 						margin = {top: 20, right: 20, bottom: 30, left: 40},
-						width = +svg.attr("width") - margin.left - margin.right,
-						height = +svg.attr("height") - margin.top - margin.bottom;
+						width = +svg1.attr("width") - margin.left - margin.right,
+						height = +svg1.attr("height") - margin.top - margin.bottom;
 						var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
 								y = d3.scaleLinear().rangeRound([height, 0]);
-						var g = svg.append("g")
+						var g = svg1.append("g")
 								.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 						d3.tsv("states.tsv", function(d) {
 							d.number = +d.number;
@@ -347,9 +351,11 @@
 							g.append("g")
 									.attr("class", "axis axis--x")
 									.attr("transform", "translate(0," + height + ")")
+									//.attr('xlink:href', 'images/blueberries.jpg')
 									.call(d3.axisBottom(x));
 							g.append("g")
 									.attr("class", "axis axis--y")
+									//.attr('xlink:href', 'images/blueberries.jpg')
 									.call(d3.axisLeft(y).ticks(50))
 								.append("text")
 									.attr("transform", "rotate(-90)")
@@ -365,6 +371,11 @@
 									.attr("y", function(d) { return y(d.number); })
 									.attr("width", x.bandwidth())
 									.attr("height", function(d) { return height - y(d.number); });
+							g.append("g")
+								    .attr("xlink:href", "http://cdn.wallpapersafari.com/95/40/IebAXK.jpg");
+								    //.attr("d", "M 0,0, 57.7,-100, 115.5,0z")
+								    //.attr("transform", "translate(135.5, 100)")
+								    //.attr("fill", "http://cdn.wallpapersafari.com/95/40/IebAXK.jpg");
 						});
 					</script>
 				</div>
