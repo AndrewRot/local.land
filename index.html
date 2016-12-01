@@ -42,6 +42,9 @@
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="html/contact.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Contact</a></li>
 	      </ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="../html/ambassadors.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Ambassadors</a></li>
+				</ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
@@ -74,7 +77,7 @@
 					   if(e.keyCode === 13) {
 					     var parameters = { search: $(this).val() };
 					       $.get( '/searching',parameters, function(data) {
-					       	//#store results 
+					       	//#store results
 					       $('#results').html(data);
 					     });
 					    };
@@ -145,20 +148,20 @@
 					  	oReq.send('search='+convertedLocation);
 					    oReq.addEventListener("load", receivedResponse); //Callback to next function
 					  }
-					  
+
 					  //Handle the server response
 					  function receivedResponse(){
 					  	//console.log(" req.responseText: "+oReq.response);
 					  	popMap( JSON.parse(oReq.response) );
 					  }
-					  
+
 					}
 
 
 
 					function popMap(foundMarkets){
-					
-						
+
+
 						var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 				        var icons = {
 				          beer: {
@@ -181,7 +184,7 @@
 				            	map: map,
 				            	title: foundMarkets.MarketName
 				          	});
-				          var contentString = 
+				          var contentString =
 				          '<div id="MarkerContent">'+
 					            '<div id="siteNotice">'+
 					            '</div>'+
@@ -208,7 +211,7 @@
 				          addMarker(foundMarkets[i]);
 				        }
 					}
-					
+
 
 					//retrieve food image icons
 					//m - market we're getting data from
@@ -228,7 +231,7 @@
 						return htmlcontent;
 					}
 
-					
+
 
 					//Attempting to read data from the text file
 
@@ -272,7 +275,7 @@
 				        }*/
 
 				        //Custom icons test
-				        
+
 				        //
 
 				        //populateMap(); //right now just use a test group
@@ -287,7 +290,7 @@
 				  //    }
 
 
-				   
+
 
 					//google.maps.event.addDomListener(window, "load", initialize);
 					// We add a DOM event here to show an alert if the DIV containing the
