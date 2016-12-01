@@ -12,6 +12,9 @@
 
 
 	<script src="js/server.js" type="text/javascript"></script>
+
+	<script src="js/fblogin.js"  type="text/javascript"></script>
+
 	<!-- JQuery needs to come before bootstrap js file  -->
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
@@ -57,7 +60,9 @@
 			<div class="col-lg-12">
 				<div id="content">
 					<h1>local.land</h1>
-					<h3>CONNECTING PEOPLE WITH LOCAL FARMERS MARKETS</h3>
+					<h3>CONNECTING PEOPLE WITH LOCAL FARMERS MARKETS </h3>
+					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+					</fb:login-button>
   					<div id="search">
     					<form action="submit" method="submit">
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->
