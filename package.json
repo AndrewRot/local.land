@@ -1,7 +1,7 @@
 {
-  "name": "ar-4241-simple-node",
+  "name": "CS-4241-Local.land Project",
   "version": "0.1.0",
-  "description": "WPI CS 4241 Assignment 2",
+  "description": "WPI CS 4241 Final Project",
   "author": "Andrew Rottier",
   "private": true,
   "scripts": {
