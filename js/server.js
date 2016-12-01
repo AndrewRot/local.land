@@ -33,10 +33,15 @@ app.post('/searchMovies', function(req, res){
   console.log("Lat: "+ lati + ", Lon: "+ long);
   console.log("************************");
   //calculate the four corners to use later
-  var top = Math.ceil( lati );
-  var bottom = Math.floor( lati );
-  var left = Math.ceil( long  );
-  var right = Math.floor( long );
+  var top = (Math.round(100*lati)/100) +.15; 
+  //var top = Math.ceil( lati );
+  //var bottom = Math.floor( lati );
+  var bottom = (Math.round(100*lati)/100) -.15; 
+  //var left = Math.ceil( long  );
+  var left = (Math.round(100*long)/100) +.15; 
+
+  //var right = Math.floor( long );
+  var right = (Math.round(100*long)/100) -.15; 
   console.log("Top : " + top);
   console.log("Bottom : " + bottom);
   console.log("Left : " + left); //maybe?
