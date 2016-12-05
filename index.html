@@ -39,22 +39,19 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	      	<li class="active"><a href="#"><i class="fa fa-home fa-1x" aria-hidden="true"></i> Home</a></li>
-	      	<li><a href="html/about.html"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i> About</a></li>
+	      	<li class="active"><a href="#"><i class="fa fa-home fa-1x" aria-hidden="true"></i>Home</a></li>
+	      	<li><a href="html/about.html"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i>About</a></li>
+	      	<li><a href="html/ambassadors.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i>Ambassadors</a></li>
+	      	<li><a href="html/contact.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i>Contact</a></li>
 	      </ul>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="html/contact.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Contact</a></li>
+
+	      <ul class="nav navbar-nav navbar-left">
+	        <li id = "status"><a href="#"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i> Not Logged in 
+	        	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+				</a></li>
 	      </ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="html/ambassadors.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Ambassadors</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="html/sperm.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Sperm</a></li>
-				</ul>	
-				<ul class="nav navbar-nav navbar-right">
-					<li id = "status"><a href="#"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Not Logged in</a></li>
-				</ul>
-				//status
+				
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
@@ -65,8 +62,7 @@
 				<div id="content">
 					<h1>local.land</h1>
 					<h3>CONNECTING PEOPLE WITH LOCAL FARMERS MARKETS </h3>
-					<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-					</fb:login-button>
+					
   					<div id="search">
     					<form action="submit" method="submit">
       				  <!--<input type="search" class= "searchinput" value="" placeholder=""/>-->

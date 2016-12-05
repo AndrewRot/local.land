@@ -170,6 +170,10 @@ hr {
      box-shadow: 6px 6px 13px -3px rgba(0,0,0,0.75);
 }
 
+#status {
+	color: white;
+}
+
 
 
 .bar{
