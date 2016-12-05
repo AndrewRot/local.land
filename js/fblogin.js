@@ -75,7 +75,9 @@
       console.log('Successful login for: ' + response.name);
       console.log(JSON.stringify(response));
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!';
+        'Thanks for logging in, ' + response.name + '!' +
+        '<fb:login-button  onclick="FB.logout(function(response) { // Person is now logged out });"> Logout</fb:login-button>' +
+        '<script>FB.logout(function(response) { // Person is now logged out }); </script>'
     });
   }
 
