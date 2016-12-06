@@ -1,4 +1,8 @@
 
+ var infowindow;
+         // content: contentString
+        //});; //used to display info about the markets, we only want 1
+
 
 function searchFor() {
   //Get value from search box
@@ -31,19 +35,19 @@ function searchFor() {
 
       //Handle result from geocoding
   function reqListener () {
-  oReq.open("POST", "/searchMovies", true);
-  // MAJOR KEY-- build form in XML http request SEND function
-  console.log('search='+convertedLocation);
+  	oReq.open("POST", "/searchMovies", true);
+  	// MAJOR KEY-- build form in XML http request SEND function
+  	console.log('search='+convertedLocation);
 
-  //THIS ISSNT SENDING THE RESQUEST PROPERLY
-  oReq.send('search='+convertedLocation);
+  	//THIS ISSNT SENDING THE RESQUEST PROPERLY
+  	oReq.send('search='+convertedLocation);
     oReq.addEventListener("load", receivedResponse); //Callback to next function
   }
 
   //Handle the server response
   function receivedResponse(){
-  //console.log(" req.responseText: "+oReq.response);
-  popMap( JSON.parse(oReq.response) );
+  	//console.log(" req.responseText: "+oReq.response);
+  	popMap( JSON.parse(oReq.response) );
   }
 
 }
@@ -62,9 +66,7 @@ scrollwheel: false,
 styles: [{"featureType":"landscape","stylers":[{"hue":"#FFA800"},{"saturation":0},{"lightness":0},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#53FF00"},{"saturation":-73},{"lightness":40},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FBFF00"},{"saturation":0},{"lightness":0},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#00FFFD"},{"saturation":0},{"lightness":30},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#00BFFF"},{"saturation":6},{"lightness":8},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#679714"},{"saturation":33.4},{"lightness":-25.4},{"gamma":1}]}]
 });
 
-
-
-var infoWindow = new google.maps.InfoWindow({map: map});
+//var infoWindow = new google.maps.InfoWindow({map: map});
 
         // Geolocation services, start user at current geolocation
         /*if (navigator.geolocation) {
@@ -126,11 +128,15 @@ function popMap(foundMarkets){
             map: map,
             title: foundMarkets.MarketName
           });
+          //store the ID of the farm in storage incase users want to load page 
+          localStorage.setItem("storageName",foundMarkets.FMID);
+
           var contentString =
           '<div id="MarkerContent">'+
             '<div id="siteNotice">'+
             '</div>'+
-            '<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'+
+            '<h4 id="firstHeading" class="firstHeading"><a href="/html/profile.html">'+ foundMarkets.MarketName+'</a></h4>'+
+            //'<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'+    Old, link to their website
             '<div id="bodyContent">'+
             '<p><b>State: </b>'+ foundMarkets.State+' <b>City:</b> '+ foundMarkets.city+' </p>'+
             '<p><b>Season: </b>'+ foundMarkets.Season1Date+' <b>Time:</b> '+ foundMarkets.Season1Time+' </p>'+
@@ -140,12 +146,14 @@ function popMap(foundMarkets){
         '</div>'+
        '</div>';
 
-        var infowindow = new google.maps.InfoWindow({
-          content: contentString
-        });
-
+        //infowindow = new google.maps.InfoWindow({
+         // content: contentString
+        //});
+        infowindow = new google.maps.InfoWindow({});
         marker.addListener('click', function() {
-          infowindow.open(map, marker);
+        	infowindow.setContent(contentString);
+   			//infowindow.open(map, this);
+        	infowindow.open(map, marker);
         });
         }
 
