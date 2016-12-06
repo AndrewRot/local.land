@@ -80,19 +80,6 @@
 					var map; //This must be declared outside scope of function
 
 
-					//Make sure that data inside this function is the data from the query, then use it to display markers. - assuming data doesnt have to be html content and can just be any variable
-					$(function(){
-					 $('#ZippyZip').on('keyup', function(e){
-					   if(e.keyCode === 13) {
-					     var parameters = { search: $(this).val() };
-					       $.get( '/searching',parameters, function(data) {
-					       	//#store results
-					       $('#results').html(data);
-					     });
-					    };
-					 });
-					});
-
 					//Input box enter search
 					$('#ZippyZip').keypress(function (e) {
  					 if (e.which == 13) {
@@ -125,58 +112,6 @@
         					scrollTop: $("#map").offset().top //+ (.15 * $("#map").height())
     					}, 1000);
 					}
-
-
-					//From A5
-					function searchFor() {
-					  //Get value from search box
-					  var searchMovieDiv = document.getElementById('ZippyZip')
-					  var convertedLocation;
-
-
-					  var resultsMap = map;
-					  //Google geocoding
-					  var geocoder = new google.maps.Geocoder();
-					  var address = document.getElementById('ZippyZip').value;
-				       geocoder.geocode({'address': address}, function(results, status) {
-				          if (status === 'OK') {
-				            resultsMap.setCenter(results[0].geometry.location);
-				            //console.log(results[0].geometry.location);
-				            convertedLocation = results[0].geometry.location; //update the searched location
-				            var marker = new google.maps.Marker({
-				              map: resultsMap,
-				              position: results[0].geometry.location
-				            });
-				            reqListener();//wait till now to pass coordinates to server
-				          } else {
-				          	convertedLocation = "no location";
-				          	console.log("****Fucked up");
-				            alert('Geocode was not successful for the following reason: ' + status);
-				          }
-				      });
-
-					  var oReq = new XMLHttpRequest();
-
-				      //Handle result from geocoding
-					  function reqListener () {
-					  	oReq.open("POST", "/searchMovies", true);
-					 	 // MAJOR KEY-- build form in XML http request SEND function
-					  	console.log('search='+convertedLocation);
-
-					  	//THIS ISSNT SENDING THE RESQUEST PROPERLY
-					  	oReq.send('search='+convertedLocation);
-					    oReq.addEventListener("load", receivedResponse); //Callback to next function
-					  }
-
-					  //Handle the server response
-					  function receivedResponse(){
-					  	//console.log(" req.responseText: "+oReq.response);
-					  	popMap( JSON.parse(oReq.response) );
-					  }
-
-					}
-
-
 
 
 
