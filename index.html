@@ -164,7 +164,7 @@
 		        var svg = dimple.newSvg("#chartContainer", width, 1000);
 		        d3.csv("/farm_data/states.csv", function(data) {
 		            var myChart = new dimple.chart(svg, data);
-		            myChart.setBounds(50, 10, "90%", 900)
+		            myChart.setBounds(10, 10, "80%", 900)
 		            var x = myChart.addCategoryAxis("x", ["State"]);
 		            myChart.addMeasureAxis("y", "Amount");
 		            var s = myChart.addSeries("State", dimple.plot.bar);
@@ -183,7 +183,7 @@
 		        var svg2 = dimple.newSvg("#chartContainertwo", width, 1000);
 		        d3.csv("/farm_data/states.csv", function (data) {
 		          var myChart2 = new dimple.chart(svg2, data);
-		          myChart2.setBounds(50, 10, "90%", 900)
+		          myChart2.setBounds(10, 10, "80%", 900)
 		          myChart2.addMeasureAxis("p", "Amount");
 		          var ring = myChart2.addSeries("State", dimple.plot.pie);
 		          ring.innerRadius = "50%";

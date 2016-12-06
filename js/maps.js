@@ -138,8 +138,8 @@ function popMap(foundMarkets){
             '</div>'+
             //'<div onClick="javascript.searchForFarm('+foundMarkets+');"><h4 id="firstHeading" class="firstHeading" >'+ foundMarkets.MarketName+'</h4></div>'+     ///Slide out attempt
            
-            '<h4 id="firstHeading" class="firstHeading"><a href="/html/profile.html">'+ foundMarkets.MarketName+'</a></h4>'+      //Link to profile
-            //'<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'+   /// Old, link to their website
+            //'<h4 id="firstHeading" class="firstHeading"><a href="/html/profile.html">'+ foundMarkets.MarketName+'</a></h4>'+      //Link to profile
+            '<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'+   /// Old, link to their website
             '<div id="bodyContent">'+
             '<p><b>State: </b>'+ foundMarkets.State+' <b>City:</b> '+ foundMarkets.city+' </p>'+
             '<p><b>Season: </b>'+ foundMarkets.Season1Date+' <b>Time:</b> '+ foundMarkets.Season1Time+' </p>'+
