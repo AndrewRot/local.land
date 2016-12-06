@@ -15,8 +15,8 @@
 	<script src="js/fblogin.js"  type="text/javascript"></script>
 	<script src="js/maps.js"  type="text/javascript"></script>
 
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
 
 	<!-- JQuery needs to come before bootstrap js file  -->
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
@@ -87,7 +87,7 @@
 					//Input box enter search
 					$('#ZippyZip').keypress(function (e) {
  					 if (e.which == 13) {
- 					 		searchFor();
+ 					 	searchFor();
    						 codeAddress();
    						 scrollToLocation();
 
@@ -138,8 +138,8 @@
 					}
 
 
-					//
-					// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+
+					//function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 				  //      infoWindow.setPosition(pos);
 				  //      infoWindow.setContent(browserHasGeolocation ?
 				  //                            'Error: The Geolocation service failed.' :
@@ -153,45 +153,41 @@
 				</script>
 			</div>
 	</div>
-	<div class="container" id="visuals">
-		<div class="container" id="vis1">
-			<div id="chartContainer">
-		      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
-		      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
-		      <script type="text/javascript">
-						var width = document.body.clientWidth;
-		        var svg = dimple.newSvg("#chartContainer", width, 1000);
-		        d3.csv("/farm_data/states.csv", function(data) {
-		            var myChart = new dimple.chart(svg, data);
-		            myChart.setBounds(50, 10, "90%", 900)
-		            var x = myChart.addCategoryAxis("x", ["State"]);
-		            myChart.addMeasureAxis("y", "Amount");
-		            var s = myChart.addSeries("State", dimple.plot.bar);
-		            //s.barGap = 0.05;
-		            myChart.draw();
-		        });
-		      </script>
-		    </div>
-		</div>
-		<div class="container" id="vis2">
-		    <div id="chartContainertwo">
-		      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
-		      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
-		      <script type="text/javascript">
-						var width = document.body.clientWidth;
-		        var svg2 = dimple.newSvg("#chartContainertwo", width, 1000);
-		        d3.csv("/farm_data/states.csv", function (data) {
-		          var myChart2 = new dimple.chart(svg2, data);
-		          myChart2.setBounds(50, 10, "90%", 900)
-		          myChart2.addMeasureAxis("p", "Amount");
-		          var ring = myChart2.addSeries("State", dimple.plot.pie);
-		          ring.innerRadius = "50%";
-		          myChart2.addLegend("90%", 10, 90, 300, "left");
-		          myChart2.draw();
-		        });
-		      </script>
-		    </div>
-		</div>
+	<div class="container-fluid" id="vis1">
+		<div id="chartContainer">
+	      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+	      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
+	      <script type="text/javascript">
+	        var svg = dimple.newSvg("#chartContainer", 990, 930);
+	        d3.csv("/farm_data/states.csv", function(data) {
+	            var myChart = new dimple.chart(svg, data);
+	            myChart.setBounds(60, 10, 900, 830)
+	            var x = myChart.addCategoryAxis("x", ["State"]);
+	            myChart.addMeasureAxis("y", "Amount");
+	            var s = myChart.addSeries("State", dimple.plot.bar);
+	            s.barGap = 0.05;
+	            myChart.draw();
+	        });
+	      </script>
+	    </div>
+	</div>
+	<div class="container-fluid" id="vis2">
+	    <div id="chartContainertwo">
+	      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+	      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
+	      <script type="text/javascript">
+	        var svg = dimple.newSvg("#chartContainertwo", 1090, 900);
+	        d3.csv("/farm_data/states.csv", function (data) {
+	          var myChart = new dimple.chart(svg, data);
+	          myChart.setBounds(20, 20, 960, 860)
+	          myChart.addMeasureAxis("p", "Amount");
+	          var ring = myChart.addSeries("State", dimple.plot.pie);
+	          ring.innerRadius = "50%";
+	          myChart.addLegend(1000, 20, 90, 300, "left");
+	          myChart.draw();
+	        });
+	      </script>
+	    </div>
 	</div>
 
   <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
