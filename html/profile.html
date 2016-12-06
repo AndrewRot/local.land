@@ -13,6 +13,7 @@
 
 	<script src="js/server.js" type="text/javascript"></script>
 
+	<script src="js/maps.js" type="text/javascript"></script>
 	<script src="js/fblogin.js"  type="text/javascript"></script>
 
 	<!-- JQuery needs to come before bootstrap js file  -->
@@ -71,17 +72,26 @@ console.log("Profile Page!");
    	console.log('FMID='+localStorage.getItem("storageName"));
 
 
-   	//oReq.send('search='+convertedLocation);
-    //oReq.addEventListener("load", receivedResponse);
 
 	loadReq.send('search='+localStorage.getItem("storageName"));
 
 
   	loadReq.addEventListener("load", loadResponse);
+
   	function loadResponse(){
+  		loadReq.open("GET", "/getFarm", true);
   		loadReq.send('search='+localStorage.getItem("storageName"));
-		console.log(JSON.parse(loadReq.response));
+		console.log(loadReq.response);
+		loadReq.addEventListener("load", receivedResponse);
 	}
+	 //Callback to next function
+  
+
+  //Handle the server response
+  function receivedResponse(){
+  	//console.log(" req.responseText: "+oReq.response);
+  	console.log('xxx: '+ loadReq.response) ;
+  }
 
 
 
