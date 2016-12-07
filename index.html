@@ -15,6 +15,9 @@
 	<script src="js/fblogin.js"  type="text/javascript"></script>
 	<script src="js/maps.js"  type="text/javascript"></script>
 
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script>
+
 	<!-- JQuery needs to come before bootstrap js file  -->
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
@@ -135,8 +138,8 @@
 					}
 
 
-
-					//function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+					//
+					// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
 				  //      infoWindow.setPosition(pos);
 				  //      infoWindow.setContent(browserHasGeolocation ?
 				  //                            'Error: The Geolocation service failed.' :
@@ -149,72 +152,46 @@
 
 				</script>
 			</div>
-
-			<div class="container-fluid ">
-				<div class= "row">
-				<div class = "col-xs-12">
-				<div id="vis" style='background-image: url("https://source.unsplash.com/tI_Odb7ZU6M"); background-size: cover;'>
-					<div id="datavis" >
-						<h3>DATA VIS GOES HERE!</h3>
-						<div id = "svgPanel">
-						<svg width="900" height="500" ></svg>
-						</div>
-						<script src="https://d3js.org/d3.v4.min.js"></script>
-						<script>
-						//https://source.unsplash.com/tI_Odb7ZU6M
-						//https://unsplash.com/search/wood?photo=x7JLwunX0M0
-							var svg1 = d3.select("svg"),
-							margin = {top: 20, right: 20, bottom: 30, left: 40},
-							width = +svg1.attr("width") - margin.left - margin.right,
-							height = +svg1.attr("height") - margin.top - margin.bottom;
-
-							var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
-									y = d3.scaleLinear().rangeRound([height, 0]);
-							var g = svg1.append("g")
-									.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-							d3.tsv("states.tsv", function(d) {
-								d.number = +d.number;
-								return d;
-							}, function(error, data) {
-								if (error) throw error;
-								x.domain(data.map(function(d) { return d.name; }));
-								y.domain([0, d3.max(data, function(d) { return d.number; })]);
-								g.append("g")
-										.attr("class", "axis axis--x")
-										.attr("transform", "translate(0," + height + ")")
-										//.attr('xlink:href', 'images/blueberries.jpg')
-										.call(d3.axisBottom(x));
-								g.append("g")
-										.attr("class", "axis axis--y")
-										//.attr('xlink:href', 'images/blueberries.jpg')
-										.call(d3.axisLeft(y).ticks(50))
-									.append("text")
-										.attr("transform", "rotate(-90)")
-										.attr("y", 6)
-										.attr("dy", "0.71em")
-										.attr("text-anchor", "end")
-										.text("Number of Markets");
-								g.selectAll(".bar")
-									.data(data)
-									.enter().append("rect")
-										.attr("class", "bar")
-										.attr("x", function(d) { return x(d.name); })
-										.attr("y", function(d) { return y(d.number); })
-										.attr("width", x.bandwidth())
-										.attr("height", function(d) { return height - y(d.number); });
-								g.append("g")
-									    .attr("xlink:href", "http://cdn.wallpapersafari.com/95/40/IebAXK.jpg");
-									    //.attr("d", "M 0,0, 57.7,-100, 115.5,0z")
-									    //.attr("transform", "translate(135.5, 100)")
-									    //.attr("fill", "http://cdn.wallpapersafari.com/95/40/IebAXK.jpg");
-							});
-						</script>
-					</div>
-					</div>
-				</div>
-</div>
-				</div>
-
+	</div>
+	<div class="container" id="visuals">
+		<div class="container" id="vis1">
+			<div id="chartContainer">
+		      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+		      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
+		      <script type="text/javascript">
+				var width = document.body.clientWidth;
+		        var svg = dimple.newSvg("#chartContainer", width, 1000);
+		        d3.csv("/farm_data/states.csv", function(data) {
+		            var myChart = new dimple.chart(svg, data);
+		            myChart.setBounds(50, 10, "90%", 900)
+		            var x = myChart.addCategoryAxis("x", ["State"]);
+		            myChart.addMeasureAxis("y", "Amount");
+		            var s = myChart.addSeries("State", dimple.plot.bar);
+		            //s.barGap = 0.05;
+		            myChart.draw();
+		        });
+		      </script>
+		    </div>
+		</div>
+		<div class="container" id="vis2">
+		    <div id="chartContainertwo">
+		      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
+		      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
+		      <script type="text/javascript">
+				var width = document.body.clientWidth;
+		        var svg2 = dimple.newSvg("#chartContainertwo", width, 1000);
+		        d3.csv("/farm_data/states.csv", function (data) {
+		          var myChart2 = new dimple.chart(svg2, data);
+		          myChart2.setBounds(50, 10, "90%", 900)
+		          myChart2.addMeasureAxis("p", "Amount");
+		          var ring = myChart2.addSeries("State", dimple.plot.pie);
+		          ring.innerRadius = "50%";
+		          myChart2.addLegend("90%", 10, 90, 300, "left");
+		          myChart2.draw();
+		        });
+		      </script>
+		    </div>
+		</div>
 	</div>
 
   <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
