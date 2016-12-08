@@ -132,31 +132,53 @@ function popMap(foundMarkets){
           //store the ID of the farm in storage incase users want to load page 
           localStorage.setItem("storageName",foundMarkets.FMID);
 
+
+          var headerString = '<h4 id="firstHeading" class="firstHeading"><a href="/html/profile.html">'+ foundMarkets.MarketName+'</a></h4>'
           var contentString =
           '<div id="MarkerContent">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            //'<div onClick="javascript.searchForFarm('+foundMarkets+');"><h4 id="firstHeading" class="firstHeading" >'+ foundMarkets.MarketName+'</h4></div>'+     ///Slide out attempt
-           
+            //'<div id="siteNotice">'+
             //'<h4 id="firstHeading" class="firstHeading"><a href="/html/profile.html">'+ foundMarkets.MarketName+'</a></h4>'+      //Link to profile
-            '<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'+   /// Old, link to their website
+            //'</div>'+
+            //'<div class="marketPage"><h4 id="firstHeading" class="firstHeading" >'+ foundMarkets.MarketName+'</h4></div>'+     ///Slide out attempt
+            //'<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'+   /// Old, link to their website
             '<div id="bodyContent">'+
-            '<p><b>State: </b>'+ foundMarkets.State+' <b>City:</b> '+ foundMarkets.city+' </p>'+
+            '<p><b>State: </b>'+ foundMarkets.State+' <b>City:</b> '+ foundMarkets.city+ ' <b>Zip:</b> '+ foundMarkets.zip+ ' <b>Street:</b> '+ foundMarkets.street+' </p>'+
             '<p><b>Season: </b>'+ foundMarkets.Season1Date+' <b>Time:</b> '+ foundMarkets.Season1Time+' </p>'+
            '<div id="foodicons style= "display: "inline-flex"">'+
            getIcons(foundMarkets);
            '</div>'+
         '</div>'+
        '</div>';
+       var footerString = 
+       	'<div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="standard" data-size="large" data-show-faces="true">TEST</div>' +
+	       //'<div id="leftFooter"  style= "float: left>"'+
+	       	
+		       
+	       //'</div>'+
+	       //'<div id="rightFooter" style= "float: right">'+
+		       '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
+		       '<button type="button" class="btn btn-primary">Save Market</button>';
+	       //'</div>';
 
         //infowindow = new google.maps.InfoWindow({
          // content: contentString
         //});
         infowindow = new google.maps.InfoWindow({});
         marker.addListener('click', function() {
-        	infowindow.setContent(contentString);
-   			//infowindow.open(map, this);
-        	infowindow.open(map, marker);
+        	console.log("Clicked location");
+
+        	updateURL(foundMarkets.Facebook);
+        	//Infor window is the google api built in tag
+        	//infowindow.setContent(contentString);
+        	//infowindow.open(map, marker);
+        	//Open modal
+        	modal.style.display = "block";
+
+        	//fbfollow.setAttribute('data-href', foundMarkets.Facebook);
+        	//$('.fb-follow').data('data-href',foundMarkets.Facebook);
+        	modaltitle.innerHTML = headerString;
+        	modalbody.innerHTML = contentString;
+        	modalfooter.innerHTML = footerString;
         });
         }
 

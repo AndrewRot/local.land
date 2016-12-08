@@ -58,40 +58,49 @@
 
 <label> Profile page </label>
 <div id="info">
-
+<button type="submit" class="btn btn-primary">CLICK</button>
 </div>
 
 <script>
 console.log("Profile Page!");
-//Get the ID of the farmers market
+
+$('.btn').click(function() {
+	console.log("CLICKLED")
+	var xhttp = new XMLHttpRequest();
+  	xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("info").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "/getFarm", true);
+  xhttp.send("Dick");
+	/*
+	//Get the ID of the farmers market
 	//window.onload = alert(localStorage.getItem("storageName"));
 
 	 //THIS CODE GETS THE STATES AND THE COUNTS
    	var loadReq = new XMLHttpRequest();
    	loadReq.open("GET", "/getFarm", true);
-   	console.log('FMID='+localStorage.getItem("storageName"));
-
-
-
-	loadReq.send('search='+localStorage.getItem("storageName"));
+   	console.log('FMID='+11);
+//localStorage.getItem("storageName")
+	loadReq.send('search='+11);
 
 
   	loadReq.addEventListener("load", loadResponse);
 
   	function loadResponse(){
-  		loadReq.open("GET", "/getFarm", true);
-  		loadReq.send('search='+localStorage.getItem("storageName"));
-		console.log(loadReq.response);
-		loadReq.addEventListener("load", receivedResponse);
+  		//loadReq.open("GET", "/getFarm", true);
+  		//loadReq.send('search='+localStorage.getItem("storageName"));
+		console.log("asdasd"+loadReq.response);
+		//loadReq.addEventListener("load", receivedResponse);
 	}
 	 //Callback to next function
   
 
-  //Handle the server response
-  function receivedResponse(){
-  	//console.log(" req.responseText: "+oReq.response);
-  	console.log('xxx: '+ loadReq.response) ;
-  }
+  //H*/
+});
+
 
 
 
