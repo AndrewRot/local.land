@@ -267,6 +267,7 @@
 
       
     </div>
+    <br>
     
     <div id="fblink">
     	<div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="standard" data-size="large" data-show-faces="true">TEST</div>
@@ -288,24 +289,19 @@
 	var modaltitle = document.getElementById('modaltitle');
 	var modalbody = document.getElementById('modalbody');
 	var modalfooter = document.getElementById('modalfooter');
-	var fbfollow = document.getElementById('fb-follow');
+	var fblink = document.getElementById('fblink');
 
 	var url = "https://www.facebook.com/zuck";
+
+	//want to dynamically set this
 	function updateURL(fbpage){
 		console.log("CHANGE LINK: "+fbpage);
 		url = fbpage;
-		FB.XFBML.parse(document.getElementById('containerX'));
-		$('#fblink').html('<div class="fb-follow" data-href="'+url+'" data-layout="standard" data-size="large" data-show-faces="true">TEST</div>');
-		//('<fb:like href="' + url + '" layout="button_count" show_faces="false" width="65" action="like" font="segoe ui" colorscheme="light" />');
+		$('#fblink').html('<div class="fb-follow" data-href="'+url+'" data-layout="standard" data-size="large" data-show-faces="true">fb</div>');
+		//refresh facebook links
+		FB.XFBML.parse(document.getElementById('fblink'));
+
 	}
-
-	//want to dynamically set this
-	$('.fb-follow').html('<fb:like href="' + url + '" layout="button_count" show_faces="false" width="65" action="like" font="segoe ui" colorscheme="light" />');
-
-	//$('.fb-follow').data('data-href','asd');
-	//fbfollow.setAttribute('data-href', 'aasd');
-
-	//fbfollow.style.display = "none";
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];

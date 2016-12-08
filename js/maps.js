@@ -150,10 +150,9 @@ function popMap(foundMarkets){
         '</div>'+
        '</div>';
        var footerString = 
-       	'<div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="standard" data-size="large" data-show-faces="true">TEST</div>' +
+       	//'<div class="fb-follow" data-href="'+foundMarkets.Facebook+'" data-layout="standard" data-size="large" data-show-faces="true">TEST</div>' +
 	       //'<div id="leftFooter"  style= "float: left>"'+
 	       	
-		       
 	       //'</div>'+
 	       //'<div id="rightFooter" style= "float: right">'+
 		       '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
@@ -174,11 +173,10 @@ function popMap(foundMarkets){
         	//Open modal
         	modal.style.display = "block";
 
-        	//fbfollow.setAttribute('data-href', foundMarkets.Facebook);
-        	//$('.fb-follow').data('data-href',foundMarkets.Facebook);
         	modaltitle.innerHTML = headerString;
         	modalbody.innerHTML = contentString;
         	modalfooter.innerHTML = footerString;
+        	
         });
         }
 
