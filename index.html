@@ -185,11 +185,21 @@
 		      <script type="text/javascript">
 				var width = document.body.clientWidth;
 		        var svg = dimple.newSvg("#chartContainer", width, 1000);
+						svg.append("text")
+							.attr("x", (width*.75)/2+10)
+							.attr("y", 15)
+							.attr("text-anchor", "middle")
+							.style("font-size", "13px")
+							.style("font-weight", "bold")
+							.text("Number of Farmers' Markets by State");
 		        d3.csv("/farm_data/states.csv", function(data) {
 		            var myChart = new dimple.chart(svg, data);
-		            myChart.setBounds(10, 10, "80%", 900)
+
+		            myChart.setBounds(25, 30, (width*.75), 870)
 		            var x = myChart.addCategoryAxis("x", ["State"]);
-		            myChart.addMeasureAxis("y", "Amount");
+								x.title = "States"
+		            var y = myChart.addMeasureAxis("y", "Amount");
+								y.title = "Number of Markets"
 		            var s = myChart.addSeries("State", dimple.plot.bar);
 		            //s.barGap = 0.05;
 		            myChart.draw();
@@ -202,15 +212,23 @@
 		      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
 		      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
 		      <script type="text/javascript">
-				var width = document.body.clientWidth;
+						var width = document.body.clientWidth;
 		        var svg2 = dimple.newSvg("#chartContainertwo", width, 1000);
+						svg2.append("text")
+							.attr("x", (width*.7)/2)
+							.attr("y", 15)
+							.attr("text-anchor", "middle")
+							.style("font-size", "13px")
+							.style("font-weight", "bold")
+							.text("A Collective Visual: Farmers Markets' by State");
 		        d3.csv("/farm_data/states.csv", function (data) {
 		          var myChart2 = new dimple.chart(svg2, data);
-		          myChart2.setBounds(10, 10, "80%", 900)
+
+		          myChart2.setBounds(15, 30, (width*.7), 900)
 		          myChart2.addMeasureAxis("p", "Amount");
 		          var ring = myChart2.addSeries("State", dimple.plot.pie);
 		          ring.innerRadius = "50%";
-		          myChart2.addLegend("90%", 10, 90, 300, "left");
+		          myChart2.addLegend((width*.7), 15, 90, 750, "left");
 		          myChart2.draw();
 		        });
 		      </script>
