@@ -238,6 +238,7 @@ hr {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+		z-index: 100000;
 }
 
 #return-to-top i {
@@ -252,6 +253,7 @@ hr {
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
+		z-index: 100000;
 }
 
 #return-to-top:hover {
@@ -307,7 +309,7 @@ hr {
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 
@@ -344,5 +346,3 @@ hr {
     background-color: #5cb85c;
     color: white;
 }
-
-
