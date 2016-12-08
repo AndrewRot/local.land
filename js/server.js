@@ -2,7 +2,10 @@
 /*Express
   author: Andrew Rottier
 */
-var express = require('express');
+//var express = require('express');
+var express = require('express')
+var app = express()
+
 var path = require('path');
 var  qs = require('querystring');
 
