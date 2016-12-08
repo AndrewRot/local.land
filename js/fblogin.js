@@ -31,7 +31,7 @@
     });
   }
 
-  window.fbAsyncInit = function() {m 
+  window.fbAsyncInit = function() {
   FB.init({
     appId      : '887794774691145',
     cookie     : true,  // enable cookies to allow the server to access 
