@@ -28,17 +28,17 @@ body {
 #circleimgs {
   height: 200px;
   width: 100%;
-  margin: 0 auto;
-  margin-left: 82.5px;
 }
+
 
 .img-circle-kurt, .img-circle-derek, .img-circle-rot {
   border-radius: 100%;
   border: 2px solid;
   border-color: #FFFFFF;
-  float: left;
-  margin: 10px;
+	display: inline-block;
+	margin: 10px;
 }
+
 
 #footer, #footer a, #footer .navbar-text {
 		margin: 20px 0 0 0;
