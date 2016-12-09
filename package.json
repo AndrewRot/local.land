@@ -8,6 +8,9 @@
     "start": "node js/server.js"
   },
   "dependencies": {
-    "express": "~4.9.0"
+    "body-parser": "^1.15.2",
+    "express": "~4.9.0",
+    "express-form": "^0.12.6",
+    "connect": "2.x"
   }
 }

@@ -3,10 +3,17 @@
   author: Andrew Rottier
 */
 var express = require('express');
-var path = require('path');
-var  qs = require('querystring');
-
 var app = express();
+var path = require('path');
+var qs = require('querystring');
+var form = require('express-form');
+
+var bodyParser = require('body-parser');
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+  
+
+
 var port = process.env.PORT || 8080;
 
 
@@ -20,6 +27,37 @@ var MongoClient = mongodb.MongoClient;
 // Connection URL. This is where your mongodb server is running. top is for local
 //var url = 'mongodb://localhost:27017/farmsDB';
 var url = 'mongodb://heroku_x2qwnz17:c5qu6veuv001ia9snr4vut4fg8@ds113678.mlab.com:13678/heroku_x2qwnz17';
+
+/*
+app.post('html/upload-market', function(req, res){
+  console.log("DICKDICKDICK");
+  var userName = req.body.userName;
+  var html = 'Hello: ' + userName + '.<br>' +
+             '<a href="/">Try again.</a>';
+  res.send(html);
+});*/
+// routes will go here
+//tell express what to do when the /about route is requested
+app.post('/form',function(req, res){
+  //res.setHeader('Content-Type', 'text/html');
+  //res.sendFile(path.join(__dirname, '../index.html'));
+  //res.end(JSON.stringify(req.body.MarketName)   );
+  //mimic a slow network connection
+  res.setHeader('Content-Type', 'application/json');
+  setTimeout(function(){
+
+    res.send(JSON.stringify({
+      MarketName: req.body.MarketName || null
+      //lastName: req.body.lastName || null
+    }));
+
+  }, 1000)
+
+  //debugging output for the terminal
+  console.log('you posted: Market Name: ' + req.body.MarketName + ', Last Name: ' + req.body.lastName);
+});
+
+
 
 
 //temp global array
