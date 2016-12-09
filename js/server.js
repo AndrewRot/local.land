@@ -8,9 +8,9 @@ var path = require('path');
 var qs = require('querystring');
 //var form = require('express-form');
 
-var bodyParser = require('body-parser');
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+//var bodyParser = require('body-parser');
+//app.use(bodyParser.json()); // support json encoded bodies
+//app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
   
 
 
