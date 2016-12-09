@@ -76,7 +76,7 @@
       console.log(JSON.stringify(response));
       document.getElementById('status').innerHTML =
         //'Thanks for logging in, ' + response.name + '!' +
-        '<a href="html/profile.html"><i class="fa fa-user fa-1x" aria-hidden="true"></i>'+response.name+'</a>'
+        '<a href="html/profile.html"><i class="fa fa-user fa-1x" aria-hidden="true"></i>  '+response.name+'</a>'
         //'<fb:login-button  onclick="FB.logout(function(response) { // Person is now logged out });"> Logout</fb:login-button>' +
         //'<script>FB.logout(function(response) { // Person is now logged out }); </script>'
     });
