@@ -133,7 +133,7 @@ function popMap(foundMarkets){
           localStorage.setItem("storageName",foundMarkets.FMID);
 
 
-          var headerString = '<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'">'+ foundMarkets.MarketName+'</a></h4>'   /// Old, link to their website
+          var headerString = '<h4 id="firstHeading" class="firstHeading"><a href="'+foundMarkets.Website+'"><b>'+ foundMarkets.MarketName+'</b></a></h4>'   /// Old, link to their website
 
           var contentString =
           '<div id="MarkerContent">'+

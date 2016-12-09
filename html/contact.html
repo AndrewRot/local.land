@@ -58,76 +58,267 @@
 			</p>
 
 		<div class="containter-fluid" style="padding-left: 10%; padding-right: 25%;">
-			<form class="form-horizontal">
-			  <div class="form-group">
+			<form class="form-horizontal" id="testForm" method="post" >
+			  <div class="form-group" >
 			    <label for="nameField" class="col-sm-3 control-label">Owner's Name</label>
 			    <div class="col-sm-9">
-			      <input type="text" class="form-control" id="nameField" placeholder="Owner Name" required>
+			      <input type="text" class="form-control" id="nameField" placeholder="Owner Name" name="nameField">
 			    </div>
 			  </div>
 			  <div class="form-group">
-			    <label for="marketName" class="col-sm-3 control-label">Market Name</label>
+			    <label for="marketName" class="col-sm-3 control-label">Market Name *</label>
 			    <div class="col-sm-9">
-			      <input type="text" class="form-control" id="MarketName" placeholder="Market Name" required>
+			      <input type="text" class="form-control" id="MarketName" placeholder="Market Name" required name="MarketName">
 			    </div>
 			  </div>
-				<div class="form-group">
-					<label for="website" class="col-sm-3 control-label">Website</label>
-					<div class="col-sm-9">
-						<input type="text" class="form-control" id="Website" placeholder="Website" required>
-					</div>
-				</div>
+				
 			  <div class="form-group">
-			    <label for="street" class="col-sm-3 control-label">Street</label>
+			    <label for="street" class="col-sm-3 control-label">Street *</label>
 			    <div class="col-sm-9">
 			      <input type="text" class="form-control" id="street" placeholder="Street" required>
 			    </div>
 			  </div>
 				<div class="form-group">
-			    <label for="city" class="col-sm-3 control-label">City</label>
+			    <label for="city" class="col-sm-3 control-label">City *</label>
 			    <div class="col-sm-9">
 			      <input type="text" class="form-control" id="city" placeholder="City" required>
 			    </div>
 			  </div>
 				<div class="form-group">
-			    <label for="country" class="col-sm-3 control-label">Country</label>
+			    <label for="county" class="col-sm-3 control-label">County</label>
 			    <div class="col-sm-9">
-			      <input type="text" class="form-control" id="country" placeholder="Country" required>
+			      <input type="text" class="form-control" id="county" placeholder="County">
 			    </div>
 			  </div>
-				<div class="form-group">
-					<label for="state" class="col-sm-3 control-label">State</label>
+				<!--<div class="form-group">
+					<label for="state" class="col-sm-3 control-label">State *</label>
 					<div class="col-sm-9">
 						<input type="text" class="form-control" id="state" placeholder="State" required>
 					</div>
+				</div>-->
+				<div class="form-group">
+					<label for="state" class="col-sm-3 control-label">State *</label>
+					<div class="col-sm-9">
+					  <select class="form-control " id="sel1">
+					    <option>Alabama</option>
+						<option>Alaska</option>
+						<option>Arizona</option>
+						<option>Arkansas</option>
+						<option>California</option>
+						<option>Colorado</option>
+						<option>Connecticut</option>
+						<option>Delaware</option>
+						<option>Florida</option>
+						<option>Georgia</option>
+						<option>Hawaii</option>
+						<option>Idaho</option>
+						<option>Illinois</option>
+						<option>Indiana</option>
+						<option>Iowa</option>
+						<option>Kansas</option>
+						<option>Kentucky</option>
+						<option>Louisiana</option>
+						<option>Maine</option>
+						<option>Maryland</option>
+						<option>Massachusetts</option>
+						<option>Michigan</option>
+						<option>Minnesota</option>
+						<option>Mississippi</option>
+						<option>Missouri</option>
+						<option>Montana</option>
+						<option>Nebraska</option>
+						<option>Nevada</option>
+						<option>New Hampshire</option>
+						<option>New Jersey</option>
+						<option>New Mexico</option>
+						<option>New York</option>
+						<option>North Carolina</option>
+						<option>North Dakota</option>
+						<option>Ohio</option>
+						<option>Oklahoma</option>
+						<option>Oregon</option>
+						<option>Pennsylvania</option>
+						<option>Rhode Island</option>
+						<option>South Carolina</option>
+						<option>South Dakota</option>
+						<option>Tennessee</option>
+						<option>Texas</option>
+						<option>Utah</option>
+						<option>Vermont</option>
+						<option>Virginia</option>
+						<option>Washington</option>
+						<option>West Virginia</option>
+						<option>Wisconsin</option>
+						<option>Wyoming</option>
+					  </select>
+					  </div>
 				</div>
+
 			  <div class="form-group">
-			    <label for="zipCode" class="col-sm-3 control-label">Zip Code</label>
+			    <label for="zipCode" class="col-sm-3 control-label">Zip Code *</label>
 			    <div class="col-sm-9">
 			      <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" pattern=".{5}" required title="Zip Code Must Be 5 Numbers">
 			    </div>
 			  </div>
 			  <div class="form-group">
 			    <div class="col-sm-offset-3 col-sm-9">
-			      <div id="flip" > <i class="fa fa-cog fa-1x" aria-hidden="true"></i> Advanced Options</div>
+			      <div id="flip" > <i class="fa fa-chevron-down fa-1x" aria-hidden="true"></i> Next </div>
 			    </div>
 			  </div>
 
 
 
 			  <div id="panel">
-				  <div class="form-group">
-				    <label for="hours" class="col-sm-3 control-label">Hours</label>
-				    <div class="col-sm-9">
-				      <textarea class="form-control" rows="1" placeholder="Hours"></textarea>
-				    </div>
+
+			  	<br>
+
+				<label for="xx" class="col-sm-12 control-label" style = "text-align: center">Medias</label>
+
+				<br>
+
+			  	<div class="form-group">
+					<label for="website" class="col-sm-3 control-label">Website</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="Website" placeholder="Website" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="fb" class="col-sm-3 control-label">Facebook</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="fb" placeholder="fb" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="twit" class="col-sm-3 control-label">Twitter</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="twit" placeholder="twit" >
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="youtube" class="col-sm-3 control-label">Youtube</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control" id="youtube" placeholder="youtube" >
+					</div>
+				</div>
+
+				<br>
+
+				<label for="xx" class="col-sm-12 control-label" style = "text-align: center">Seasonal Operation</label>
+
+				<br>
+
+				<div class="form-group">
+				   	<label for="onth" class="col-sm-3 control-label">Month *</label>
+					<div class="col-sm-9">
+					  <select class="form-control " id="sel1">
+					    <option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					  </select>
+					  </div>
 				  </div>
 				  <div class="form-group">
-				    <label for="Seasons" class="col-sm-3 control-label">Seasons</label>
-				    <div class="col-sm-9">
-				      <input type="text" class="form-control" id="Seasons" placeholder="Seasons" >
+				   	<label for="day" class="col-sm-3 control-label">Day *</label>
+					
+							<div class="checkbox col-sm-2">
+								<label><input type="checkbox" value="" >Su    </label>
+							</div>
+							<div class="checkbox col-sm-2">
+								<label><input type="checkbox" value="">M    </label>
+							</div>
+							<div class="checkbox col-sm-2">
+								<label><input type="checkbox" value="">T    </label>
+							</div>
+							<div class="checkbox col-sm-2">
+								<label><input type="checkbox" value="">W    </label>
+							</div>
+							<div class="checkbox col-sm-1"> </div>
+							<div class="checkbox col-sm-3"> </div>
+
+							<div class="checkbox col-sm-2">
+								<label><input type="checkbox" value="">R    </label>
+							</div>
+							<div class="checkbox col-sm-2">
+								<label><input type="checkbox" value="">F    </label>
+							</div>
+							<div class="checkbox col-sm-2">
+								<label><input type="checkbox" value="">Sa    </label>
+							</div>
+							<div class="checkbox col-sm-3">
+								
+							</div>
+
+				  
+				  <div class="form-group">
+				    <label for="hours" class="col-sm-3 control-label">Open</label>
+				    <div class="col-sm-3">
+				      <select class="form-control " id="sel1">
+					    <option>12AM</option>
+						<option>1AM</option>
+						<option>2AM</option>
+						<option>3AM</option>
+						<option>4AM</option>
+						<option>5AM</option>
+						<option>6AM</option>
+						<option>7AM</option>
+						<option>8AM</option>
+						<option>9AM</option>
+						<option>10AM</option>
+						<option>11AM</option>
+						<option>12PM</option>
+						<option>1PM</option>
+						<option>2PM</option>
+						<option>3PM</option>
+						<option>4PM</option>
+						<option>5PM</option>
+						<option>6PM</option>
+						<option>7PM</option>
+						<option>8PM</option>
+						<option>9PM</option>
+						<option>10PM</option>
+						<option>11PM</option>
+					  </select>
+				    </div>
+				    <label for="hours" class="col-sm-3 control-label">Close</label>
+				    <div class="col-sm-3">
+				      <select class="form-control " id="sel1">
+					    <option>12AM</option>
+						<option>1AM</option>
+						<option>2AM</option>
+						<option>3AM</option>
+						<option>4AM</option>
+						<option>5AM</option>
+						<option>6AM</option>
+						<option>7AM</option>
+						<option>8AM</option>
+						<option>9AM</option>
+						<option>10AM</option>
+						<option>11AM</option>
+						<option>12PM</option>
+						<option>1PM</option>
+						<option>2PM</option>
+						<option>3PM</option>
+						<option>4PM</option>
+						<option>5PM</option>
+						<option>6PM</option>
+						<option>7PM</option>
+						<option>8PM</option>
+						<option>9PM</option>
+						<option>10PM</option>
+						<option>11PM</option>
+					  </select>
 				    </div>
 				  </div>
+				  
 					<div class="form-group">
 						<label for="goodsSold" class="col-sm-3 control-label">Goods Sold</label>
 						<div class="row">
@@ -138,90 +329,90 @@
 							<div class="checkbox">
 								<label><input type="checkbox" value="">Baked Goods</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Cheese</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Crafts</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Flowers</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Eggs</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Seafood</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Herbs</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Vegetables</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Honey</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Jams</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Maple</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Meat</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Nursery</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Nuts</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Plants</label>
 							</div>
 						</div>
 						<div class="col-sm-4">
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Poultry</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Prepared</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Soap</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Trees</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Wine</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Coffee</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Beans</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Fruits</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Grains</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Juices</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Mushrooms</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Pet Food</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Tofu</label>
 							</div>
-							<div class="checkbox disabled">
+							<div class="checkbox">
 								<label><input type="checkbox" value="">Wild Harvested</label>
 							</div>
 						</div>
@@ -232,7 +423,7 @@
 
 			  <div class="form-group">
 			    <div class="col-sm-offset-3 col-sm-9">
-			      <button type="submit"  class="btn btn-default">Say Hello!</button>
+			      <button type="submit"  id="submitButton" class="btn btn-default ajaxLoader">Say Hello!</button>
 			    </div>
 			  </div>
 
@@ -269,6 +460,40 @@
 		    </div>
 		  </div>
 	</nav>
+
+	<script type="text/javascript">
+
+		 $('#submitButton').click(submitButtonHandler);
+
+		 function submitButtonHandler (evt) {
+		 	console.log("Contact POST!")
+     	var testForm = document.getElementById('testForm');
+
+      	//prevent form submission
+      	/*evt.preventDefault();
+      	evt.stopPropagation();
+
+	      $('#post-results-container').fadeOut();
+	      $('.ajaxLoader').css('display', 'inline-block');*/
+
+
+      //make the AJAX call
+      $.ajax({
+        url: '/form',
+        type: 'POST',
+        data: {
+          //firstName: testForm.firstName.value,
+          MarketName: testForm.MarketName.value
+        },
+        //success: postSuccessHandler
+      });
+
+      
+  }
+
+
+  
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>

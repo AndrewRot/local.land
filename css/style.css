@@ -147,6 +147,8 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+
+
 #footer, #footer a, #footer .navbar-text {
 		margin: 20px 0 0 0;
     color: #9d9d9d;
@@ -318,7 +320,7 @@ hr {
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
+/* The Close Button  darkskin #375d3b  lightskin #74a63b*/
 .close {
     color: white;
     float: right;
@@ -346,3 +348,22 @@ hr {
     background-color: #5cb85c;
     color: white;
 }
+
+#modaltitle {
+	color: #FFFFFF;
+	font-family: 'Abel', sans-serif;
+}
+
+a:link {
+color: #FFFFFF;
+}
+a:visited {
+color: #FFFFF0;
+}
+a:hover {
+color: #FFFFFA=+;
+}
+
+
+
+
