@@ -194,6 +194,7 @@
 							.attr("text-anchor", "middle")
 							.style("font-size", "13px")
 							.style("font-weight", "bold")
+							.style("font-family", "Abel")
 							.text("Number of Farmers' Markets by State");
 		        d3.csv("/farm_data/states.csv", function(data) {
 		            var myChart = new dimple.chart(svg, data);
@@ -223,6 +224,7 @@
 							.attr("text-anchor", "middle")
 							.style("font-size", "13px")
 							.style("font-weight", "bold")
+							.style("font-family", "Abel")
 							.text("A Collective Visual: Farmers Markets' by State");
 		        d3.csv("/farm_data/states.csv", function (data) {
 		          var myChart2 = new dimple.chart(svg2, data);
