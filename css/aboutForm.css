@@ -31,12 +31,10 @@ body {
 	display: flex;
 }
 
-
 .img-circle-kurt, .img-circle-derek, .img-circle-rot {
   border-radius: 100%;
   border: 2px solid;
   border-color: #FFFFFF;
-	display: inline-block;
 	margin: 10px;
 }
 
@@ -61,7 +59,7 @@ h1 {
 	color: #FFFFFF
 }
 
-h3 {
+figcaption, h3 {
 	font-weight: 500;
 	font-size: 2em;
 	color: #FFFFFF;
