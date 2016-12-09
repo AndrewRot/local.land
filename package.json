@@ -1,27 +1,15 @@
 {
-<<<<<<< HEAD
-  "name": "ar-4241-simple-node",
-  "version": "0.1.0",
-  "description": "WPI CS 4241 Assignment 2",
-  "author": "Andrew Rottier",
-=======
+
   "name": "localland",
   "version": "0.1.0",
   "description": "Local Land",
   "author": "Andrew Rottier, Kurt Bugbee, Derek McMaster",
->>>>>>> 351b4a40fcd9112799e78416146e39bff56d33c6
   "private": true,
   "scripts": {
     "start": "node js/server.js"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "body-parser": "^1.15.2",
-    "express": "~4.9.0",
-    "express-form": "^0.12.6",
-    "connect": "2.x"
-  }
-=======
+
     "express": "~4.9.0"
   },
   "main": "index.js",
@@ -38,5 +26,4 @@
   "keywords": [
     "localland"
   ]
->>>>>>> 351b4a40fcd9112799e78416146e39bff56d33c6
 }
