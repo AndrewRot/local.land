@@ -1,8 +1,8 @@
 {
   "name": "localland",
   "version": "0.1.0",
-  "description": "WPI CS 4241 Assignment 2",
-  "author": "Andrew Rottier",
+  "description": "Local Land",
+  "author": "Andrew Rottier, Kurt Bugbee, Derek McMaster",
   "private": true,
   "scripts": {
     "start": "node js/server.js"
