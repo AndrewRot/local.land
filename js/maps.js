@@ -184,6 +184,25 @@ function popMap(foundMarkets){
         for (var i = 0; i < foundMarkets.length; i++) {
           addMarker(foundMarkets[i]);
         }
+
+        //populate the side bar with top choices (sliderContent)
+        function slidePanel(fm){
+          var html = '<li><a href="'+fm.Website+'">'+fm.MarketName+'</a></li>'
+          return html;
+        }
+
+        var sliderContent = '';
+        var sc = document.getElementById('sliderContent');
+        for (var i = 0; i < foundMarkets.length; i++) {
+          sliderContent = sliderContent + slidePanel(foundMarkets[i]);
+          
+        }
+        sc.innerHTML = ""; //clear out old content
+        
+        sc.innerHTML = sliderContent;
+
+
+
 }
 
 

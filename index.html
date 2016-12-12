@@ -97,7 +97,50 @@
 		</div>
 	</div>
 
+
+		
+
 	<div id="gmap">
+
+	<div class="slidecontainer">
+			<div class="slide">
+				<ul class="sliderContent" id = "sliderContent">
+					<li><a href="#">Markets</a></li>
+				</ul>
+			</div>
+		
+		<div class="area">
+			<div class="sliderarrow"> 
+				<img src="images/rightarrow.png">
+			</div>
+		</div>
+		<div class="opacity"></div>
+		<a href="#" class="toggle">
+		<i class="fa fa-arrow-right bars" aria-hidden="true"></i>
+		</a>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+	
+	$(".area, .toggle").click(function(){	
+		$(".slidecontainer").toggleClass("menu-open");
+		$(".opacity").toggleClass("opacity2");
+		$(".bars").toggleClass("bars2");
+		$(".sliderarrow").toggleClass("sliderarrow2");
+	});
+	$(".opacity").click(function(){
+		$(".slidecontainer").toggleClass("menu-open");
+		$(".opacity").toggleClass("opacity2");
+		$(".bars").toggleClass("bars2");
+		$(".sliderarrow").toggleClass("sliderarrow2");
+	});
+});
+
+	</script>
+
+
+
 			<div id="map">
 				<script>
 					var geocoder;
@@ -112,14 +155,14 @@
    						 scrollToLocation();
 
    						 //THIS CODE GETS THE STATES AND THE COUNTS
-   						var loadReq = new XMLHttpRequest();
+   						/*var loadReq = new XMLHttpRequest();
    						loadReq.open("GET", "/getStateCount", true);
 					  	loadReq.send('s');
 					  	loadReq.addEventListener("load", loadResponse);
 					  	function loadResponse(){
 					  		//console.log(" req.responseText: "+oReq.response);
 					  		console.log(JSON.parse(loadReq.response));
-					  	}
+					  	}*/
 
    						 return false;    //<---- Add this line
   						}
