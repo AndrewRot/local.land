@@ -109,12 +109,13 @@ input:focus::-webkit-input-placeholder {
 	left: 0px;
 	top: 100%;
 	z-index: 0;
+	padding-bottom: 50px;
 }
 
 #map {
 	height: 100%;
 	width: 100%;
-    z-index: 90;
+  z-index: 90;
 }
 
 #vis {
@@ -425,7 +426,6 @@ color: #FFFFFA=+;
 .slidecontainer .area {
     width:30px;
     position:absolute;
-    background-color:#5cb85c;
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.26);
     z-index: 100;
 		background-color: rgba(45, 42, 42, 0.7);
@@ -450,6 +450,8 @@ color: #FFFFFA=+;
     float:left;
     left:4px;
     top:2px;
+
+
 }
 
 .toggle .lines {
@@ -579,24 +581,15 @@ color: #FFFFFA=+;
 
 .sliderarrow {
     display: flex;
-    margin-top: 80px;
-    margin-left: 1px;
-    -webkit-transform-origin: 50% 50%;
--moz-transform-origin: 50% 50%;
--o-transform-origin: 50% 50%;
-transform-origin: 50% 50%;
+    margin-top: 50px;
+    padding-top: 50px;
     color: white;
-    animation: rotate 1s backwards;
 }
 
 .sliderarrow2 {
     display: flex;
-    margin-top: 80px;
-    margin-left: 1px;
-    -webkit-transform-origin: 50% 50%;
--moz-transform-origin: 50% 50%;
--o-transform-origin: 50% 50%;
-transform-origin: 50% 50%;
+    margin-top: 50px;
+    padding-top: 50px;
     color: white;
     animation: rotate 1s forwards;
 }
@@ -612,12 +605,9 @@ transform-origin: 50% 50%;
 
 
 }
+
+
 .gmnoprint {
-    
-}
-
-
-.gm-style-mtc {
     z-index: 1000 !important;
-    /*margin-left: 60px !important;*/
+    margin-left: 60px !important;
 }
