@@ -377,7 +377,7 @@ color: #FFFFFA=+;
     top:0;
     left:0;
     white-space:no-wrap;
-    
+
 
 }
 .slidecontainer .slide {
@@ -389,8 +389,8 @@ color: #FFFFFA=+;
     left:-240px;
     z-index: 95;
     overflow: auto;
-    
-} 
+
+}
 .slidecontainer .slide ul {
     padding:0px;
     margin:0px;
@@ -408,7 +408,7 @@ color: #FFFFFA=+;
     color:#757575;
     font-weight:400;
     font-size:18;
-    
+
 }
 
 .slidecontainer .slide ul li:hover  {
@@ -419,16 +419,26 @@ color: #FFFFFA=+;
 
 .slidecontainer .content {
     padding: 30px 80px;
-    
+
 }
 
 .slidecontainer .area {
-    height:100%;
-    width:50px;
+    width:30px;
     position:absolute;
-    background-color:rgb(63,81,181);
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.26);
     z-index: 100;
+		background-color: rgba(45, 42, 42, 0.7);
+		margin-top:100px;
+		height:200px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+}
+
+.area:hover {
+    background-color: rgba(45, 42, 42, 0.9);
 }
 
 .toggle {
@@ -439,8 +449,6 @@ color: #FFFFFA=+;
     float:left;
     left:4px;
     top:2px;
-    
-    
 }
 
 .toggle .lines {
@@ -451,14 +459,14 @@ color: #FFFFFA=+;
     margin-bottom: 4px;
     transition-duration: .2s;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
-    
-    
+
+
 }
 
 
 .menu-open {
     left:240px;
-    
+
 }
 
 .opacity {
@@ -487,18 +495,18 @@ color: #FFFFFA=+;
     0% {
         opacity:0;
     }
-    
+
     25% ,50%, 75%, 100%{
         opacity:.5
     }
-    
+
 
 }
 
 .toggle .bars2 {
     transform: rotate(180deg);
     margin-left:4px;
-    
+
 }
 
 
@@ -514,7 +522,7 @@ color: #FFFFFA=+;
     overflow:hidden;
     height:335px;
     transition: all .5s ease-in-out;
-    
+
 }
 
 .accord ul {
@@ -532,7 +540,7 @@ color: #FFFFFA=+;
     position:relative;
     transition: all .6s ease-in-out;
 
-    
+
 }
 
 .accord ul:hover  li {
@@ -547,7 +555,7 @@ color: #FFFFFA=+;
     transition:all .7s ease-in-out;
     bottom:5px;
 
-    
+
 
 }
 .accord  .title {
@@ -565,7 +573,7 @@ color: #FFFFFA=+;
     padding: 10px;
     background-color: rgba(0,0,0,.7);
     transition:all .5s ease-in-out;
-    
+
 }
 
 .sliderarrow {
@@ -587,11 +595,11 @@ color: #FFFFFA=+;
     0% {
         transform: rotate(0deg);
     }
-    
+
     25% ,50%, 75%, 100%{
         transform: rotate(180deg);
     }
-    
+
 
 }
 
@@ -600,6 +608,3 @@ color: #FFFFFA=+;
     z-index: 1000 !important;
     margin-left: 60px !important;
 }
-
-
-
