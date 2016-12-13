@@ -105,16 +105,16 @@
 	<div class="slidecontainer">
 			<div class="slide">
 				<ul class="sliderContent" id = "sliderContent">
-					<li><a href="#">Markets</a></li>
+					<li><a href="#"><b>Markets</b></a></li>
 				</ul>
 			</div>
 		
 		<div class="area">
 			<div class="sliderarrow"> 
-				<img src="images/rightarrow.png">
+				<img src="images/rightarrow.png" width="40" height="40">
 			</div>
 		</div>
-		<div class="opacity"></div>
+		<!--<div class="opacity"></div>-->
 		<a href="#" class="toggle">
 		<i class="fa fa-arrow-right bars" aria-hidden="true"></i>
 		</a>
@@ -129,12 +129,12 @@
 		$(".bars").toggleClass("bars2");
 		$(".sliderarrow").toggleClass("sliderarrow2");
 	});
-	$(".opacity").click(function(){
+	/*$(".opacity").click(function(){
 		$(".slidecontainer").toggleClass("menu-open");
 		$(".opacity").toggleClass("opacity2");
 		$(".bars").toggleClass("bars2");
 		$(".sliderarrow").toggleClass("sliderarrow2");
-	});
+	});*/
 });
 
 	</script>
@@ -151,7 +151,8 @@
 					$('#ZippyZip').keypress(function (e) {
  					 if (e.which == 13) {
  					 	searchFor();
-   						 codeAddress();
+ 					 	var address = document.getElementById('ZippyZip').value;
+   						 codeAddress(address);
    						 scrollToLocation();
 
    						 //THIS CODE GETS THE STATES AND THE COUNTS
@@ -170,7 +171,8 @@
 					//search by clicking search button
 					$('.btn').click(function() {
 						searchFor();
-						codeAddress();
+						var address = document.getElementById('ZippyZip').value;
+   						 codeAddress(address);
 						scrollToLocation();
   					});
 
