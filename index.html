@@ -6,10 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
@@ -27,6 +25,8 @@
 <!-- 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 	<script src="https://use.fontawesome.com/8af70e38e3.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 
@@ -62,6 +62,7 @@
 	      	<li><a href="html/about.html"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i> About</a></li>
 	      	<li><a href="html/ambassadors.html"><i class="fa fa-link fa-1x" aria-hidden="true"></i> Ambassadors</a></li>
 	      	<li><a href="html/contact.html"><i class="fa fa-phone fa-1x" aria-hidden="true"></i> Contact</a></li>
+					<li><a href="html/datavis.html"><i class="fa fa-question-circle fa-1x" aria-hidden="true"></i> Datavis</a></li>
 	      </ul>
 
 	      <ul class="nav navbar-nav navbar-right">
@@ -97,9 +98,6 @@
 		</div>
 	</div>
 
-
-		
-
 	<div id="gmap">
 
 	<div class="slidecontainer">
@@ -111,7 +109,7 @@
 		
 		<div class="area">
 			<div class="sliderarrow"> 
-				<img src="images/rightarrow.png" width="40" height="40">
+				<img src="images/rightarrow.png" width="27" height="27">
 			</div>
 		</div>
 		<!--<div class="opacity"></div>-->
@@ -141,6 +139,7 @@
 
 
 
+
 			<div id="map">
 				<script>
 					var geocoder;
@@ -156,14 +155,14 @@
    						 scrollToLocation();
 
    						 //THIS CODE GETS THE STATES AND THE COUNTS
-   						/*var loadReq = new XMLHttpRequest();
+   						var loadReq = new XMLHttpRequest();
    						loadReq.open("GET", "/getStateCount", true);
 					  	loadReq.send('s');
 					  	loadReq.addEventListener("load", loadResponse);
 					  	function loadResponse(){
 					  		//console.log(" req.responseText: "+oReq.response);
 					  		console.log(JSON.parse(loadReq.response));
-					  	}*/
+					  	}
 
    						 return false;    //<---- Add this line
   						}
@@ -225,66 +224,13 @@
 			</div>
 	</div>
 
-	<div class="container" id="visuals">
-		<div class="container" id="vis1">
-			<div id="chartContainer">
-		      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
-		      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
-		      <script type="text/javascript">
-				var width = document.body.clientWidth;
-		        var svg = dimple.newSvg("#chartContainer", width, 1000);
-						svg.append("text")
-							.attr("x", (width*.75)/2+10)
-							.attr("y", 15)
-							.attr("text-anchor", "middle")
-							.style("font-size", "18px")
-							.style("font-weight", "bold")
-							.style("font-family", "Abel")
-							.text("Number of Farmers' Markets by State");
-		        d3.csv("/farm_data/states.csv", function(data) {
-		            var myChart = new dimple.chart(svg, data);
-
-		            myChart.setBounds(25, 30, (width*.75), 870)
-		            var x = myChart.addCategoryAxis("x", ["State"]);
-								x.title = "States"
-		            var y = myChart.addMeasureAxis("y", "Amount");
-								y.title = "Number of Markets"
-		            var s = myChart.addSeries("State", dimple.plot.bar);
-		            //s.barGap = 0.05;
-		            myChart.draw();
-		        });
-		      </script>
-		    </div>
-		</div>
-		<div class="container" id="vis2">
-		    <div id="chartContainertwo">
-		      <!-- <script src="http://d3js.org/d3.v3.min.js"></script> -->
-		      <!-- <script src="http://dimplejs.org/dist/dimple.v2.1.2.min.js"></script> -->
-		      <script type="text/javascript">
-						var width = document.body.clientWidth;
-		        var svg2 = dimple.newSvg("#chartContainertwo", width, 1000);
-						svg2.append("text")
-							.attr("x", (width*.7)/2)
-							.attr("y", 15)
-							.attr("text-anchor", "middle")
-							.style("font-size", "18px")
-							.style("font-weight", "bold")
-							.style("font-family", "Abel")
-							.text("A Collective Visual: Farmers Markets' by State");
-		        d3.csv("/farm_data/states.csv", function (data) {
-		          var myChart2 = new dimple.chart(svg2, data);
-
-		          myChart2.setBounds(15, 30, (width*.7), 900)
-		          myChart2.addMeasureAxis("p", "Amount");
-		          var ring = myChart2.addSeries("State", dimple.plot.pie);
-		          ring.innerRadius = "50%";
-		          myChart2.addLegend((width*.7), 15, 90, 750, "left");
-		          myChart2.draw();
-		        });
-		      </script>
-		    </div>
-		</div>
+	<div height="50">asdasdasd
 	</div>
+
+
+	</div>
+
+
 
   <nav class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
 	  <div class="container-fluid">
