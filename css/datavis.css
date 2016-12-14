@@ -90,6 +90,19 @@ body {
 	font-family: 'Abel', sans-serif;
 }
 
+#footer, #footer a, #footer .navbar-text {
+		margin: 20px 0 0 0;
+    color: #9d9d9d;
+    width: 100%;
+		text-decoration: none;
+		font-size: 10px;
+}
+
+#footer a:visited {
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
 a:link {
 color: #FFFFFF;
 }
