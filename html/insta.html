@@ -62,33 +62,20 @@
   			  Use the hashtag #localland to be featured!
   			</p>
         <div id="instafeed">
-        <script>
+        <script type="text/javascript">
 
       /** THIS JUST RETURNS MY FEED **/
           var feed = new Instafeed({
-            get: 'user',
+            get: 'tagged',
+            tagName: 'localcrops',
             userId: '52153903',
-            accessToken: '52153903.1677ed0.f6b30774acc14313add04b89810caf70',
+            accessToken: '52153903.ba4c844.677539e551af4edabbd89c8d905537af',
+            limit: '100'
           });
           feed.run();
       </script>
   		</div>
   	</div>
   </div>
-
-
-
-<!--THIS IS NOT WORKING YET... ACCESSING PUBLIC DATA.... TODO: FIND ISSUE!
-    var feed = new Instafeed({
-      get: 'tagged',
-      tagName: 'twiglets',
-      accessToken: '52153903.1677ed0.f6b30774acc14313add04b89810caf70',
-      sortBy: 'most-recent',
-      limit: '21'
-    });
-    feed.run();
-***/
--->
-
   </body>
 </html>
