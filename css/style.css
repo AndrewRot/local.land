@@ -229,7 +229,7 @@ hr {
 #return-to-top {
     position: fixed;
     bottom: 50px;
-    right: 20px;
+    right: 45px;
     background: rgb(45, 42, 42);
     background: rgba(45, 42, 42, 0.7);
     width: 50px;
@@ -615,5 +615,5 @@ color: #FFFFFA=+;
 
 .gmnoprint {
     z-index: 1000 !important;
-    margin-left: 60px !important;
+    /*margin-left: 60px !important;*/
 }
