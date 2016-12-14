@@ -1,0 +1,126 @@
+body {
+  background-color: black;
+	background-image: url('../images/raspberries.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-attachment: fixed;
+	background-position: center;
+	padding-top: 70px;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+			 0px 8px 13px rgba(0,0,0,0.1),
+			 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(45, 42, 42);
+    background: rgba(45, 42, 42, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(45, 42, 42, 0.9);
+}
+
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+#instafeed {
+  margin-top: 20px;
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: #222;
+	color: #FFFFFF;
+}
+
+.jumbotron {
+	opacity: .96;
+	padding-bottom: 100px;
+}
+
+#mainBody {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+#circleimgs {
+  height: 200px;
+  width: 100%;
+	display: flex;
+}
+
+.img-circle-kurt, .img-circle-derek, .img-circle-rot {
+  border-radius: 100%;
+  border: 2px solid;
+  border-color: #FFFFFF;
+	margin: 10px;
+}
+
+
+#footer, #footer a, #footer .navbar-text {
+		margin: 20px 0 0 0;
+    color: #9d9d9d;
+    width: 100%;
+		text-decoration: none;
+		font-size: 10px;
+}
+
+#footer a:visited {
+	color: #9d9d9d;
+	text-decoration: none;
+}
+
+h1 {
+	font-weight: 700;
+	font-family: 'Lobster', cursive;
+	font-size: 6em;
+	color: #FFFFFF
+}
+
+figcaption, h3 {
+	font-weight: 500;
+	font-size: 2em;
+	color: #FFFFFF;
+	font-family: 'Abel', sans-serif;
+}
+
+figcaption1 {
+	font-weight: 500;
+	font-size: 1em;
+	color: #FFFFFF;
+	font-family: 'Abel', sans-serif;
+}
+
+label {
+	color: #FFFFFF;
+	font-weight: 500;
+}

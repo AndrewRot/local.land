@@ -3,15 +3,15 @@
   author: Andrew Rottier
 */
 var express = require('express');
-var app = express();
 var path = require('path');
 var qs = require('querystring');
+var app = express();
 //var form = require('express-form');
 
 //var bodyParser = require('body-parser');
 //app.use(bodyParser.json()); // support json encoded bodies
 //app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-  
+
 
 
 var port = process.env.PORT || 8080;
@@ -82,15 +82,15 @@ app.post('/searchMovies', function(req, res){
     //console.log("Lat: "+ lati + ", Lon: "+ long);
     //console.log("************************");
     //calculate the four corners to use later
-    var top = (Math.round(100*lati)/100) +.15; 
+    var top = (Math.round(100*lati)/100) +.15;
     //var top = Math.ceil( lati );
     //var bottom = Math.floor( lati );
-    var bottom = (Math.round(100*lati)/100) -.15; 
+    var bottom = (Math.round(100*lati)/100) -.15;
     //var left = Math.ceil( long  );
-    var left = (Math.round(100*long)/100) +.15; 
+    var left = (Math.round(100*long)/100) +.15;
 
     //var right = Math.floor( long );
-    var right = (Math.round(100*long)/100) -.15; 
+    var right = (Math.round(100*long)/100) -.15;
     //console.log("Top : " + top);
     //console.log("Bottom : " + bottom);
     //console.log("Left : " + left); //maybe?
@@ -104,11 +104,11 @@ app.post('/searchMovies', function(req, res){
       console.log('Unable to connect to the mongoDB server. Error:', err);
     } else {
       console.log('Connection re-established to', url);
-                  
+
       //Create a promise here
       var p1 = new Promise(function(resolve, reject) {
         //console.log("Inside Promise");
-       
+
         var count = 0;
         //Query the areas in the square
         var myCursor = db.collection('markets')
@@ -127,18 +127,18 @@ app.post('/searchMovies', function(req, res){
 
           // If the item is null then the cursor is exhausted/empty and closed
           if(item == null) {
-                        
+
             // Show that the cursor is closed
             myCursor.toArray(function(err, items) {
-                            
+
             //resolve when we get to the end of the query
             //console.log("array length (INSIDE PROMISE): "+ farms.length);
-            
+
             resolve(farms);
             //db.close();
           });
         };
-      });      
+      });
     // reject ("Error!");
     });
 
@@ -177,14 +177,14 @@ app.get('/getStateCount', function(req, res){
 
     //get the name of the collection from the database
     var collection = db.collection('markets');
-              
+
     //Create a promise here
     var p1 = new Promise(function(resolve, reject) {
     //Query the areas in the square
     var myCursor = db.collection('markets').find();
-    
+
     var myMap = new Map();
-      
+
     var count = 0;
     // Execute the each command, triggers for each document
     myCursor.each(function(err, item) {
@@ -201,7 +201,7 @@ app.get('/getStateCount', function(req, res){
       }
       // If the item is null then the cursor is exhausted/empty and closed
       if(item == null) {
-                    
+
       // Show that the cursor is closed
       myCursor.toArray(function(err, items) {
         //console.log("Count: "+count);
@@ -210,7 +210,7 @@ app.get('/getStateCount', function(req, res){
         //db.close();
       });
     };
-  });          
+  });
    // reject ("Error!");
   });
 
@@ -261,17 +261,17 @@ app.get('/getFarm', function(req, res){
 
     //get the name of the collection from the database
     var collection = db.collection('markets');
-              
+
     //Create a promise here
     var p1 = new Promise(function(resolve, reject) {
     //Find farm
     var myCursor = db.collection('markets').find({FMID: farmID});
-    
+
     // Execute the each command, triggers for each document
     myCursor.each(function(err, item) {
       // If the item is null then the cursor is exhausted/empty and closed
       if(item == null) {
-                    
+
       // Show that the cursor is closed
       myCursor.toArray(function(err, items) {
         resolve(item);
@@ -279,12 +279,12 @@ app.get('/getFarm', function(req, res){
         //db.close();
       });
     };
-  });          
+  });
    // reject ("Error!");
   });
 
   p1.then(function(farm) {
- 
+
     //send back data
     res.end(JSON.stringify(Array.from(farm)) );
 
@@ -317,6 +317,3 @@ app.use('/', function(req, res) {
 app.listen(port, function() {
   console.log('App is listening on port ' + port);
 });
-
-
-
