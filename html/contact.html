@@ -3,7 +3,7 @@
 <head>
 	<title>Contact | local.land</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
@@ -12,6 +12,8 @@
 
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	<script src="js/maps.js"  type="text/javascript"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -60,7 +62,7 @@
 			</p>
 
 		<div class="containter-fluid" style="padding-left: 10%; padding-right: 25%;">
-			<form class="form-horizontal" id="testForm" method="post" >
+			<form class="form-horizontal" id="testForm" method="post" onsubmit="return false;">
 			  <div class="form-group" >
 			    <label for="nameField" class="col-sm-3 control-label">Owner's Name</label>
 			    <div class="col-sm-9">
@@ -77,19 +79,19 @@
 			  <div class="form-group">
 			    <label for="street" class="col-sm-3 control-label">Street *</label>
 			    <div class="col-sm-9">
-			      <input type="text" class="form-control" id="street" placeholder="Street" required>
+			      <input type="text" class="form-control" id="street" placeholder="Street" required name="street">
 			    </div>
 			  </div>
 				<div class="form-group">
 			    <label for="city" class="col-sm-3 control-label">City *</label>
 			    <div class="col-sm-9">
-			      <input type="text" class="form-control" id="city" placeholder="City" required>
+			      <input type="text" class="form-control" id="city" placeholder="City" required name="city">
 			    </div>
 			  </div>
 				<div class="form-group">
 			    <label for="county" class="col-sm-3 control-label">County</label>
 			    <div class="col-sm-9">
-			      <input type="text" class="form-control" id="county" placeholder="County">
+			      <input type="text" class="form-control" id="county" placeholder="County" name="county">
 			    </div>
 			  </div>
 				<!--<div class="form-group">
@@ -101,7 +103,7 @@
 				<div class="form-group">
 					<label for="state" class="col-sm-3 control-label">State *</label>
 					<div class="col-sm-9">
-					  <select class="form-control " id="sel1">
+					  <select class="form-control " id="sel1" name="state">
 					    <option>Alabama</option>
 						<option>Alaska</option>
 						<option>Arizona</option>
@@ -159,7 +161,7 @@
 			  <div class="form-group">
 			    <label for="zipCode" class="col-sm-3 control-label">Zip Code *</label>
 			    <div class="col-sm-9">
-			      <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" pattern=".{5}" required title="Zip Code Must Be 5 Numbers">
+			      <input type="text" class="form-control" id="zipCode" placeholder="Zip Code" pattern=".{5}" required title="Zip Code Must Be 5 Numbers" name="zip">
 			    </div>
 			  </div>
 			  <div class="form-group">
@@ -181,25 +183,25 @@
 			  	<div class="form-group">
 					<label for="website" class="col-sm-3 control-label">Website</label>
 					<div class="col-sm-9">
-						<input type="text" class="form-control" id="Website" placeholder="Website" >
+						<input type="text" class="form-control" id="Website" placeholder="Website" name="website">
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="fb" class="col-sm-3 control-label">Facebook</label>
 					<div class="col-sm-9">
-						<input type="text" class="form-control" id="fb" placeholder="fb" >
+						<input type="text" class="form-control" id="fb" placeholder="fb" name="facebook">
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="twit" class="col-sm-3 control-label">Twitter</label>
 					<div class="col-sm-9">
-						<input type="text" class="form-control" id="twit" placeholder="twit" >
+						<input type="text" class="form-control" id="twit" placeholder="twit" name="twitter">
 					</div>
 				</div>
 				<div class="form-group">
 					<label for="youtube" class="col-sm-3 control-label">Youtube</label>
 					<div class="col-sm-9">
-						<input type="text" class="form-control" id="youtube" placeholder="youtube" >
+						<input type="text" class="form-control" id="youtube" placeholder="youtube" name="youtube">
 					</div>
 				</div>
 
@@ -212,7 +214,7 @@
 				<div class="form-group">
 				   	<label for="onth" class="col-sm-3 control-label">Month *</label>
 					<div class="col-sm-9">
-					  <select class="form-control " id="sel1">
+					  <select class="form-control " id="sel1" name="month">
 					    <option>January</option>
 						<option>February</option>
 						<option>March</option>
@@ -232,28 +234,28 @@
 				   	<label for="day" class="col-sm-3 control-label">Day *</label>
 
 							<div class="checkbox col-sm-2">
-								<label><input type="checkbox" value="" >Su    </label>
+								<label><input type="checkbox" value="" name="sunday">Su    </label>
 							</div>
 							<div class="checkbox col-sm-2">
-								<label><input type="checkbox" value="">M    </label>
+								<label><input type="checkbox" value="" name="monday">M    </label>
 							</div>
 							<div class="checkbox col-sm-2">
-								<label><input type="checkbox" value="">T    </label>
+								<label><input type="checkbox" value="" name="tuesday">T    </label>
 							</div>
 							<div class="checkbox col-sm-2">
-								<label><input type="checkbox" value="">W    </label>
+								<label><input type="checkbox" value="" name="wednesday">W    </label>
 							</div>
 							<div class="checkbox col-sm-1"> </div>
 							<div class="checkbox col-sm-3"> </div>
 
 							<div class="checkbox col-sm-2">
-								<label><input type="checkbox" value="">R    </label>
+								<label><input type="checkbox" value="" name="thursday">R    </label>
 							</div>
 							<div class="checkbox col-sm-2">
-								<label><input type="checkbox" value="">F    </label>
+								<label><input type="checkbox" value="" name="friday">F    </label>
 							</div>
 							<div class="checkbox col-sm-2">
-								<label><input type="checkbox" value="">Sa    </label>
+								<label><input type="checkbox" value="" name="saturday">Sa    </label>
 							</div>
 							<div class="checkbox col-sm-3">
 
@@ -263,7 +265,7 @@
 				  <div class="form-group">
 				    <label for="hours" class="col-sm-3 control-label">Open</label>
 				    <div class="col-sm-3">
-				      <select class="form-control " id="sel1">
+				      <select class="form-control " id="sel1" name="open">
 					    <option>12AM</option>
 						<option>1AM</option>
 						<option>2AM</option>
@@ -292,7 +294,7 @@
 				    </div>
 				    <label for="hours" class="col-sm-3 control-label">Close</label>
 				    <div class="col-sm-3">
-				      <select class="form-control " id="sel1">
+				      <select class="form-control " id="sel1" name = "close">
 					    <option>12AM</option>
 						<option>1AM</option>
 						<option>2AM</option>
@@ -326,96 +328,106 @@
 						<div class="row">
 						<div class="col-sm-4">
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Organic</label>
+
+
+
+								<label><input type="checkbox" value="" name="organic">Organic</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Baked Goods</label>
+								<label><input type="checkbox" value="" name="bakedgoods">Baked Goods</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Cheese</label>
+								<label><input type="checkbox" value="" name="cheese">Cheese</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Crafts</label>
+								<label><input type="checkbox" value="" name="crafts">Crafts</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Flowers</label>
+								<label><input type="checkbox" value="" name="flowers">Flowers</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Eggs</label>
+								<label><input type="checkbox" value="" name="eggs">Eggs</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Seafood</label>
+								<label><input type="checkbox" value="" name="seafood">Seafood</label>
+							</div>
+
+
+
+							<div class="checkbox">
+								<label><input type="checkbox" value="" name="herbs">Herbs</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Herbs</label>
+								<label><input type="checkbox" value="" name="vegetables">Vegetables</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Vegetables</label>
+								<label><input type="checkbox" value="" name="honey">Honey</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Honey</label>
+								<label><input type="checkbox" value="" name="jams">Jams</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Jams</label>
+								<label><input type="checkbox" value="" name="maple">Maple</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Maple</label>
+								<label><input type="checkbox" value="" name="meat">Meat</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Meat</label>
+								<label><input type="checkbox" value="" name="nursery">Nursery</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Nursery</label>
+								<label><input type="checkbox" value="" name="nuts">Nuts</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Nuts</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="">Plants</label>
+								<label><input type="checkbox" value="" name="plants">Plants</label>
 							</div>
 						</div>
 						<div class="col-sm-4">
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Poultry</label>
+
+
+				
+
+								<label><input type="checkbox" value="" name="poultry">Poultry</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Prepared</label>
+								<label><input type="checkbox" value="" name="prepared">Prepared</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Soap</label>
+								<label><input type="checkbox" value="" name="soap">Soap</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Trees</label>
+								<label><input type="checkbox" value="" name="trees">Trees</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Wine</label>
+								<label><input type="checkbox" value="" name="wine">Wine</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Coffee</label>
+								<label><input type="checkbox" value="" name="coffee">Coffee</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Beans</label>
+								<label><input type="checkbox" value="" name="beans">Beans</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Fruits</label>
+								<label><input type="checkbox" value="" name="fruits">Fruits</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Grains</label>
+								<label><input type="checkbox" value="" name="grains">Grains</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Juices</label>
+								<label><input type="checkbox" value="" name="juices">Juices</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Mushrooms</label>
+								<label><input type="checkbox" value="" name="mushrooms">Mushrooms</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Pet Food</label>
+								<label><input type="checkbox" value="" name="petfood">Pet Food</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Tofu</label>
+								<label><input type="checkbox" value="" name="tofu">Tofu</label>
 							</div>
 							<div class="checkbox">
-								<label><input type="checkbox" value="">Wild Harvested</label>
+								<label><input type="checkbox" value="" name="wildharvested">Wild Harvested</label>
 							</div>
 						</div>
 					</div>
@@ -469,36 +481,126 @@
 
 		 function submitButtonHandler (evt) {
 		 	console.log("Contact POST!")
-     	var testForm = document.getElementById('testForm');
+     		var testForm = document.getElementById('testForm');
 
-      	//prevent form submission
-      	/*evt.preventDefault();
-      	evt.stopPropagation();
+     		//get the x and y
+var address = testForm.street.value + ', ' + testForm.city.value + ' ' + testForm.state.value;//document.getElementById('address').value;
 
-	      $('#post-results-container').fadeOut();
-	      $('.ajaxLoader').css('display', 'inline-block');*/
+	var x = 0;
+	var y = 0;
+
+    //var address = document.getElementById('address').value;
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == 'OK') {
+      	x = results[0].geometry.location.lat();
+      	y = results[0].geometry.location.lng();
+      	console.log("Contact location x: "+ results[0].geometry.location.lat());
+		console.log("Contact location y: "+ results[0].geometry.location.lng());
 
 
-      //make the AJAX call
+
+		//make the AJAX call
       $.ajax({
         url: '/form',
         type: 'POST',
         data: {
           //firstName: testForm.firstName.value,
-          MarketName: testForm.MarketName.value
-        },
+          MarketName: testForm.MarketName.value,
+          street: testForm.street.value,
+          city: testForm.city.value,
+          county: testForm.county.value,
+          state: testForm.state.value,
+          zip: testForm.zip.value,
+          website: testForm.website.value,
+          facebook: testForm.facebook.value,
+          twitter: testForm.twitter.value,
+          youtube: testForm.youtube.value,
+          month: testForm.month.value,
+
+          sunday: testForm.sunday.checked,
+          monday: testForm.monday.checked,
+          tuesday: testForm.tuesday.checked,
+          wednesday: testForm.wednesday.checked,
+          thursday: testForm.thursday.checked,
+          friday: testForm.friday.checked,
+          saturday: testForm.saturday.checked,
+
+          open: testForm.open.value,
+          close: testForm.close.value,
+
+          x: x,
+          y: y,
+
+
+          organic: testForm.organic.checked,
+          bakedgoods: testForm.bakedgoods.checked,
+          cheese: testForm.cheese.checked,
+          crafts: testForm.crafts.checked,
+          flowers: testForm.flowers.checked,
+          eggs: testForm.eggs.checked,
+          seafood: testForm.seafood.checked,
+          herbs: testForm.herbs.checked,
+          vegetables: testForm.vegetables.checked,
+          honey: testForm.honey.checked,
+          jams: testForm.jams.checked,
+          maple: testForm.maple.checked,
+          meat: testForm.meat.checked,
+          nursery: testForm.nursery.checked,
+          nuts: testForm.nuts.checked,
+          plants: testForm.plants.checked,
+
+          poultry: testForm.poultry.checked,
+          prepared: testForm.prepared.checked,
+          soap: testForm.soap.checked,
+          trees: testForm.trees.checked,
+          wine: testForm.wine.checked,
+          coffee: testForm.coffee.checked,
+          beans: testForm.beans.checked,
+          fruits: testForm.fruits.checked,
+          grains: testForm.grains.checked,
+          juices: testForm.juices.checked,
+          mushrooms: testForm.mushrooms.checked,
+          petfood: testForm.petfood.checked,
+          tofu: testForm.tofu.checked,
+          wildharvested: testForm.wildharvested.checked
+
+
+
+        }
         //success: postSuccessHandler
       });
 
+        //map.setCenter(results[0].geometry.location);
+        //var marker = new google.maps.Marker({
+        //    map: map,
+        //    position: results[0].geometry.location
+        //});
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+      }
+    });
+  
+
+      	//prevent form submission
+      	/*evt.preventDefault();
+      	evt.stopPropagation();
+
+
+	      $('#post-results-container').fadeOut();
+	      $('.ajaxLoader').css('display', 'inline-block');*/
+
+
+      
 
   }
 
 
 
 	</script>
-
-	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPEdZKfT-QclO5EjLMKGPFS9zuY1mnA-c&callback=initMap"></script>
+	<script type = "text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type = "text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
 
 </body>
 </html>

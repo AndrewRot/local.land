@@ -123,6 +123,24 @@ function popMap(foundMarkets){
     //get position
     var position =  new google.maps.LatLng(foundMarkets.y, foundMarkets.x);
 
+    //or get the x and y from the street/city combo
+    /*var geocoder = new google.maps.Geocoder();
+    var address = foundMarkets.street + ', ' + foundMarkets.city + ' ' + foundMarkets.State;//document.getElementById('address').value;
+    console.log("ADDRESS: "+ address);
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == 'OK') {
+        position = results[0].geometry.location;
+
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
+      }
+    });*/
+
     //switch to datapassed from DB
     var marker = new google.maps.Marker({
       position: position,

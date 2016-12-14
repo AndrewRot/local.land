@@ -11,7 +11,9 @@ var qs = require('querystring');
 //var bodyParser = require('body-parser');
 //app.use(bodyParser.json()); // support json encoded bodies
 //app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-  
+  var bodyParser = require('body-parser');
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 
 var port = process.env.PORT || 8080;
@@ -43,18 +45,162 @@ app.post('/form',function(req, res){
   //res.sendFile(path.join(__dirname, '../index.html'));
   //res.end(JSON.stringify(req.body.MarketName)   );
   //mimic a slow network connection
+
+  
+  //checkboxes
+  //var sunday, monday;
+  //if(x.sunday === false)
+  //  sunday = 'N';
+  //else
+
+
+  //debugging output for the terminal
+  console.log('Market Name: ' + req.body.MarketName );
+  console.log('street: ' + req.body.street );
+  console.log('city: ' + req.body.city );
+  console.log('county: ' + req.body.county );
+  console.log('state: ' + req.body.state );
+
+  console.log('zip: ' + req.body.zip );
+  console.log('website: ' + req.body.website );
+  console.log('facebook: ' + req.body.facebook );
+  console.log('twitter: ' + req.body.twitter );
+  console.log('youtube: ' + req.body.youtube );
+  console.log('month: ' + req.body.month);
+
+  console.log('sunday: ' + req.body.sunday );
+  console.log('monday: ' + req.body.monday );
+  console.log('tuesday: ' + req.body.tuesday );
+  console.log('wednesday: ' + req.body.wednesday );
+  console.log('thursday: ' + req.body.thursday );
+  console.log('friday: ' + req.body.friday);
+
+
+//get all the variables
+  var x = req.body;
+  var MarketName = x.MarketName,
+  street = x.street,
+  city = x.city,
+  county = x.county,
+  state = x.state,
+  zip = x.zip,
+  website = x.website,
+  facebook = x.facebook,
+  twitter = x.twitter,
+  youtube = x.youtube,
+  month = x.month,
+  lat = x.x,
+  lng = x.y;
+
+  //add other fields
+
+
+
+  //connect and insert to mongoDB
+  //db.products.insert( { item: "card", qty: 15 } )
+    // Use connect method to connect to the Server
+  MongoClient.connect(url, function (err, db) {
+  if (err) {
+    console.log('Unable to connect to the mongoDB server. Error:', err);
+  } else {
+    console.log('Connection established to', url);
+
+    //get the name of the collection from the database
+    var collection = db.collection('markets');
+              
+    //Create a promise here
+    var p1 = new Promise(function(resolve, reject) {
+    //Query the areas in the square
+    //db.collection('markets').insert( { MarketName: "card", street: "15" } )
+    db.collection('markets').insert( { MarketName: MarketName, x: lat, y: lng, Website: website, Facebook: facebook, Twitter: twitter, Youtube: youtube, street: street, city: city, County: county, State: state, zip: zip})
+   
+
+    var count = db.collection('markets').find().count();
+    resolve(count);
+    
+  });
+
+  p1.then(function(count) {
+    //loop through hashmap and display counts
+    console.log("Added farm, number of farms: "+ count);
+    //send back data
+    //res.end("end");
+
+
+    //console.log("Number of found markets: "+value); // Success!
+  }, function(reason) {
+    console.log("fail: "+reason); // Error!
+  });
+  }
+
+});
+
+
   res.setHeader('Content-Type', 'application/json');
   setTimeout(function(){
 
     res.send(JSON.stringify({
-      MarketName: req.body.MarketName || null
+      street: req.body.street || null,
+      city: req.body.city || null,
+      county: req.body.county || null,
+      state: req.body.state || null,
+      //MarketName: req.body.MarketName || null
       //lastName: req.body.lastName || null
+      zip: req.body.zip || null,
+          website: req.body.website || null,
+          facebook: req.body.facebook || null,
+          twitter: req.body.twitter || null,
+          youtube: req.body.youtube || null,
+          month: req.body.month || null,
+
+      sunday: req.body.sunday || null,
+      monday: req.body.monday || null,
+      tuesday: req.body.tuesday || null,
+      wednesday: req.body.wednesday || null,
+      thursday: req.body.thursday || null,
+      friday: req.body.friday || null,
+      saturday: req.body.saturday || null,
+
+      open: req.body.open || null,
+      close: req.body.close || null,
+
+      organic: req.body.organic || null,
+          bakedgoods: req.body.bakedgoods || null,
+          cheese: req.body.cheese || null,
+          crafts: req.body.crafts || null,
+          flowers: req.body.flowers || null,
+          eggs: req.body.eggs || null,
+          seafood: req.body.seafood || null,
+          herbs: req.body.herbs || null,
+          vegetables: req.body.vegetables || null,
+          honey: req.body.honey || null,
+          jams: req.body.jams || null,
+          maple: req.body.maple || null,
+          meat: req.body.meat || null,
+          nursery: req.body.nursery || null,
+          nuts: req.body.nuts || null,
+          plants: req.body.plants || null,
+
+          poultry: req.body.poultry || null,
+          prepared: req.body.prepared || null,
+          soap: req.body.soap || null,
+          trees: req.body.trees || null,
+          wine: req.body.wine || null,
+          coffee: req.body.coffee || null,
+          beans: req.body.beans || null,
+          fruits: req.body.fruits || null,
+          grains: req.body.grains || null,
+          juices: req.body.juices || null,
+          mushrooms: req.body.mushrooms || null,
+          petfood: req.body.petfood || null,
+          tofu: req.body.tofu || null,
+          wildharvested: req.body.wildharvested || null
+
     }));
 
-  }, 1000)
+  }, 2000)
 
-  //debugging output for the terminal
-  console.log('you posted: Market Name: ' + req.body.MarketName + ', Last Name: ' + req.body.lastName);
+
 });
 
 
@@ -216,9 +362,9 @@ app.get('/getStateCount', function(req, res){
 
   p1.then(function(myMap) {
     //loop through hashmap and display counts
-    for (var [key, value] of myMap) {
+    //for (var [key, value] of myMap) {
       //console.log("States: " + key + ", "+value);
-    }
+    //}
     //send back data
     res.end(JSON.stringify(Array.from(myMap)) );
 
