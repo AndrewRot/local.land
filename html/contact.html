@@ -497,6 +497,8 @@ var address = testForm.street.value + ', ' + testForm.city.value + ' ' + testFor
       if (status == 'OK') {
       	x = results[0].geometry.location.lat();
       	y = results[0].geometry.location.lng();
+      	x = Number(x);
+      	y = Number(y);
       	console.log("Contact location x: "+ results[0].geometry.location.lat());
 		console.log("Contact location y: "+ results[0].geometry.location.lng());
 

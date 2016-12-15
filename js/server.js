@@ -77,22 +77,40 @@ app.post('/form',function(req, res){
 
 //get all the variables
   var x = req.body;
-  var MarketName = x.MarketName,
+  var FMID = 1234,
+  MarketName = x.MarketName,
+  website = x.website,
+  facebook = x.facebook,
+  twitter = x.twitter,
+  youtube = x.youtube,
+  othermedia = "www.sample.com",
   street = x.street,
   city = x.city,
   county = x.county,
   state = x.state,
   zip = x.zip,
-  website = x.website,
-  facebook = x.facebook,
-  twitter = x.twitter,
-  youtube = x.youtube,
-  month = x.month,
+  
+  Season1Date = x.month,
+  Season1Time = x.open,
+
+  Season2Date = "",
+  Season2Time = "",
+  Season3Date = "",
+  Season3Time = "",
+  Season4Date = "",
+  Season4Time = "",
+
   lat = x.x,
   lng = x.y;
 
+
+
+  console.log("LAT: " + lat);
+  console.log("LNG: " + lng);
   //add other fields
 
+  lat = Number(lat);
+  lng = Number(lng);
 
 
   //connect and insert to mongoDB
@@ -111,10 +129,12 @@ app.post('/form',function(req, res){
     var p1 = new Promise(function(resolve, reject) {
     //Query the areas in the square
     //db.collection('markets').insert( { MarketName: "card", street: "15" } )
-    db.collection('markets').insert( { MarketName: MarketName, x: lat, y: lng, Website: website, Facebook: facebook, Twitter: twitter, Youtube: youtube, street: street, city: city, County: county, State: state, zip: zip})
+    db.collection('markets').insert( { FMID: FMID, MarketName: MarketName, Website: website, Facebook: facebook, Twitter: twitter, Youtube: youtube, street: street, city: city, County: county, State: state, zip: zip, Season1Date: Season1Date, Season1Time: Season1Time, Season2Date: Season2Date, Season2Time: Season2Time, Season3Date: Season3Date, Season3Time: Season3Time, Season4Date: Season4Date, Season4Time: Season4Time, x: lat, y: lng})
    
 
-    var count = db.collection('markets').find().count();
+    //var count = db.collection('markets').find().count(); //count increases
+    var count = db.collection('markets').find({ MarketName: "ANdrew market"}).count();
+
     resolve(count);
     
   });
@@ -236,12 +256,15 @@ app.post('/searchMovies', function(req, res){
 
     //var right = Math.floor( long );
     var right = (Math.round(100*long)/100) -.15;
-    //console.log("Top : " + top);
-    //console.log("Bottom : " + bottom);
-    //console.log("Left : " + left); //maybe?
-    //console.log("Right : " + right);
+    console.log("Top : " + top);
+    console.log("Bottom : " + bottom);
+    console.log("Left : " + left); //maybe?
+    console.log("Right : " + right);
 
     //Chopped good!
+
+    //41.6680138,
+    // -72.860251,
 
     // Use connect method to connect to the Server -MAY BE ABLE TO THROW AWAY THIS DUPLICATE CODE LATER
     MongoClient.connect(url, function (err, db) {
@@ -265,8 +288,9 @@ app.post('/searchMovies', function(req, res){
           if(item != null){
             //Naming of the variables pulled from the DB
             //farms.push({FMID: item.FMID, MarketName: item.MarketName, Website: item.Website, Facebook: item.Facebook, Twitter: item.Twitter, Youtube: item.Youtube, street: item.street, city: item.city, County: item.County, State: item.State, zip: item.zip, Season1Date: item.Season1Date, Season1Time: item.Season1Time, Credit: item.Credit, Organic: item.Organic, Eggs: item.Eggs, Vegetables: item.Vegetables, lat: item.y, lon: item.x, });
+            
             farms.push({FMID: item.FMID, MarketName: item.MarketName, Website: item.Website, Facebook: item.Facebook, Twitter: item.Twitter, Youtube: item.Youtube, OtherMedia: item.OtherMedia, street: item.street, city: item.city, County: item.County, State: item.State, zip: item.zip, Season1Date: item.Season1Date, Season1Time: item.Season1Time, Season2Date: item.Season2Date, Season2Time: item.Season2Time, Season3Date: item.Season3Date, Season3Time: item.Season3Time, Season4Date: item.Season4Date, Season4Time: item.Season4Time, x: item.x, y: item.y, Location: item.Location, Credit: item.Credit, WIC: item.WIC, WICcash: item.WICcash, SFMNP: item.SFMNP, SNAP: item.SNAP, Organic: item.Organic, Bakedgoods: item.Bakedgoods, Cheese: item.Cheese, Crafts: item.Crafts, Flowers: item.Flowers, Eggs: item.Eggs, Seafood: item.Seafood, Herbs: item.Herbs, Vegetables: item.Vegetables, Honey: item.Honey, Jams: item.Jams, Maple: item.Maple, Meat: item.Meat, Nursery: item.Nursery, Nuts: item.Nuts, Plants: item.Plants, Poultry: item.Poultry, Prepared: item.Prepared, Soap: item.Soap, Trees: item.Trees, Wine: item.Wine, Coffee: item.Coffee, Beans: item.Beans, Fruits: item.Fruits, Grains: item.Grains, Juices: item.Juices, Mushrooms: item.Mushrooms, PetFood: item.PetFood, Tofu: item.Tofu, WildHarvested: item.WildHarvested, updateTime: item.updateTime});
-            //console.log(item.MarketName + ", Lat: " + item.y + ", Lon: " + item.x);
+            console.log(item.MarketName + ", Lat: " + item.y + ", Lon: " + item.x);
             count ++;
           }
 
@@ -278,7 +302,7 @@ app.post('/searchMovies', function(req, res){
 
             //resolve when we get to the end of the query
             //console.log("array length (INSIDE PROMISE): "+ farms.length);
-
+            //console.log(items);
             resolve(farms);
             //db.close();
           });
