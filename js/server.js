@@ -112,7 +112,7 @@ app.post('/form',function(req, res){
    
 
     //var count = db.collection('markets').find().count(); //count increases
-    var count = db.collection('markets').find().count();   //This one is finding the 6 farms
+    var count = db.collection('markets').find({MarketName: "ANdrew market"}).count();   //This one is finding the 6 farms
 
     resolve(count);
     
@@ -246,7 +246,8 @@ app.post('/searchFarms', function(req, res){
       var p1 = new Promise(function(resolve, reject) {
         //console.log("Inside Promise");
 
-        var count = db.collection('markets').find().count();
+        //var count = db.collection('markets').find().count();
+         var count = db.collection('markets').find({MarketName: "ANdrew market"}).count(); 
         //Query the areas in the square
         var myCursor = db.collection('markets')
          .find({ $and: [{y: {$lt: top, $gt: bottom} },
