@@ -236,11 +236,9 @@ app.post('/searchFarms', function(req, res){
     console.log("Right : " + right);
 
     //Chopped good!
-
+    // Plainville coords
     //41.6680138,
     // -72.860251,
-
-   
 
       //Create a promise here
       var p1 = new Promise(function(resolve, reject) {
@@ -297,7 +295,7 @@ app.post('/searchFarms', function(req, res){
 
 
 
-
+/*
 app.get('/getStateCount', function(req, res){
   var body = ''
   console.log("Handling Search");
@@ -373,10 +371,10 @@ app.get('/getStateCount', function(req, res){
 }
 )
 });
+*/
 
 
-
-
+/*
 app.get('/getFarm', function(req, res){
   var body = ''
   console.log("Handling Search for Farm ID");
@@ -438,7 +436,7 @@ app.get('/getFarm', function(req, res){
 });
 }
 )
-});
+});*/
 
 
 
