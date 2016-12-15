@@ -29,23 +29,21 @@ var MongoClient = mongodb.MongoClient;
 //var url = 'mongodb://localhost:27017/farmsDB';
 var url = 'mongodb://heroku_x2qwnz17:c5qu6veuv001ia9snr4vut4fg8@ds113678.mlab.com:13678/heroku_x2qwnz17';
 
+//connect to DB, and store DB in db
+var db;
+MongoClient.connect(url, function (err, db1) {
+  if (err) {
+    console.log('Unable to connect to the mongoDB server. Error:', err);
+  } else {
+    console.log('Connection established to', url);
+    db = db1;
+}});
+
 
 // routes will go here
 //tell express what to do when the /about route is requested
 app.post('/form',function(req, res){
-  //res.setHeader('Content-Type', 'text/html');
-  //res.sendFile(path.join(__dirname, '../index.html'));
-  //res.end(JSON.stringify(req.body.MarketName)   );
-  //mimic a slow network connection
-
   
-  //checkboxes
-  //var sunday, monday;
-  //if(x.sunday === false)
-  //  sunday = 'N';
-  //else
-
-
   //debugging output for the terminal
   console.log('Market Name: ' + req.body.MarketName );
   console.log('street: ' + req.body.street );
@@ -95,31 +93,19 @@ app.post('/form',function(req, res){
 
   lat = x.x,
   lng = x.y;
-
-
-
   console.log("LAT: " + lat);
   console.log("LNG: " + lng);
   //add other fields
-
   lat = Number(lat);
   lng = Number(lng);
 
 
-  //connect and insert to mongoDB
-  //db.products.insert( { item: "card", qty: 15 } )
-    // Use connect method to connect to the Server
-  MongoClient.connect(url, function (err, db) {
-  if (err) {
-    console.log('Unable to connect to the mongoDB server. Error:', err);
-  } else {
-    console.log('Connection established to', url);
-
+ 
     //get the name of the collection from the database
     var collection = db.collection('markets');
               
-    //Create a promise here
-    var p1 = new Promise(function(resolve, reject) {
+  //Create a promise here
+   var p1 = new Promise(function(resolve, reject) {
     //Query the areas in the square
     //db.collection('markets').insert( { MarketName: "card", street: "15" } )
     db.collection('markets').insert( { FMID: FMID, MarketName: MarketName, Website: website, Facebook: facebook, Twitter: twitter, Youtube: youtube, street: street, city: city, County: county, State: state, zip: zip, Season1Date: Season1Date, Season1Time: Season1Time, Season2Date: Season2Date, Season2Time: Season2Time, Season3Date: Season3Date, Season3Time: Season3Time, Season4Date: Season4Date, Season4Time: Season4Time, x: lat, y: lng})
@@ -143,9 +129,7 @@ app.post('/form',function(req, res){
   }, function(reason) {
     console.log("fail: "+reason); // Error!
   });
-  }
-
-});
+ 
 
 
   res.setHeader('Content-Type', 'application/json');
@@ -256,12 +240,7 @@ app.post('/searchFarms', function(req, res){
     //41.6680138,
     // -72.860251,
 
-    // Use connect method to connect to the Server -MAY BE ABLE TO THROW AWAY THIS DUPLICATE CODE LATER
-    MongoClient.connect(url, function (err, db) {
-    if (err) {
-      console.log('Unable to connect to the mongoDB server. Error:', err);
-    } else {
-      console.log('Connection re-established to', url);
+   
 
       //Create a promise here
       var p1 = new Promise(function(resolve, reject) {
@@ -311,8 +290,7 @@ app.post('/searchFarms', function(req, res){
       console.log("fail: "+reason); // Error!
       //fill in res.end with error
     });
-  }
-  });
+
   });
 });
 
