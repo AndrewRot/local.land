@@ -119,6 +119,7 @@ function popMap(foundMarkets){
   };
 
   function addMarker(foundMarkets) {
+    console.log("MARKET NAME: "+foundMarkets.MarketName);
 
     //get position
     var position =  new google.maps.LatLng(foundMarkets.y, foundMarkets.x);
@@ -234,15 +235,6 @@ function popMap(foundMarkets){
 
   
 
-  
-  //first is always undefined?
-  //for (var i = 1; i < foundMarkets.length; i++) {
-    //sliderContent = sliderContent + slidePanel(foundMarkets[i]);
-    
-  //}
-  //sc.innerHTML = ""; //clear out old content
-  //document.getElementById('sliderContent').innerHTML = "";
-  //sc.innerHTML = sliderContent;
 
 
 
