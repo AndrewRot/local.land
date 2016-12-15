@@ -214,7 +214,7 @@
 				<br>
 
 				<div class="form-group">
-				   	<label for="onth" class="col-sm-3 control-label">Month *</label>
+				   	<label for="onth" class="col-sm-3 control-label">Start Month</label>
 					<div class="col-sm-9">
 					  <select class="form-control " id="sel1" name="month">
 					    <option>January</option>
@@ -232,6 +232,26 @@
 					  </select>
 					  </div>
 				  </div>
+				  <div class="form-group">
+				   	<label for="onth" class="col-sm-3 control-label">End Month</label>
+					<div class="col-sm-9">
+					  <select class="form-control " id="sel2" name="month2">
+					    <option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+						<option>June</option>
+						<option>July</option>
+						<option>August</option>
+						<option>September</option>
+						<option>October</option>
+						<option>November</option>
+						<option>December</option>
+					  </select>
+					  </div>
+				  </div>
+
 				  <div class="form-group">
 				   	<label for="day" class="col-sm-3 control-label">Day *</label>
 
@@ -491,7 +511,7 @@ var address = testForm.street.value + ', ' + testForm.city.value + ' ' + testFor
 	var x = 0;
 	var y = 0;
 
-    //var address = document.getElementById('address').value;
+    //convert street address 
     var geocoder = new google.maps.Geocoder();
     geocoder.geocode( { 'address': address}, function(results, status) {
       if (status == 'OK') {
@@ -503,6 +523,7 @@ var address = testForm.street.value + ', ' + testForm.city.value + ' ' + testFor
 		console.log("Contact location y: "+ results[0].geometry.location.lng());
 
 
+		console.log("ORGANIC?: "+testForm.organic.checked);
 
 		//make the AJAX call
       $.ajax({
@@ -520,7 +541,9 @@ var address = testForm.street.value + ', ' + testForm.city.value + ' ' + testFor
           facebook: testForm.facebook.value,
           twitter: testForm.twitter.value,
           youtube: testForm.youtube.value,
+
           month: testForm.month.value,
+          month2: testForm.month2.value,
 
           sunday: testForm.sunday.checked,
           monday: testForm.monday.checked,
@@ -585,21 +608,13 @@ var address = testForm.street.value + ', ' + testForm.city.value + ' ' + testFor
       }
     });
 
-
       	//prevent form submission
       	/*evt.preventDefault();
       	evt.stopPropagation();
-
-
 	      $('#post-results-container').fadeOut();
 	      $('.ajaxLoader').css('display', 'inline-block');*/
 
-
-
-
   }
-
-
 
 	</script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPEdZKfT-QclO5EjLMKGPFS9zuY1mnA-c&callback=initMap"></script>

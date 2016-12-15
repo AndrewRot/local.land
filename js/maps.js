@@ -163,8 +163,9 @@ function popMap(foundMarkets){
       getIcons(foundMarkets);
       '</div> </div> </div>';
     var footerString = 
-      '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
-      '<button type="button" class="btn btn-primary">Save Market</button>';
+      '<p> Market found on: 12/15/2017 </p>';
+      //'<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
+      //'<button type="button" class="btn btn-primary">Save Market</button>';
 
 
     //infowindow = new google.maps.InfoWindow({
@@ -232,9 +233,6 @@ function popMap(foundMarkets){
     for (var i = 1; i < foundMarkets.length; i++) {
       addMarker(foundMarkets[i]);
     }
-
-  
-
 
 
 

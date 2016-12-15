@@ -81,8 +81,11 @@ app.post('/form',function(req, res){
   state = x.state,
   zip = x.zip,
   
-  Season1Date = x.month,
-  Season1Time = x.open,
+  Season1Date = x.month + " to " + x.month2,
+
+
+
+  Season1Time = x.open + " - " + x.close,
 
   Season2Date = "",
   Season2Time = "",
@@ -95,11 +98,79 @@ app.post('/form',function(req, res){
   lng = x.y;
   console.log("LAT: " + lat);
   console.log("LNG: " + lng);
-  //add other fields
   lat = Number(lat);
   lng = Number(lng);
 
 
+//****
+//true = Y
+
+  var organic= x.organic,
+          bakedgoods= x.bakedgoods,
+          cheese= x.cheese,
+          crafts= x.crafts,
+          flowers= x.flowers,
+          eggs= x.eggs,
+          seafood= x.seafood,
+          herbs= x.herbs,
+          vegetables= x.vegetables,
+          honey= x.honey,
+          jams= x.jams,
+          maple= x.maple,
+          meat= x.meat,
+          nursery= x.nursery,
+          nuts= x.nuts,
+          plants= x.plants,
+
+          poultry= x.poultry,
+          prepared= x.prepared,
+          soap= x.soap,
+          trees= x.trees,
+          wine= x.wine,
+          coffee= x.coffee,
+          beans= x.beans,
+          fruits= x.fruits,
+          grains= x.grains,
+          juices= x.juices,
+          mushrooms= x.mushrooms,
+          petfood= x.petfood,
+          tofu= x.tofu,
+          wildharvested= x.wildharvested;
+
+            if( x.organic ){organic = "Y"}else{organic = "N"}
+          if( x.bakedgoods ){bakedgoods = "Y"}else{bakedgoods = "N"}
+           if( x.cheese ){cheese = "Y"}else{cheese = "N"}
+          if( x.crafts ){crafts = "Y"}else{crafts = "N"}
+          if( x.flowers ){flowers = "Y"}else{flowers = "N"}
+          if( x.eggs ){eggs = "Y"}else{eggs = "N"}
+          if( x.seafood ){seafood = "Y"}else{seafood = "N"}
+           if( x.herbs ){herbs ="Y"}else{herbs ="N"}
+           if( x.vegetables ){vegetables ="Y"}else{vegetables ="N"}
+          if( x.honey ){honey = "Y"}else{honey = "N"}
+          if( x.jams ){jams = "Y"}else{jams = "N"}
+           if( x.maple ){maple ="Y"}else{maple ="N"}
+         if( x.meat ){ meat = "Y"}else{ meat = "N"}
+          if( x.nursery ){nursery = "Y"}else{nursery = "N"}
+          if( x.nuts ){nuts = "Y"}else{nuts = "N"}
+           if( x.plants ){plants ="Y"}else{plants ="N"}
+
+           if( x.poultry ){poultry ="Y"}else{poultry ="N"}
+           if( x.prepared ){prepared ="Y"}else{prepared ="N"}
+           if( x.soap ){soap ="Y"}else{soap ="N"}
+          if( x.trees ){trees = "Y"}else{trees = "N"}
+           if( x.wine ){wine ="Y"}else{wine ="N"}
+           if( x.coffee ){coffee ="Y"}else{coffee ="N"}
+          if( x.beans ){beans = "Y"}else{beans = "N"}
+           if( x.fruits ){fruits ="Y"}else{fruits ="N"}
+          if( x.grains ){grains = "Y"}else{grains = "N"}
+          if( x.juices ){juices = "Y"}else{juices = "N"}
+          if( x.mushrooms ){mushrooms = "Y"}else{mushrooms = "N"}
+           if( x.petfood ){petfood ="Y"}else{petfood ="N"}
+          if( x.tofu ){tofu = "Y"}else{tofu = "N"}
+           if( x.wildharvested ){wildharvested = "Y"} else {wildharvested = "N"};
+
+
+//****
  
     //get the name of the collection from the database
     var collection = db.collection('markets');
@@ -108,7 +179,37 @@ app.post('/form',function(req, res){
    var p1 = new Promise(function(resolve, reject) {
     //Query the areas in the square
     //db.collection('markets').insert( { MarketName: "card", street: "15" } )
-    db.collection('markets').insert( { FMID: FMID, MarketName: MarketName, Website: website, Facebook: facebook, Twitter: twitter, Youtube: youtube, street: street, city: city, County: county, State: state, zip: zip, Season1Date: Season1Date, Season1Time: Season1Time, Season2Date: Season2Date, Season2Time: Season2Time, Season3Date: Season3Date, Season3Time: Season3Time, Season4Date: Season4Date, Season4Time: Season4Time, x: lat, y: lng})
+    db.collection('markets').insert( { FMID: FMID, MarketName: MarketName, Website: website, Facebook: facebook, Twitter: twitter, Youtube: youtube, street: street, city: city, County: county, State: state, zip: zip, Season1Date: Season1Date, Season1Time: Season1Time, Season2Date: Season2Date, Season2Time: Season2Time, Season3Date: Season3Date, Season3Time: Season3Time, Season4Date: Season4Date, Season4Time: Season4Time, x: lng, y: lat,   Organic: organic,
+          Bakedgoods: bakedgoods,
+          Cheese: cheese,
+          Crafts: crafts,
+          Flowers: flowers,
+          Eggs: eggs,
+          Seafood: seafood,
+          Herbs: herbs,
+          Vegetables: vegetables,
+          Honey: honey,
+          Jams: jams,
+          Maple: maple,
+          Meat: meat,
+          Nursery: nursery,
+          Nuts: nuts,
+          Plants: plants,
+
+          Poultry: poultry,
+          Prepared: prepared,
+          Soap: soap,
+          Trees: trees,
+          Wine: wine,
+          Coffee: coffee,
+          Beans: beans,
+          Fruits: fruits,
+          Grains: grains,
+          Juices: juices,
+          Mushrooms: mushrooms,
+          Petfood: petfood,
+          Tofu: tofu,
+          Wildharvested: wildharvested})
    
 
     //var count = db.collection('markets').find().count(); //count increases
@@ -197,8 +298,6 @@ app.post('/form',function(req, res){
 });
 
 
-
-
 //temp global array
 var farms = [{name: "farmtest", lat: 100, lon: 100}];
 
@@ -218,8 +317,6 @@ app.post('/searchFarms', function(req, res){
 
     var lati = locArray[0];
     var long = locArray[1];
-    //console.log("Lat: "+ lati + ", Lon: "+ long);
-    //console.log("************************");
     //calculate the four corners to use later
     var top = (Math.round(100*lati)/100) +.15;
     //var top = Math.ceil( lati );
@@ -245,20 +342,32 @@ app.post('/searchFarms', function(req, res){
         //console.log("Inside Promise");
 
         //var count = db.collection('markets').find().count();
-         var count = db.collection('markets').find({MarketName: "ANdrew market"}).count(); 
+         //var count = db.collection('markets').find({MarketName: "ANdrew market"}).count(); 
+         /*var result = db.collection("markets").findOne({x:41.6680138,y:-72.860251},function(err,items) {
+          console.log(items);
+          console.log("X: "+ items.x)
+          console.log("Y: "+ items.y)
+          console.log(top +"   "+ items.y +"   "+ bottom);
+          console.log(right +"   "+ items.x +"   "+ left);
+
+          console.log(items.y < top && items.y > bottom);
+          console.log(items.x > right && items.x < left);
+
+        });*/
+
+
+
         //Query the areas in the square
         var myCursor = db.collection('markets')
          .find({ $and: [{y: {$lt: top, $gt: bottom} },
                         {x: {$lt: left, $gt: right} }]});
 
-         
+    
 
         // Execute the each command, triggers for each document
         myCursor.each(function(err, item) {
           if(item != null){
             //Naming of the variables pulled from the DB
-            //farms.push({FMID: item.FMID, MarketName: item.MarketName, Website: item.Website, Facebook: item.Facebook, Twitter: item.Twitter, Youtube: item.Youtube, street: item.street, city: item.city, County: item.County, State: item.State, zip: item.zip, Season1Date: item.Season1Date, Season1Time: item.Season1Time, Credit: item.Credit, Organic: item.Organic, Eggs: item.Eggs, Vegetables: item.Vegetables, lat: item.y, lon: item.x, });
-            
             farms.push({FMID: item.FMID, MarketName: item.MarketName, Website: item.Website, Facebook: item.Facebook, Twitter: item.Twitter, Youtube: item.Youtube, OtherMedia: item.OtherMedia, street: item.street, city: item.city, County: item.County, State: item.State, zip: item.zip, Season1Date: item.Season1Date, Season1Time: item.Season1Time, Season2Date: item.Season2Date, Season2Time: item.Season2Time, Season3Date: item.Season3Date, Season3Time: item.Season3Time, Season4Date: item.Season4Date, Season4Time: item.Season4Time, x: item.x, y: item.y, Location: item.Location, Credit: item.Credit, WIC: item.WIC, WICcash: item.WICcash, SFMNP: item.SFMNP, SNAP: item.SNAP, Organic: item.Organic, Bakedgoods: item.Bakedgoods, Cheese: item.Cheese, Crafts: item.Crafts, Flowers: item.Flowers, Eggs: item.Eggs, Seafood: item.Seafood, Herbs: item.Herbs, Vegetables: item.Vegetables, Honey: item.Honey, Jams: item.Jams, Maple: item.Maple, Meat: item.Meat, Nursery: item.Nursery, Nuts: item.Nuts, Plants: item.Plants, Poultry: item.Poultry, Prepared: item.Prepared, Soap: item.Soap, Trees: item.Trees, Wine: item.Wine, Coffee: item.Coffee, Beans: item.Beans, Fruits: item.Fruits, Grains: item.Grains, Juices: item.Juices, Mushrooms: item.Mushrooms, PetFood: item.PetFood, Tofu: item.Tofu, WildHarvested: item.WildHarvested, updateTime: item.updateTime});
             console.log(item.MarketName + ", Lat: " + item.y + ", Lon: " + item.x);
             //count ++;
@@ -273,7 +382,7 @@ app.post('/searchFarms', function(req, res){
             //resolve when we get to the end of the query
             //console.log("array length (INSIDE PROMISE): "+ farms.length);
             //console.log(count);
-            resolve(farms, count);
+            resolve(farms);
             //db.close();
           });
         };
@@ -281,11 +390,12 @@ app.post('/searchFarms', function(req, res){
     // reject ("Error!");
     });
  
-    p1.then(function(value, count) {
-      console.log("Number of found markets with andrew: "+count); // Success!
+    p1.then(function(value) {
+          
+      //console.log("Number of found markets with andrew: "+count); // Success!
       res.end(JSON.stringify(value)   );
 
-    }, function(reason) {
+    }, function(reason, count) {
       console.log("fail: "+reason); // Error!
       //fill in res.end with error
     });
