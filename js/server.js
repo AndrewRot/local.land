@@ -29,14 +29,7 @@ var MongoClient = mongodb.MongoClient;
 //var url = 'mongodb://localhost:27017/farmsDB';
 var url = 'mongodb://heroku_x2qwnz17:c5qu6veuv001ia9snr4vut4fg8@ds113678.mlab.com:13678/heroku_x2qwnz17';
 
-/*
-app.post('html/upload-market', function(req, res){
-  console.log("DICKDICKDICK");
-  var userName = req.body.userName;
-  var html = 'Hello: ' + userName + '.<br>' +
-             '<a href="/">Try again.</a>';
-  res.send(html);
-});*/
+
 // routes will go here
 //tell express what to do when the /about route is requested
 app.post('/form',function(req, res){
@@ -133,7 +126,7 @@ app.post('/form',function(req, res){
    
 
     //var count = db.collection('markets').find().count(); //count increases
-    var count = db.collection('markets').find({ MarketName: "ANdrew market"}).count();
+    var count = db.collection('markets').find().count();   //This one is finding the 6 farms
 
     resolve(count);
     
@@ -214,11 +207,8 @@ app.post('/form',function(req, res){
           petfood: req.body.petfood || null,
           tofu: req.body.tofu || null,
           wildharvested: req.body.wildharvested || null
-
     }));
-
   }, 2000)
-
 
 });
 
@@ -229,7 +219,7 @@ app.post('/form',function(req, res){
 var farms = [{name: "farmtest", lat: 100, lon: 100}];
 
 //When we click the search bar
-app.post('/searchMovies', function(req, res){
+app.post('/searchFarms', function(req, res){
   var body = ''
   //console.log("Handling Search");
   req.on('data', function(d) {
@@ -277,11 +267,13 @@ app.post('/searchMovies', function(req, res){
       var p1 = new Promise(function(resolve, reject) {
         //console.log("Inside Promise");
 
-        var count = 0;
+        var count = db.collection('markets').find().count();
         //Query the areas in the square
         var myCursor = db.collection('markets')
          .find({ $and: [{y: {$lt: top, $gt: bottom} },
                         {x: {$lt: left, $gt: right} }]});
+
+         
 
         // Execute the each command, triggers for each document
         myCursor.each(function(err, item) {
@@ -291,7 +283,7 @@ app.post('/searchMovies', function(req, res){
             
             farms.push({FMID: item.FMID, MarketName: item.MarketName, Website: item.Website, Facebook: item.Facebook, Twitter: item.Twitter, Youtube: item.Youtube, OtherMedia: item.OtherMedia, street: item.street, city: item.city, County: item.County, State: item.State, zip: item.zip, Season1Date: item.Season1Date, Season1Time: item.Season1Time, Season2Date: item.Season2Date, Season2Time: item.Season2Time, Season3Date: item.Season3Date, Season3Time: item.Season3Time, Season4Date: item.Season4Date, Season4Time: item.Season4Time, x: item.x, y: item.y, Location: item.Location, Credit: item.Credit, WIC: item.WIC, WICcash: item.WICcash, SFMNP: item.SFMNP, SNAP: item.SNAP, Organic: item.Organic, Bakedgoods: item.Bakedgoods, Cheese: item.Cheese, Crafts: item.Crafts, Flowers: item.Flowers, Eggs: item.Eggs, Seafood: item.Seafood, Herbs: item.Herbs, Vegetables: item.Vegetables, Honey: item.Honey, Jams: item.Jams, Maple: item.Maple, Meat: item.Meat, Nursery: item.Nursery, Nuts: item.Nuts, Plants: item.Plants, Poultry: item.Poultry, Prepared: item.Prepared, Soap: item.Soap, Trees: item.Trees, Wine: item.Wine, Coffee: item.Coffee, Beans: item.Beans, Fruits: item.Fruits, Grains: item.Grains, Juices: item.Juices, Mushrooms: item.Mushrooms, PetFood: item.PetFood, Tofu: item.Tofu, WildHarvested: item.WildHarvested, updateTime: item.updateTime});
             console.log(item.MarketName + ", Lat: " + item.y + ", Lon: " + item.x);
-            count ++;
+            //count ++;
           }
 
           // If the item is null then the cursor is exhausted/empty and closed
@@ -302,17 +294,17 @@ app.post('/searchMovies', function(req, res){
 
             //resolve when we get to the end of the query
             //console.log("array length (INSIDE PROMISE): "+ farms.length);
-            //console.log(items);
-            resolve(farms);
+            //console.log(count);
+            resolve(farms, count);
             //db.close();
           });
         };
       });
     // reject ("Error!");
     });
-
-    p1.then(function(value) {
-      //console.log("Number of found markets: "+value.length); // Success!
+ 
+    p1.then(function(value, count) {
+      console.log("Number of found markets with andrew: "+count); // Success!
       res.end(JSON.stringify(value)   );
 
     }, function(reason) {

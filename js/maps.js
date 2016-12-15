@@ -35,7 +35,7 @@ function searchFor() {
 
       //Handle result from geocoding
   function reqListener () {
-  	oReq.open("POST", "/searchMovies", true);
+  	oReq.open("POST", "/searchFarms", true);
   	// MAJOR KEY-- build form in XML http request SEND function
   	console.log('search='+convertedLocation);
 
