@@ -35,7 +35,7 @@ function searchFor() {
 
       //Handle result from geocoding
   function reqListener () {
-  	oReq.open("POST", "/searchMovies", true);
+  	oReq.open("POST", "/searchFarms", true);
   	// MAJOR KEY-- build form in XML http request SEND function
   	console.log('search='+convertedLocation);
 
@@ -119,6 +119,7 @@ function popMap(foundMarkets){
   };
 
   function addMarker(foundMarkets) {
+    console.log("MARKET NAME: "+foundMarkets.MarketName);
 
     //get position
     var position =  new google.maps.LatLng(foundMarkets.y, foundMarkets.x);
@@ -162,8 +163,9 @@ function popMap(foundMarkets){
       getIcons(foundMarkets);
       '</div> </div> </div>';
     var footerString = 
-      '<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
-      '<button type="button" class="btn btn-primary">Save Market</button>';
+      '<p> Market found on: 12/15/2017 </p>';
+      //'<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>' +
+      //'<button type="button" class="btn btn-primary">Save Market</button>';
 
 
     //infowindow = new google.maps.InfoWindow({
@@ -231,18 +233,6 @@ function popMap(foundMarkets){
     for (var i = 1; i < foundMarkets.length; i++) {
       addMarker(foundMarkets[i]);
     }
-
-  
-
-  
-  //first is always undefined?
-  //for (var i = 1; i < foundMarkets.length; i++) {
-    //sliderContent = sliderContent + slidePanel(foundMarkets[i]);
-    
-  //}
-  //sc.innerHTML = ""; //clear out old content
-  //document.getElementById('sliderContent').innerHTML = "";
-  //sc.innerHTML = sliderContent;
 
 
 

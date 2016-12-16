@@ -40,8 +40,6 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 
-
-
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -121,31 +119,20 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-
-	$(".area, .toggle").click(function(){
-		$(".slidecontainer").toggleClass("menu-open");
-		$(".opacity").toggleClass("opacity2");
-		$(".bars").toggleClass("bars2");
-		$(".sliderarrow").toggleClass("sliderarrow2");
+			$(".area, .toggle").click(function(){
+			$(".slidecontainer").toggleClass("menu-open");
+			$(".opacity").toggleClass("opacity2");
+			$(".bars").toggleClass("bars2");
+			$(".sliderarrow").toggleClass("sliderarrow2");
+		});
 	});
-	/*$(".opacity").click(function(){
-		$(".slidecontainer").toggleClass("menu-open");
-		$(".opacity").toggleClass("opacity2");
-		$(".bars").toggleClass("bars2");
-		$(".sliderarrow").toggleClass("sliderarrow2");
-	});*/
-});
-
 	</script>
-
-
 
 
 			<div id="map">
 				<script>
 					var geocoder;
 					var map; //This must be declared outside scope of function
-
 
 					//Input box enter search
 					$('#ZippyZip').keypress(function (e) {
@@ -165,7 +152,7 @@
 					  		console.log(JSON.parse(loadReq.response));
 					  	}*/
 
-   						 return false;    //<---- Add this line
+   						 return false; 
   						}
 					});
 					//search by clicking search button
@@ -186,10 +173,6 @@
 						console.log("CLICKLED")
 					});
 
-
-
-
-
 					//retrieve food image icons
 					//m - market we're getting data from
 					function getIcons(m){
@@ -208,24 +191,9 @@
 						return htmlcontent;
 					}
 
-
-
-					//function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-				  //      infoWindow.setPosition(pos);
-				  //      infoWindow.setContent(browserHasGeolocation ?
-				  //                            'Error: The Geolocation service failed.' :
-				  //                            'Error: Your browser doesn\'t support geolocation.');
-				  //    }
-
-
-					//google.maps.event.addDomListener(window, "", initialize);
-
-
 				</script>
 			</div>
-	</div>
-
-
+		</div>
 	</div>
 
 
@@ -248,32 +216,25 @@
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modalcontent">
-    <div class="modalheader">
-      <span class="close">×</span>
-      <div id="modaltitle" >
-      <h2>Modal Header</h2>
-      </div>
-    </div>
-    <div id="modalbody">
-      <p>Some text in the Modal Body</p>
-      <p>Some other text...</p>
-
-
-    </div>
-    <br>
-
-    <div id="fblink">
-    	<div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="standard" data-size="large" data-show-faces="true">TEST</div>
-    </div>
-
-
-    <div id="modalfooter">
-      <h3>Modal Footer</h3>
-
-
-    </div>
-  </div>
+  	<div class="modalcontent">
+   	 	<div class="modalheader">
+      		<span class="close">×</span>
+      		<div id="modaltitle" >
+      			<h2>Modal Header</h2>
+      		</div>
+    	</div>
+    	<div id="modalbody">
+      		<p>Some text in the Modal Body</p>
+      		<p>Some other text...</p>
+    	</div>
+    	<br>
+    	<div id="fblink">
+    		<div class="fb-follow" data-href="https://www.facebook.com/zuck" data-layout="standard" data-size="large" data-show-faces="true">TEST</div>
+    	</div>
+    	<div id="modalfooter">
+      		<h3>Modal Footer</h3>
+    	</div>
+  	</div>
 </div>
 
 
@@ -294,7 +255,6 @@
 		$('#fblink').html('<div class="fb-follow" data-href="'+url+'" data-layout="standard" data-size="large" data-show-faces="true">fb</div>');
 		//refresh facebook links
 		FB.XFBML.parse(document.getElementById('fblink'));
-
 	}
 
 	// Get the <span> element that closes the modal
@@ -306,13 +266,12 @@
 	}
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
 
 </script>
-
 
 <!-- SCRIPTS -->
 	<script src="js/stacked.js"></script>

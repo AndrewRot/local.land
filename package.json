@@ -10,7 +10,8 @@
   },
   "dependencies": {
 
-    "express": "~4.9.0"
+    "express": "~4.9.0",
+    "body-parser": "~1.10.1"
   },
   "main": "index.js",
   "devDependencies": {},
